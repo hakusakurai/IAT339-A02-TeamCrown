@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Style Guide and Pattern Library</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
+
+	</head>
+
+	<body>
+		
+		<header>
+			<nav>
+					<a href="StyleGuide.html">Style Guide</a>
+					<a href="PatternLibrary.html">Pattern Library</a>
+					<a href="WireframeandMockup.html">Wireframe/Mockup</a>
+					<a href="Citations.html">Citations</a>
+			</nav>
+		</header>
+
+		
+		<main class="wrapper">
+			<div class="grid-container">
+			<div class="title">
+				<h1>Style Guide</h1>
+			</div>
+
+			<div class="sidemenu">
+				<nav>
+					<ul>
+						<li><a href="#BasicInteractiveElements"><strong>Basic Interactive Elements</strong></a></li>
+						<li><a href="#intextlink">In-text Link</a></li>
+						<li><a href="#calltoactionbutton">Call To Action Button</a></li>
+						<li><a href="#submitandresetbutton">Submit and Reset Button</a></li>
+						<li><a href="#textinputfieldandlabel">Text Input Field and Label</a></li>
+						<li><a href="#websitecolourswatches">Website Colour Swatches</a></li>
+						<li><a href="#TextStyling"><strong>Text Styling</strong></a></li>
+						<li><a href="#headings">Headings</a></li>
+						<li><a href="#paragraph">Paragraph</a></li>
+						<li><a href="#bulletedlist">Bulleted List</a></li>
+						<li><a href="#numberedlist">Numbered List</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<section id="BasicInteractiveElements">
+				<h2>Basic Interactive Elements</h2>
+
+				<section id="intextlink">
+					<h3>In-text Link</h3>
+					<p>Using in-text link to transport users to another page or another sections.</p>
+					<h4>Example</h4>
+					<p>Here is the <a class="IntextLink" href="#" title="Go to the page of #">link</a> within a line of text will link you to the page of #.</p>
+					<h4>Code Snippet</h4>
+					<pre class="CodeSnippet"><code>&lt;p&gt;Here is the &lt;a class="IntextLink" href="#" abbr title="Go to the page of #"&gt;link&lt;/a&gt;within a line of text will link you to the page of #.&lt;/p&gt;
+					</code></pre>
+				</section>
+
+				<section id="calltoactionbutton">
+					<h3>Call To Action Button</h3>
+					<p>Using CTA button to call users' action.</p>
+					<h4>Example</h4>
+					<p><a class="CallToActionButton" href="#" title="Go to the page of #">START TO SHOP</a></p>
+					<h4>Code Snippet</h4>
+					<pre class="CodeSnippet"><code>&lt;p&gt;&lt;a class="CallToActionButton" href="#" abbr title="Go to the page of #"&gt;START TO SHOP&lt;/a>&lt;/p&gt;
+					</code></pre>
+				</section>
+
+				<section id="submitandresetbutton">
+					<h3>Submit and Reset Button</h3>
+					<p>Using submit and reset button when users need to submit or reset information.</p>
+					<h4>Example of Submit Button</h4>
+					<button class="SubmitButton">Submit</button>
+					<h4>Code Snippet of Submit Button</h4>
+					<pre class="CodeSnippet"><code>&lt;button class="SubmitButton"&gt;Submit&lt;/button&gt;
+					</code></pre>
+					<h4>Example of Reset Button</h4>
+					<button class="ResetButton">Reset</button>
+					<h4>Code Snippet of Reset Button</h4>
+					<pre class="CodeSnippet"><code>&lt;button class="ResetButton"&gt;Reset&lt;/button&gt;
+					</code></pre>
+				</section>
+
+				<section id="textinputfieldandlabel">
+					<h3>Text Input Field and Label</h3>
+					<p>Using text input field and label when users need to input or complete a form, such as sign up form.</p>
+					<h4>Example</h4>
+					<form>
+					<label class="SignInForm" for="username">Username*</label>
+					<input type="text" class="SignInForm" placeholder="" id="username">
+					</form>
+					<!--Learned Label and Input from w3school.com:https://www.w3schools.com/tags/tag_label.asp -->
+
+					<h4>Code Snippet</h4>
+					<pre class="CodeSnippet"><code>&lt;label class="SignInForm"&gt;Username*&lt;/label&gt;					&lt;input type="text" class="SignInForm" placeholder=""&gt;
+					</code></pre>
+				</section>
+
+				<section id="websitecolourswatches">
+					<h3>Website Colour Swatches</h3>
+					<h4>Primary Colour</h4>
+					<div class="PrimaryColour">
+						<h4>#15B890</h4>
+						<p>This is our primary colour.</p>
+					</div>
+					<h4>Secondary Colour</h4>
+					<div class="SecondaryColour">
+						<h4>#1573B8</h4>
+						<p>This is our secondary colour.</p>
+					</div>
+					<h4>Error Colour</h4>
+					<div class="ErrorColour">
+						<h4>#FF9090</h4>
+						<p>This is our error colour.</p>
+					</div>
+					<h4>Title Coulour</h4>
+					<div class="TitleColour">
+						<h4>#1D1D1D</h4>
+						<p>This is our title colour.</p>
+					</div>
+
+					<h4>Text Colour</h4>
+					<div class="TextColour">
+						<h4>#333333</h4>
+						<p>This is our text colour.</p>
+					</div>
+					<h4>Navigation Colour</h4>
+					<div class="NavigationColour">
+						<h4>#34383B</h4>
+						<p>This is our navigation colour.</p>
+					</div>
+					<h4>Background Colour</h4>
+					<div class="BackgroundColour">
+						<h4>#F2F2F2</h4>
+						<p>This is our background colour.</p>
+					</div>
+
+					<h4>Secondary Background Colour</h4>
+					<div class="SecondaryBackgroundColour">
+						<h4>#E7F3FD</h4>
+						<p>This is our secondary background colour.</p>
+					</div>
+				</section>
+			</section>
+
+			<section id="TextStyling">
+				<h2>Text Styling</h2>
+
+				<section id="headings">
+					<h3>Headings</h3>
+					
+				
+					
+					
+
+					<h1>Heading 1</h1>
+					<p>Using heading1 for title of functional pages (eg:Account).</p>
+					<h4>Code Snippet</h4>
+						<pre class="CodeSnippet"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+						</code></pre>
+
+					<h2>Heading 2</h2>
+						<p>Using heading2 for title of functional section (eg:Billing address).</p>
+					<h4>Code Snippet</h4>
+						<pre class="CodeSnippet"><code>&lt;h2&gt;Heading 2&lt;/h2&gt;
+						</code></pre>	
+
+					<h3>Heading 3</h3>
+					<p>Using heading3 for title of inactivate tabs and lables of forms.</p>
+					<h4>Code Snippet</h4>
+						<pre class="CodeSnippet"><code>&lt;h3&gt;Heading 3&lt;/h3&gt;
+						</code></pre>
+
+					<h4>Heading 4</h4>
+					<p>Using heading4 for name of products on product list page/ Filter.</p>
+					<h4>Code Snippet</h4>
+						<pre class="CodeSnippet"><code>&lt;h4&gt;Heading 4&lt;/h4&gt;
+						</code></pre>
+				</section>
+
+				<section id="paragraph">
+					<h3>Paragraph</h3>
+					<h4>Example</h4>
+					<p>This is the example of paragraph. <strong>We can use strong to emphasize special point.</strong> Or we can use regular size for normal text. Such as: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h4>Code Snippet</h4>
+						<pre class="CodeSnippet">
+							<code>&lt;p&gt;This is the example of paragraph. &lt;strong&gt;We can use strong to emphasize special point.&lt;/strong&gt; Or we can use regular size for normal text. Such as: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+						</code></pre>
+				</section>
+
+				<section id="bulletedlist">
+					<h3>Bulleted List</h3>
+					<p>Using bulleted list for benefits of products.</p>
+					<h4>Example</h4>
+					<ul class="ProductBenefit">
+						<li>Free of preservatives, additives or fillers</li>
+						<li>Simple, natural, whole ingredients</li>
+						<li>Balanced & complete according to AAFCO guidelines</li>
+						<li>Heart-healthy. Omega-3 Fish oil & Organics Safflower/Flaxseed Oil</li>
+					</ul>
+					<h4>Code Snippet</h4>
+						<pre class="CodeSnippet"><code>&lt;ul class="ProductBenefit"&gt;
+									&lt;li&gt;Free of preservatives, additives or fillers&lt;/li&gt;
+									&lt;li&gt;Simple, natural, whole ingredients&lt;/li&gt;
+									&lt;li&gt;Balanced & complete according to AAFCO guidelines&lt;/li&gt;
+									&lt;li&gt;Heart-healthy. Omega-3 Fish oil & Organics Safflower/Flaxseed Oil&lt;/li&gt;&lt;/ul&gt;
+						</code></pre>
+					</section>
+
+					<section id="numberedlist">
+						<h3>Numbered List</h3>
+						<h4>Example</h4>
+						<ol class="NumberedList">
+							<li>First</li>
+							<li>Second</li>
+							<li>Third</li>
+						</ol>
+						<h4>Code Snippet</h4>
+							<pre class="CodeSnippet"><code>&lt;ol class="NumberedList"&gt;
+									&lt;li&gt;First&lt;/li&gt;
+									&lt;li&gt;Second&lt;/li&gt;
+									&lt;li&gt;Third&lt;/li&gt;								&lt;/ol&gt;
+							</code></pre>	
+				</section>
+
+			</section>
+			</div>
+	</main>
+	
+	</body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Pattern Library</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/pattern.css" type="text/css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
+
+	</head>
+
+	<body>
+		<header>
+			<nav>
+					<a href="StyleGuide.html">Style Guide</a>
+					<a href="PatternLibrary.html">Pattern Library</a>
+					<a href="WireframeandMockup.html">Wireframe/Mockup</a>
+					<a href="Citations.html">Citations</a>
+			</nav>
+		</header>
+
+		
+		<main class="wrapper">
+			<div class="grid-container">
+				<div class="title">
+					<h1>Pattern Library</h1>
+				</div>
+
+			<div class="sidemenu">
+				<nav>
+					<ul>
+						<li><a href="#mainnavigation">Main Navigation</a></li>
+						<li><a href="#singleproduct">Detailed View of Single Product</a></li>
+						<li><a href="#gridstructure">Grid Structure</a></li>
+						<li><a href="#othermodule">Other Module: Check Out Module Process 2</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		<section id="ModularPatternElements">
+			<h2>Modular Pattern Elements</h2>
+			<section id="mainnavigation">
+				<h3>Main Navigation</h3>
+				<div class="mainNavigation">
+					<div class="logo">
+						<a href="homepage" class="IconImg"><img class="logo" src="img/Logo.png" alt="Logo" width="87" height="28"></a>
+					</div>
+				<div class="menu">
+					<ul class="NavigationBarList">
+						<li class="dropdown"><a href="#" class="dropbtn">SHOP BY BRAND</a>
+							<div class="dropdown-content-C2">
+								<a href="#" class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a>
+								<a href="#" class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a>
+								<a href="#" class="NavigationBarC2">SHOP BY PROSERIES</a>
+							</div>
+						</li>
+						<li class="dropdown"><a href="#" class="dropbtn">SHOP BY CATEGORY</a>
+							<div class="dropdown-content-C2">
+								<a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a>
+									<div class="dropdown-content-C3">
+										<a href="#" class="NavigationBarC3">Chicken</a>
+										<a href="#" class="NavigationBarC3">Fish</a>
+										<a href="#" class="NavigationBarC3">Beef</a>
+										<a href="#" class="NavigationBarC3">Lamb</a>
+									</div>						
+								<a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a>
+								<a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a>
+								<a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a>
+								<a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a>
+							</div>
+						</li>
+						<li class="dropdown"><a href="" class="dropbtn">ABOUT US</a></li>
+
+					</ul>
+
+				</div>
+				<div class="ShoppingCart">
+					<a href="" class="ShoppingCart"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="25" height="25"></a>
+				</div>
+				<div class="Account">
+					<a href="" class="Account"><img src="img/Account.png" alt="accounticon" width="25" height="25"></a>
+				</div>
+			</div>
+			</section>
+
+			<section id="singleproduct">
+				<h3>Detailed View of Single Product</h3>
+				<div class="ProductDetailed">
+						<div class="ProductImage">
+							<figure>
+								<img src="img/ProductImg.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
+							</figure>
+						</div>
+						<div class="ProductDetailedList">
+						<div class="ProductTitle">
+							<h3>Homestead Turkey & Chicken Wet Cat Food</h3>
+							<a href="" class="IntextLink">By Kafka's Organic</a>
+							<div class="ProductRating">
+								<p>
+								<img src="img/Rating.png" width="142" height="23" alt="Rating">    (201)</p>
+							</div>
+						</div>
+						<div class="ProductDetail">
+							<h4>Size: 1 lb ($ 12.99/lb)</h4>
+							<h4>Fuction:<a href="" class="IntextLink">Hairball Control</a></h4>
+							<h4>Suitable Life Stage:<a href="" class="IntextLink">Adult</a></h4>
+						</div>
+						<div class="ProductPrice">
+							<h3>$12.99</h3>
+							
+								<button type="button" class="productQuantity" >-</button>
+								<form>
+									<input type="number" name="quantity">
+								</form>
+								<button type="button" class="productQuantity">+</button>
+								<div class="AddToCart">
+									<a href="#" class="CallToActionButton">ADD TO CART</a>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="gridstructure">
+				<h3>Grid Structure</h3>
+				<h4>Navigation Bar/Footer</h4>
+				<div class="NVFT"><div class="glogo"><p>1/9</p></div><div class="gmenu"><p>5/9</p></div><div class="gShoppingCart"><p>1/9</p></div><div class="gAccount"><p>1/9</p></div> </div>
+				<h4>ProductList</h4>
+				<div class="PL"><div class="oneunit"><p>1/5</p></div><div class="oneunit"><p>1/5</p></div><div class="oneunit"><p>1/5</p></div><div class="oneunit"><p>1/5</p></div><div class="oneunit"><p>1/5</p></div></div>
+				<h4>Shopping Cart/Purchase History</h4>
+				<div class="SCPH"><div class="oneunit"><p>1/3</p></div><div class="oneunit"><p>1/3</p></div><div class="oneunit"><p>1/3</p></div></div>
+				<h4>Checkout</h4>
+				<div class="CO"><div class="gInformationArea"><p>5/9</p></div><div class="gPriceArea"><p>3/9</p></div></div>
+				<h4>Account</h4>
+				<div class="AC"><div class="gsidemenu"><p>2/8</p></div><div class="gcontent"><p>6/8</p></div></div>
+				<h4>Two Column Form (Sign/Product Detail)</h4>
+				<div class="TCF"><div class="oneunit"><p>1/2</p></div><div class="oneunit"><p>1/2</p></div></div>
+				
+			</section>
+
+			<section id="othermodule">
+				<h3>Other Module: Check Out Module Process 2</h3>
+					<section class="ProcessBarArea">
+						<h2>CHECK OUT</h2>
+						<figure>
+						<img src="img/ProcessBarStep2.png" alt="ProcessBarStep2" width="661" height="57" >
+						</figure>
+					</section>
+					<div class="billinginformation">
+						<section class="InformationArea">
+							<h2>BILLING INFORMATION</h2>
+							<form>
+								<label class="CheckOutForm" for="nameofreceiver">Name of Receiver</label>
+								<input type="text" class="CheckOutForm" id="nameofreceiver">
+								<label class="CheckOutForm" for="phonenumber">Phone Number</label>
+								<input type="text" class="CheckOutForm" id="phonenumber">
+								<label class="CheckOutForm" for="shippingaddress">Shipping Address</label>
+								<input type="text" class="CheckOutForm" id="shippingaddress">
+								<label class="CheckOutForm" for="deliverytype">Delivery Type</label>
+								<select class="CheckOutForm" id="deliverytype" >
+									<option value="standard">Standard Delivery</option>
+									<option value="fedexexpress">Fedex Express</option>
+								</select>
+								<!--Learned Select Tag from w3schools.com: https://www.w3schools.com/tags/tag_select.asp -->
+								<button class="SubmitButton">Edit</button>
+							</form>
+						</section>
+					<section class="PriceArea">
+						<p>ORDER VALUE $130.12</p>
+						<p>SAVE VALUE $32.00</p>
+						<p>GST/HST $3.32</p>
+						<p>PST $6.10</p>
+						<p><strong>TOTAL $98.12</strong></p> 
+					</section>
+					<div class="PreviousStep">
+						<a class="IntextLink" href="#" title="Back to Shopping Cart">&lt; Back to Shopping Cart</a>
+					</div>
+					<div class="NextStep">
+						<a class="IntextLink" id="NextStep" href="#" title="Next Step">Next Step&gt;</a>
+					</div>
+				</div>
+			</section>
+			</section>
+			</div>
+		
+
+		</main>
+	
+	</body>
+</html>

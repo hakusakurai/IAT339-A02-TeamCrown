@@ -1,0 +1,289 @@
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	font-size:1.5rem;
+	background-color: #34383B;
+	font-family: Josefin Sans;
+	height:4rem;
+}
+
+
+header nav{
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+header a{
+	float:left;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+	padding:0.4rem 0.5rem;
+	text-decoration: none;
+}
+
+header a:hover{
+	background-color:#15B890;
+	color:#34383B;
+}
+
+header a:focus{
+	color:#FFFFFF;
+}
+
+.title{
+	padding-left: 2rem;
+	background-color: #F2F2F2;
+}
+
+pre{
+	font-family: monospace;
+	white-space: pre-wrap;
+}
+
+#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons,#Images{
+	padding-left: 5rem;
+}
+
+section{
+	padding-bottom: 1rem; 
+/*	border-bottom: 0.1rem outset #333333;*/
+}
+
+
+h1,h2,h3{
+	font-family:Montserrat, sans-serif;
+}
+
+h1{
+	font-size:3rem;
+}
+
+h2{
+	font-size:2rem;
+}
+
+h3{
+	font-size:1.5rem;
+}
+
+
+
+.sidemenu a{
+	color:#333333;
+	text-decoration: none;
+}
+
+.sidemenu a:hover{
+	background-color: #15B890;
+}
+
+
+.sidemenu li{
+	padding:.5rem; 
+}
+
+
+
+p{
+	width:clamp(45ch, 75%, 75ch);
+	font-family: Source Sans Pro;
+}
+
+code{
+	background-color: white;
+	display: block;
+	width:clamp(45ch,70%,75ch);
+} 
+
+.wrapper{
+	width:clamp(16rem, 90vw, 75rem);
+	padding: 1rem;
+	background-color: #f2f2f2;
+	margin:0 auto;
+}
+
+.sidemenu ul{
+	list-style-type: none;
+}
+
+.sidemenu{
+	padding-top: 1.5rem;
+}
+
+a.IntextLink:link {
+	color:#15B890;
+	text-decoration: none;
+}
+
+a.IntextLink:hover {
+	color:#15B890;
+	text-decoration: underline;
+}
+a.IntextLink:focus {
+	color:#1573B8;
+}
+
+a.IntextLink:visited {
+	color:#1573B8;
+}
+
+a.CallToActionButton{
+	font-family: Josefin Sans;
+}
+
+a.CallToActionButton:link {
+	color: #FFFFFF;
+	background-color:#15B890;
+	border-radius: 1rem;
+	padding: .75rem 1rem .5rem 1rem;
+	text-decoration: none;
+}
+/* Learned round corner from W3schools:https://www.w3schools.com/css/css3_borders.asp;*/
+
+a.CallToActionButton:hover {
+	color: #FFFFFF;
+	background-color:#1AD9AA;
+	border-radius: 1rem;
+	text-decoration: underline;
+}
+a.CallToActionButton:focus {
+	color:#1573B8;
+}
+
+a.CallToActionButton:visited {
+	color:#1573B8;
+}
+
+button{
+	font-family: Josefin Sans;
+	margin-top: 1rem;
+
+}
+
+button.SubmitButton{
+	background-color: white;
+	color: #15B890;
+	font-size: 1rem;
+	border:none;
+	padding: 0.5rem 1rem .25rem 1rem;
+	border-radius: 1rem;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #15B890;
+}
+/*Learned about inner shadow of button from: https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow*/
+
+button.SubmitButton:hover{
+	color: #1AD9AA;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #1AD9AA;
+}
+
+button.SubmitButton:active{
+	color: #15B890;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #333333;
+}
+
+button.ResetButton{
+	background-color: white;
+	color: #1573B8;
+	font-size: 1rem;
+	border:none;
+	padding: 0.5rem 1rem .25rem 1rem;
+	border-radius: 1rem;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #1573B8;
+}
+
+button.ResetButton:hover{
+	color: #46D7F6;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #46D7F6;
+}
+
+button.ResetButton:active{
+	color: #1573B8;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #333333;
+}
+
+label{
+	font-family: Montserrat;
+	font-size: 1.5rem;
+	color: #333333;
+}
+
+input[type=text]{
+	border: 0.15rem solid #F2F2F2;
+	display: block;
+	border-radius: .25rem;
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+}
+
+input[type=text]:focus{
+	outline: none;
+	border: 0.15rem solid #15B890;
+}
+
+input[type=text]:invalid{
+	outline: none;
+	border: 0.15rem solid #FF9090;
+}
+
+.PrimaryColour{
+	background-color: #15B890;
+	color: white;
+	padding: 1rem;
+}
+
+.SecondaryColour{
+	background-color: #1573B8;
+	color: white;
+	padding: 1rem;
+}
+
+.ErrorColour{
+	background-color: #FF9090;
+	color: white;
+	padding: 1rem;
+}
+.TitleColour{
+	background-color: #1D1D1D;
+	color: white;
+	padding: 1rem;
+}
+.TextColour{
+	background-color: #333333;
+	color: white;
+	padding: 1rem;
+}
+
+.NavigationColour{
+	background-color: #34383B;
+	color: white;
+	padding: 1rem;
+}
+.BackgroundColour{
+	background-color: #F2F2F2;
+	border-style: solid;
+	border-color: #333333;
+	color: #333333;
+	padding: 1rem;
+}
+.SecondaryBackgroundColour{
+	background-color: #E7F3FD;
+	color: #333333;
+	padding: 1rem;
+}
+
+ul.ProductBenefit{
+	list-style: "- ";
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+}
+
+ol.NumberedList{
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+}
+
+select{
+	display: block;
+}
