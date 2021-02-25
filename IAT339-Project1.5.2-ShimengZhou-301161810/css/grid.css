@@ -126,11 +126,11 @@ a.CallToActionButton{
 	grid-column:8;
 }
 
-.gAccount{
+.gAccountNavBar{
 	background-color: #E7F3FD;
 	margin-top: .25rem;
 	margin-left: .5rem;
-	grid-column:9 
+	grid-column:9;
 }
 
 .gProductList{
@@ -142,7 +142,7 @@ a.CallToActionButton{
 
 }
 
-. gOneUnit{
+.gOneUnit{
 	background-color: #E7F3FD; 
 	padding-left: 2rem;
 }
