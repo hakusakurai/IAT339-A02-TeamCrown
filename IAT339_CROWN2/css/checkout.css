@@ -1,0 +1,94 @@
+input{
+	margin-left: 4rem;
+}
+
+
+input[type=tel]{
+  width: 450px;
+  height: 40px;
+  padding: 12px;
+  border: 0.8px #15B890 solid;
+  box-sizing: border-box;
+  border-radius: 6.24057px;
+  resize: vertical;
+}
+
+
+p{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+select{
+  width: 450px;
+  height: 40px;
+  padding: 12px;
+  border: 0.8px #15B890 solid;
+  box-sizing: border-box;
+  border-radius: 6.24057px;
+  resize: vertical;
+  margin-left: 4rem;
+}
+
+label{
+	font-size: 28pt;
+	font-weight: 300;
+	color: #1d1d1d;
+	font-family: "Montserrant";
+	margin-top:0;
+	margin-bottom: 0;
+	margin-left: 4rem;
+}
+
+h2{
+	margin-top: 2rem;
+	margin-left: 4rem;
+	margin-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+#submitcheckout{
+	align-items: center;
+	text-align: center;
+}
+
+
+#nextstep{
+	float: right;
+}
+
+.price{
+	float: right;
+}
+
+.pagecontainer{
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.contetncontainer{
+	display: grid;
+	grid-column: 2/9;
+	grid-template-columns: 1fr;
+}
+
+.grid-container{
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: repeat(3, 1fr);
+    /*repeat(auto-fill, minmax(200px, 1fr));*/
+    min-height: 100vh;
+    column-gap: 50px;
+}
+
+.InformationArea{
+	background-color: #f2f2f2;
+	grid-column: 1/3;
+}
+
+.PriceArea{
+	background-color: #f2f2f2;
+	grid-column: 3/4;
+	padding-bottom: 3rem;
+	margin-bottom: 3rem;
+}

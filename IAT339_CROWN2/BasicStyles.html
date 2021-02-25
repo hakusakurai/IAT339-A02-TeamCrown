@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<title>Pattern Library</title>
+		<link rel="stylesheet" href="css/main.css"> 
+		<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+	</head>
+
+	<body>
+		<header>
+		<h1>Pattern Library: Basic Styles</h1>
+		<nav class="navibar">
+			<a href="BasicStyles.html">Basic styles</a> 
+			<a href="ModularPattern.html">Modular Patterns</a> 
+			<a href="Citations.html">Citations</a> 
+			<a href="Wireframes.html">Wireframes</a> 
+		</nav>
+		</header>
+
+		<main>
+
+		<section id="Headings">
+			<h2>Headings:</h2>
+			<h1>Examples of heading 1</h1>
+			<p>Title of functional pages (eg: Account)</p>
+			<h2>Examples of heading 2</h2>
+			<p>Title of Functional section(eg: Billing address)</p>
+			<h3>Examples of heading 3</h3>
+			<p>Title of inactivate tabs and lables of forms</p>
+			<h4>Examples of heading 4</h4>
+			<p>Name of products on product list page/ Filter</p>
+
+			<h3>Sample Code:</h3>
+			<p class="samplecode">&lt;h1&gt;Examples of heading 1&lt;/h1&gt;</p>
+			<p class="samplecode">&lt;h2&gt;Examples of heading 2&lt;/h2&gt;</p>
+			<p class="samplecode">&lt;h3&gt;Examples of heading 3&lt;/h3&gt;</p>
+			<p class="samplecode">&lt;h4&gt;Examples of heading 4&lt;/h4&gt;</p>
+			<p> h1{
+				font-size: 48pt;
+				font-weight: 500;
+				color: #1d1d1d;
+				font-family: "Montserrant";
+					margin-top:0;
+				}
+
+				h2{
+				font-size: 36pt;
+				font-weight: 500;
+				color: #1d1d1d;
+				font-family: "Montserrant";
+				margin-top:0;
+				}
+
+				h3{
+				font-size: 28pt;
+				font-weight: 500;
+				color: #1d1d1d;
+				font-family: "Montserrant";
+				margin-top:0;
+				}
+
+				h4{
+				font-size: 16pt;
+				font-weight: 500;
+				color: #1d1d1d;
+				font-family: "Montserrant";
+				margin-top:0;
+			}</p>
+
+		</section>
+
+		<br>
+
+
+		<section id="Paragraph">
+			<h2>Paragraphs:</h2>
+			<p class="Paragraph"><strong>In pursuit of the ultimate ideal of seating. </strong>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+			<h3>Sample Code:</h3>
+			<p class="samplecode">&lt;p&gt;&lt;strong&gt;In pursuit of the ultimate ideal of seating. &lt;/strong>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Examples of heading 1&lt;/p&gt;
+			</p>
+			<p>
+				p{
+					font-size: 18pt;
+					font-weight: 400;
+					color: #333333;
+					margin-top:0;
+					width: clamp(45ch,70%,75ch);
+				}
+
+			</p>
+		</section>
+
+		<br>
+
+		<section id="BulletLists:">
+			<h2>Bullet Lists:</h2>
+			<h3>List 1:</h3>
+			<ul class="PruductBenefit">
+  				<li class="BenefitList">Free of preservatives, additives or fillers</li>
+  				<li class="BenefitList">Simple, natural, whole ingredients</li>
+  				<li class="BenefitList">Balanced & complete according to AAFCO guidelines</li>
+  				<li class="BenefitList">Heart-healthy. Omega-3 Fish oil & Organic Safflower/Flaxseed Oil</li>
+			</ul>
+			<h3>Sample Code:</h3>
+			<p class="samplecode">
+			&lt;ul&gt;
+  				&lt;li&gt;Free of preservatives, additives or fillers&lt;/li&gt;
+  				&lt;li&gt;Simple, natural, whole ingredients&lt;/li&gt;
+  				&lt;li&gt;Balanced & complete according to AAFCO guidelines&lt;/li&gt;
+  				&lt;li&gt;Heart-healthy. Omega-3 Fish oil & Organic Safflower/Flaxseed Oil&lt;/li&gt;
+			&lt;/ul&gt;
+			</p>
+
+			<h3>List 2:</h3>
+			<ul style="list-style-type:none;" class="FilterAndSort">
+  				<li class="SortFont">Sort
+    				<ul style="list-style-type:none;" class="Sort">
+      					<li><input type="checkbox" id="sort1"><label for="sort1" class="SortFont"> Recently Added</label><br></li>
+      					<li><input type="checkbox" id="sort2"><label for="sort2" class="SortFont"> Most Rated</label><br></li>
+      					<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: Low → High</label><br></li>
+    				</ul>
+  				</li>
+  				<li class="SortFont">Flavor
+  					<ul style="list-style-type:none;" class="Filter">
+      					<li><a href="" class="SortFont">Chicken</a></li>
+      					<li><a href="" class="SortFont">Fish</a></li>
+      					<li><a href="" class="SortFont">Lamb</a></li>
+    				</ul>
+    			</li>
+			</ul>
+
+			<h3>Sample Code:</h3>
+			<p class="samplecode">
+			&lt;ul style="list-style-type:none;"&gt;
+  				&lt;li&gt;Sort
+    				&lt;ul style="list-style-type:none;"&gt;
+      					&lt;li&gt;&lt;input type="checkbox" id="sort1"&gt;&lt;label for="sort1"&gt; Recently Added&lt;/label&gt;&lt;br&gt;&lt;/li&gt;
+      					&lt;li&gt;&lt;input type="checkbox" id="sort2"&gt;&lt;label for="sort2"&gt; Most Rated&lt;/label&gt;&lt;br&gt;&lt;/li&gt;
+      					&lt;li&gt;&lt;input type="checkbox" id="sort3"&gt;&lt;label for="sort3"&gt; Price: Low → High&lt;/label&gt;&lt;br&gt;&lt;/li&gt;
+    				&lt;/ul&gt;
+  				&lt;/li&gt;
+  				&lt;li&gt;Flavor&lt;/li&gt;
+  					&lt;ul style="list-style-type:none;"&gt;
+      					&lt;li&gt;&lt;a href="" class="filterlink"&gt;Chicken&lt;/a&gt;&lt;/li&gt;
+      					&lt;li&gt;&lt;a href="" class="filterlink"&gt;Fish&lt;/a&gt;&lt;/li&gt;
+      					&lt;li&gt;&lt;a href="" class="filterlink"&gt;Lamb&lt;/a&gt;&lt;/li&gt;
+    				&lt;/ul&gt;
+			&lt;ul&gt;
+			</p>		
+		</section>
+
+		<br>
+
+		<section id="LinkWithText">
+			<h2>Link With text:</h2>
+			<a href="https://www.figma.com/file/upmSH1iZoHBSqApKUgw310/Untitled?node-id=17%3A0" class="IntextLink">Figma Layout</a> 
+			<h3>Sample Code:</h3>
+			<p>&lt;a href="https://www.figma.com/file/upmSH1iZoHBSqApKUgw310/Untitled?node-id=17%3A0"&gt;Figma Layout&lt;/a&gt;</p>
+			<p>
+				.IntextLink{
+					font-family: "Montserrant";
+					font-size: 24pt;
+					text-decoration: none;
+					color: #15b890;
+				}
+
+				.IntextLink:hover{
+					text-decoration: underline;
+				}
+
+				.IntextLink:visited{
+					color: #1573B8;
+				}
+			</p>
+		</section>
+
+		<br>
+
+		<section id="CallToActionButton">
+			<h2>Call To Action Button:</h2>
+			<a href="" class="CallToActionButton">BUTTON1</a>
+			<h3>Sample Code:</h3>
+			<p>&lt;a href="" class="button"&gt;BUTTON1&lt;/a&gt;</p>
+			<p>.CallToActionButton{
+					font-family: "Josefin Sans";
+					font-size: 20pt;
+					border: none;
+					border-radius: 28px;
+					padding: 8px 40px;
+					text-align: center;
+					color: #15b890;
+					background-color: #ffffff;
+					text-decoration: none;
+				  	display: inline-block;
+					box-shadow: inset 0px -5px 11px #B0D1C9;
+				}
+
+				.CallToActionButton:hover{
+					box-shadow: inset 0px -5px 11px #6FF1D1;
+				}
+
+				.CallToActionButton:active{
+					box-shadow: inset 0px 5px 11px #B0D1C9;
+				}
+
+				.CallToActionButton:visited{
+					color: #15b890;
+					box-shadow: inset 0px -5px 11px #E0FFF7;
+				}
+			</p>
+		</section>
+
+		<br>
+
+		<section id="SubmitButton">
+			<h2>Submit and Reset Button:</h2>
+			<form>
+  				<input type="submit" value="SUBMIT" class="SubmitButton">
+  				<input type="reset" value="RESET" class="ResetButton">
+			</form>
+			<h3>Sample Code:</h3>
+			<p>
+				&lt;form action=""&gt;
+  				&lt;input type="submit" value="Submit"&gt;
+  				&lt;input type="reset"&gt;
+				&lt;/form&gt;
+			</p>
+		</section>
+
+		<br>
+
+		<section id="TextInput">
+			<h2>TextInput:</h2>
+			<form class=“SignInForm”>
+				<label class="FormFont">Username*</label><br>
+  				<input type="text"><br>
+  				<label class="FormFont">Email*</label><br>
+  				<input type="email"><br>
+  				<label class="FormFont">Password*</label><br>
+  				<input type="password"><br>
+			</form>	
+			<h3>Sample Code:</h3>
+			<p>			
+				&lt;form&gt;
+				&lt;label for="username">Username*&lt;/label&gt;&lt;br&gt;
+  				&lt;input type="text" id="" name="" value=""&gt;&lt;br&gt;
+  				&lt;label for="email">Email*&lt;/label&gt;&lt;br&gt;
+  				&lt;input type="text" id="" name="" value=""&gt;&lt;br&gt;
+  				&lt;label for="passwword">Password*&lt;/label&gt;&lt;br&gt;
+  				&lt;input type="password" id="" name="" value=""&gt;&lt;br&gt;
+				&lt;/form&gt;
+				
+			</p>
+			<p>.FormFont{
+					padding-left:12px;
+					padding-bottom: 30px;
+					font-size: 28pt;
+					font-weight: 300;
+					color: #1d1d1d;
+					font-family: "Montserrant";
+					margin-top:0;
+					font-style: normal;
+					letter-spacing: -0.015em;
+				}
+
+				input[type=text]{
+				  width: 450px;
+				  height: 40px;
+				  border: 0.8px #15B890 solid;
+				  padding: 12px;
+				  box-sizing: border-box;
+				  border-radius: 6.24057px;
+				  resize: vertical;
+				}
+			</p>
+		</section>
+
+		<br>
+			
+		</main>
+		
+	</body>
+
+
+</html>
