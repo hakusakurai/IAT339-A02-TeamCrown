@@ -58,10 +58,13 @@ h1,h2,h3{
 
 h1{
 	font-size:3rem;
+	font-color:#15B890;
 }
 
 h2{
 	font-size:2rem;
+	font-color:#1573B8;
+
 }
 
 h3{
