@@ -1,0 +1,287 @@
+body{
+	font-family: "Source Sans Pro";
+	background-color: #ffffff;
+}
+
+h1{
+	font-size: 48pt;
+	font-weight: 500;
+	color: #1d1d1d;
+	font-family: "Montserrant";
+	margin-top:0;
+	margin-bottom: 0;
+	padding: 0 0 0 0;
+}
+
+h2{
+	font-size: 36pt;
+	font-weight: 500;
+	color: #1d1d1d;
+	font-family: "Montserrant";
+	margin-top:0;
+	margin-bottom: 0;
+	padding: 0 0 0 0;
+}
+
+h3{
+	font-size: 28pt;
+	font-weight: 500;
+	color: #1d1d1d;
+	font-family: "Montserrant";
+	margin-top:0;
+	margin-bottom: 0;
+	padding: 0 0 0 0;
+}
+
+h4{
+	font-size: 16pt;
+	font-weight: 500;
+	color: #1d1d1d;
+	font-family: "Montserrant";
+	margin-top:0;
+	margin-bottom: 0;
+	padding: 0 0 0 0;
+}
+
+p{
+	font-size: 18pt;
+	font-weight: 400;
+	color: #333333;
+	margin-top:0;
+	margin-bottom: 0;
+	padding: 0 0 0 0;
+}
+
+
+
+
+
+
+
+
+.CallToActionButton{
+	font-family: "Josefin Sans";
+	font-size: 20pt;
+	border: none;
+	border-radius: 28px;
+	padding: 8px 40px;
+	text-align: center;
+	color: #15b890;
+	background-color: #ffffff;
+	text-decoration: none;
+  	display: inline-block;
+	box-shadow: inset 0px -5px 11px #B0D1C9;
+}
+
+.CallToActionButton:hover{
+	box-shadow: inset 0px -5px 11px #6FF1D1;
+}
+
+.CallToActionButton:active{
+	box-shadow: inset 0px 5px 11px #B0D1C9;
+}
+
+.CallToActionButton:visited{
+	color: #15b890;
+	box-shadow: inset 0px -5px 11px #E0FFF7;
+}
+
+
+
+
+
+
+
+
+
+.SubmitButton{
+	font-family: "Josefin Sans";
+	border: none;
+	font-size: 20pt;
+	border-radius: 28px;
+	padding: 8px 40px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #15b890;
+	text-decoration: none;
+  	display: inline-block;
+	box-shadow: inset 0px -5px 11px #14A07E;
+}
+
+.SubmitButton:hover{
+	background: #1AD9AA;
+	box-shadow: inset 0px -5px 11px #14A07E;
+}
+
+.SubmitButton:active{
+	background: #16866B;
+	box-shadow: inset 0px 5px 11px #04362A;
+}
+
+.SubmitButton:visited{
+	background: #A3CBC1;
+	box-shadow: inset 0px -5px 11px #85B1A7;
+}
+
+
+
+
+
+
+
+
+
+.ResetButton{
+	font-family: "Josefin Sans";
+	font-size: 20pt;
+	border: none;
+	border-radius: 28px;
+	padding: 8px 40px;
+	text-align: center;
+	color: #1573b8;
+	background-color: #ffffff;
+	text-decoration: none;
+  	display: inline-block;
+	box-shadow: inset 0px -5px 11px #73c4ff;
+}
+
+.ResetButton:hover{
+	box-shadow: inset 0px -5px 11px #46D7F6;
+}
+
+.ResetButton:active{
+	box-shadow: inset 0px 5px 11px #A3C1D8;
+}
+
+.ResetButton:visited{
+	color: #15b890;
+	box-shadow: inset 0px -5px 11px #CBE0F4;
+}
+
+
+
+
+
+
+
+
+
+
+.IntextLink{
+	font-family: "Montserrant";
+	font-size: 24pt;
+	text-decoration: none;
+	color: #15b890;
+}
+
+.IntextLink:hover{
+	text-decoration: underline;
+}
+
+.IntextLink:visited{
+	color: #1573B8;
+}
+
+
+
+
+
+
+.SortFont{
+	font-family: "Montserrant";
+	padding-left: 6px;
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	color: #19191D;
+	text-decoration: none;
+}
+
+ul li{
+	padding-bottom: 8px;
+}
+
+.BenefitList{
+	font-size: 18pt;
+	font-weight: 400;
+	color: #333333;
+	margin-top:0;
+}
+
+
+
+
+
+
+
+.FormFont{
+	padding-left:12px;
+	padding-bottom: 30px;
+	font-size: 28pt;
+	font-weight: 300;
+	color: #1d1d1d;
+	font-family: "Montserrant";
+	margin-top:0;
+	font-style: normal;
+	letter-spacing: -0.015em;
+}
+
+input[type=text]{
+  width: 450px;
+  height: 40px;
+  border: 0.8px #15B890 solid;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 6.24057px;
+  resize: vertical;
+}
+
+input[type=email]{
+  width: 450px;
+  height: 40px;
+  padding: 12px;
+  border: 0.8px #15B890 solid;
+  box-sizing: border-box;
+  border-radius: 6.24057px;
+  resize: vertical;
+}
+
+input[type=password]{
+  width: 450px;
+  height: 40px;
+  padding: 12px;
+  border: 0.8px #15B890 solid;
+  box-sizing: border-box;
+  border-radius: 6.24057px;
+  resize: vertical;
+}
+
+
+
+main{
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+.navibar{
+	background-color: #34383b;
+	padding:0.5em 0.85em;
+}
+
+
+.navibar a{
+	background-color: #34383b;
+	font-family: "Josefin Sans";
+	font-size: 24pt;
+	font-weight: 400;
+	color:#ffffff;
+	padding:0.25em 0.85em;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.navibar a:hover{
+	text-shadow:0 0 5px #ffffff,0 0 10px #ffffff,0 0 20px #ffffff;
+}
