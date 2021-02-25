@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<title>CheckOut</title>
+		
+		<link rel="stylesheet" href="css/main.css">		
+		<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+		<link rel="stylesheet" href="css/checkout.css">	
+	</head>
+
+	<body>
+		<div class="pagecontainer">
+		<a href="ModularPattern.html">Back to Patterns</a>
+
+		<div class="contetncontainer">
+		<header>
+		<h1>CHECK OUT</h1>
+		</header>
+
+		<main>
+
+		<div class="grid-container">
+
+			<div class="InformationArea">
+				<h2>BILLING INFORMATION</h2>
+				<form>
+					<label class="H3InForms">Name of receiver:</label><br>
+  					<input type="text" name="receivername" value="Wade Warren"><br>
+  					<label class="H3InForms">Phone number</label><br>
+  					<input type="tel" name="phonenumber" value="( 905 ) 929 3221"><br>
+  					<label class="H3InForms">Shipping Address</label><br>
+  					<input type="text" name="shippingaddress" value="1107- 4912  Smith Avenue L9H 1E6 Hamilton Ontario"><br>
+  					<label class="H3InForms">Delivery type</label><br>
+  					<select id="deliverytype" name="deliverytypes">
+    						<option value="Standard delivery">Standard delivery</option>
+    						<option value="Quick delivery">Quick delivery</option>
+    						<option value="Canada Post" selected>Canada Post</option>
+    						<option value="Express">Express</option>
+  					</select>
+  					<br>
+  					<br>
+					<input type="submit" value="Submit" class="SubmitButton" id="submitcheckout">
+				</form>
+				
+			</div>
+
+
+
+			<div class="PriceArea">
+
+				<br><br>
+			
+				<P class="price">$130.12</P>
+					<p>ORDER VALUE</p>
+				<P class="price">$32.00</P>
+						<p>SAVE VALUE</p>
+				<P class="price">$3.32</P>
+					<p>GST/HST</p>
+				<P class="price">$6.10</P>
+				<p>PST</p>
+
+				<br>
+				<P class="price">$98.12</P>	
+					<p>Total</p>
+			</div>
+
+
+		</div>
+
+
+			<section class="StepArea">
+				<a href="" class="IntextLink" id="previousstep">Back To Shopping Cart</a>
+				<a href="" class="IntextLink" id="nextstep">Next Step</a>
+			</section>
+
+		</main>
+		</div>
+		</div>
+
+	</body>
+
+</html>
