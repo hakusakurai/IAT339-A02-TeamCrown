@@ -130,7 +130,7 @@ a.CallToActionButton{
 	background-color: #E7F3FD;
 	margin-top: .25rem;
 	margin-left: .5rem;
-	grid-column:9;
+	grid-column:9 ;
 }
 
 .gProductList{
