@@ -47,6 +47,7 @@ pre{
 }
 
 section{
+	padding-top: 3rem;
 	padding-bottom: 1rem; 
 /*	border-bottom: 0.1rem outset #333333;*/
 }
@@ -58,19 +59,17 @@ h1,h2,h3{
 
 h1{
 	font-size:3rem;
-	
+	color:#15B890;
 }
 
 h2{
 	font-size:2rem;
-	color:#15B890;
-	
-
+	color:#1573B8;
 }
 
 h3{
 	font-size:1.5rem;
-	color:#1573B8;
+	
 }
 
 
