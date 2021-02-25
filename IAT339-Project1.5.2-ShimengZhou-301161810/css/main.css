@@ -32,7 +32,7 @@ header a:focus{
 	color:#FFFFFF;
 }
 
-.title{
+.Title{
 	padding-left: 2rem;
 	background-color: #F2F2F2;
 }
@@ -73,17 +73,17 @@ h3{
 
 
 
-.sidemenu a{
+.SideMenu a{
 	color:#333333;
 	text-decoration: none;
 }
 
-.sidemenu a:hover{
+.SideMenu a:hover{
 	background-color: #15B890;
 }
 
 
-.sidemenu li{
+.SideMenu li{
 	padding:.5rem; 
 }
 
@@ -100,18 +100,18 @@ code{
 	width:clamp(45ch,70%,75ch);
 } 
 
-.wrapper{
+.Wrapper{
 	width:clamp(16rem, 90vw, 75rem);
 	padding: 1rem;
 	background-color: #f2f2f2;
 	margin:0 auto;
 }
 
-.sidemenu ul{
+.SideMenu ul{
 	list-style-type: none;
 }
 
-.sidemenu{
+.SideMenu{
 	padding-top: 1.5rem;
 }
 

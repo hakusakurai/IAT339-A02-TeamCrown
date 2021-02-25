@@ -1,5 +1,5 @@
-.mainNavigation{
-	background-color: #34383B;
+.MainNavigation{
+	MackNround-color: #34383B;
 	font-size: .3rem;
 	font-family: Josefin Sans;
 	height: 4.5rem;
@@ -8,7 +8,7 @@
  	grid-template-columns:repeat(9,1fr);
 }
 
-.mainNavigation ul {
+.MainNavigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,11 +16,11 @@
   background-color: #34383B;
 }
 
-.mainNavigation li {
+.MainNavigation li {
   float: left;
 }
 
-.mainNavigation li#logo{
+.MainNavigation li#logo{
 	float: left;
 }
 
@@ -32,11 +32,11 @@
   text-decoration: none;
 }
 
-.mainNavigation li a:hover, .dropdown:hover .dropbtn {
+.MainNavigation li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
-.mainNavigation li.dropdown {
+.MainNavigation li.dropdown {
   display: inline-block;
 }
 .dropdown-content-C2 {
@@ -133,7 +133,7 @@
 	border-radius: 60%;
 }
 
-.billinginformation{
+.BillingInformation{
 	display: grid;
 	grid-template-columns: repeat(9,1fr);
 }
