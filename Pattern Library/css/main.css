@@ -1,0 +1,249 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #F8F8F8;
+}
+
+h2.header{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 48px;
+	font-weight: Bold; 
+	color: #1573B8; 
+	max-width: 75ch;
+	min-width: 45ch;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 36px;
+	font-weight: Medium; 
+	color: #282828;
+}
+
+h2.Heading1{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 48px;
+	font-weight: Medium; 
+	color: #15B890; 
+
+}
+
+h2.Heading2{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 36px; 
+	font-weight: Semi Bold; 
+	color: #1F1F1F;
+}
+
+h3.Heading3{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 36px; 
+	font-weight: Medium;
+	color: #1F1F1F; 
+	margin-top: 10px;
+}
+
+h4.Heading4{
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 28px; 
+	font-weight: Medium; 
+	color: #1F1F1F; 
+	margin-top: 10px;
+}
+
+p.Paragraph{
+	font-family: 'Source sans pro', sans-serif;
+	font-size: 18px; 
+	font-weight: Medium; 
+	color: #1F1F1F; 
+}
+
+.textLink{ 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px; 
+	font-weight: Normal; 
+	color: #23BF99; 
+}
+
+a.CallToActionButton{ 
+	font-family: ' Source sans pro', sans-serif; 
+ 	font-weight: Semi Bold; 
+ 	display: inline-block;
+	background-color: #15B890;
+	font-size: 1.5rem;
+	color: #F8F8F8;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	box-shadow: inset 0 -0.5rem 0.5rem #14A07E;
+}
+
+a.CallToActionButton:hover{
+	display: inline-block;
+	background-color: #1AD9AA;
+	font-size: 1.5rem;
+	color: #F8F8F8;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	box-shadow: inset 0 -0.5rem 0.5rem #14A07E;
+}
+
+a.CallToActionButton:active{
+	display: inline-block;
+	background-color: #16866B;
+	font-size: 1.5rem;
+	color: #F8F8F8;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	box-shadow: inset 0 0.5rem 0.5rem #04362A;
+}
+
+a.SubmitBT{ 
+	font-family: ' Source sans pro', sans-serif; 
+ 	font-weight: Semi Bold; 
+ 	display: inline-block;
+	background-color: #FFFFFF;
+	font-size: 1.5rem;
+	color: #15B890;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	box-shadow: inset 0 -0.2rem 0.5rem #B0D1C9;
+}
+
+a.SubmitBT:hover{
+	display: inline-block;
+	background-color: #FFFFFF;
+	font-size: 1.5rem;
+	color: #15B890;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	box-shadow: inset 0 -0.5rem 0.5rem #6FF1D1;
+}
+
+a.SubmitBT:active{
+	display: inline-block;
+	background-color: #FFFFFF;
+	font-size: 1.5rem;
+	color: #15B890;
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	box-shadow: inset 0 0.5rem 0.5rem #B0D1C9;
+}
+
+nav a{
+	display: inline-block;
+	color:#F8F8F8;
+	background-color: #34383B;
+	font-size:1.25rem;
+	text-decoration: none;
+	padding:1rem 1rem;
+}
+
+nav a:hover, nav a:focus{
+	background-color: #15B890;
+	color: #F8F8F8;
+}
+
+.nav-left a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #F8F8F8;
+  display: block;
+}
+
+.nav-left a:hover {
+  color: #15B890;
+}
+
+.color-box{
+	padding: 3rem 3rem;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #15B890;
+  border-radius: 4px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.BILLINGINFORMATION{
+	background-color: #F2F2F2;
+	max-width: 500px;
+}
+
+
+
+
+
+
+
+
+.inputtext {
+	background-color: #F2F2F2;
+	max-width: 1200px;
+	height: 60px;
+}
+
+#NavigationBar {
+	background:rgb(190, 190, 190);
+}
+
+#Columnform {
+background:rgb(190, 190, 190);
+}
+
+#ProductList {
+background:rgb(190, 190, 190);
+}
+
+#ShoppingCart{
+background:rgb(190, 190, 190);
+}
+
+#Checkout {
+	background:rgb(190, 190, 190);
+}
+
+#Signin {
+background:rgb(190, 190, 190);
+}
+
+.a{
+background:#F2F2F2;
+}
+
+.b{
+	background:#F2F2F2;
+}
+
+.c{
+	background:#F2F2F2;
+}
+
+.d{
+	background:#F2F2F2;
+}
+
+.e{
+	background:#F2F2F2;
+}
+
+.f{
+	background:#F2F2F2;
+}
+
+.NavigationBarList{
+	background-color:#34383B;
+	max-width: 1000px;
+}
