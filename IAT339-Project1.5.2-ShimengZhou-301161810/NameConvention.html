@@ -24,26 +24,93 @@
 		</header>
 
 		
-		<main class="wrapper">
-			<div class="grid-container">
-			<div class="title">
-			<h1>Rule and Convention</h1>
+		<main class="Wrapper">
+			<div class="GridContainer">
+			<div class="Title">
+				<h1>Rule and Convention</h1>
 			</div>
 
-			<div class="sidemenu">
+			<div class="SideMenu">
 				<nav>
 					<ul>
-						<li><a href="#Fonts">Fonts</a></li>
-						<li><a href="#Icons">Icons</a></li>
-						<li><a href="#Images">Images</a></li>
+						<li><a href="#workflow">Workflows</a></li>
+						<li><a href="#rule">Rules</a></li>
+						<li><a href="#name-convention">Name Convention</a></li>
+						<li><a href="#nesting-convention">Nesting Convention</a></li>
+						<li><a href="#comment-convention">Commenting Convention</a></li>
 					</ul>
 				</nav>
 			</div>
 
-			<section class="name-convention">
+
+			<section id="workflow">
+				<h2>Workflow</h2>
+				<p>First detail each element, then focus on grid design. During the grid design, we first focus on the whole website layout, then small field layout.</p>
+			</section>
+
+			<section id="rule">
+				<h2>Rules</h2>
+				<p>If a style will only be used once in the whole website, we will label it as id. If the certain style will be applied for more than once, we will label it as class.</p> 
+
+				<ul>
+					<li>
+						<h3>Class</h3>
+						<ul>
+							<li>Don't use abbreviations</li>
+							<li>Capital the first letter of the word</li>
+							<li>No space</li>
+							<li>You can use - to distinguish words</li>
+							<li>The grid class begins with “g”</li>
+						</ul>
+					</li>
+					<li>
+						<h3>ID</h3>
+						<ul>
+							<li>Don't use abbreviations</li>
+							<li>All lowercase</li>
+							<li>No space</li>
+							<li>You can use - to distinguish words</li>
+							<li>img alt: Same as image name</li>
+						</ul>
+					</li>
+				</ul>				
+			</section>
+
+
+			<section id="name-convention">
 				<h2>Name Convention</h2>
+				<ul>
+					<li>CodeSnippet</li>
+					<li>CallToActionButton(a)</li>
+					<li>SubmitButton(button)</li>
+					<li>ResetButton(button)</li>
+					<li>ProductBenefit</li>
+					<li>gNavigationBar: gLogo, gMenu, gShoppingCart, gAccount</li>
+					<li>gProductList: gOneUnit</li>
+					<li>gCheckOut: gInformationArea, gPriceArea</li>
+					<li>gAccount: gSideMenu, gTwoColumnForm</li>
+					<li>Wrapper</li>
+					<li>GridContainer</li>
+					<li>Title</li>
+					<li>SideMenu</li>
+					<li>MainNavigation</li>
+					<li>Logo</li>
+					<li>ProductQuantity</li>
+					<li>BillingInformation</li>
+				</ul>
+			</section>
+
+			<section id="nesting-convention">
+				<h2>Nesting Convention</h2>
+				<p>We will use section to divide the page content. Once we need a grid to form layout, we use div wrap the field.</p>
 			</section>
 			
+			<section id="comment-convention">
+				<h2>Commenting Convention</h2>
+				<p>Using comment to divide codes into sections in css files based on the usage of css code.</p>
+				<p>Adding detailed information for codes that cannot identify the usage based on its name. </p>
+			</section>
+
 		</div>
 		</main>
 

@@ -30,7 +30,7 @@ body{
 	margin-top: 4rem;
 }
 
-#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons,#Images{
+#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons,#Images, #workflow, #rule, #name-convention, #comment-convention, #nesting-convention{
 	grid-column: 3/9;
 }
 
@@ -216,7 +216,7 @@ a.CallToActionButton{
 		display: inline;
 	}
 
-	#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons,#Images{
+	#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons, #Images{
 	padding-left: 0;
 	grid-column: 1/9;
 }
