@@ -141,6 +141,10 @@
   grid-template-rows: 5rem, 1fr;
 }
 
+.ProductTitle h3{
+  width:clamp(20ch, 75%, 85ch);
+}
+
 /* --- End --- */
 
 .BillingInformation{

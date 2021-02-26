@@ -86,7 +86,7 @@ a.CallToActionButton{
 .InformationTabs{
 	grid-column: 2/9;
 	display: grid;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: 1fr 1fr 1.5fr 1fr;
 }
 .InformationTab{
 	text-decoration: underline;
@@ -94,11 +94,10 @@ a.CallToActionButton{
 
 .ProductDescription{
 	grid-column: 2/8;
+	padding-left: 2rem;
 }
 
-/*.ProductDescription p{
-	width:clamp(45ch, 75%, 75ch);
-}*/
+
 /*--- End ---*/
 
 .InformationArea{
