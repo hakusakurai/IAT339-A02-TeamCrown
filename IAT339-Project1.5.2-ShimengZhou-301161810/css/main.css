@@ -90,7 +90,7 @@ h3{
 
 
 p{
-	width:clamp(45ch, 75%, 75ch);
+	width:clamp(65ch, 75%, 85ch);
 	font-family: Source Sans Pro;
 }
 

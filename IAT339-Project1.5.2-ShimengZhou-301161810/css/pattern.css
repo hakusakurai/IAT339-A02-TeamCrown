@@ -89,6 +89,8 @@
 
 /*Learned Drop down menu from w3schools:https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
 
+
+/*---Detailed View of Single Product start---*/
 .ProductDetailed{
 	display: grid;
 	grid-template-columns:repeat(2,1fr);
@@ -132,6 +134,14 @@
 	margin-top: 1.7rem;
 	border-radius: 60%;
 }
+
+.ProductDetailedInformation{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: 5rem, 1fr;
+}
+
+/* --- End --- */
 
 .BillingInformation{
 	display: grid;

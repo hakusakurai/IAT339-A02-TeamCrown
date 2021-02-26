@@ -59,10 +59,12 @@ body{
 .Account{
 	margin-top: .25rem;
 	margin-left: .5rem;
-	grid-column:9 
+	grid-column:9;
 }
 
 
+
+/* --- Detailed View of Single Product begin---*/
 
 .ProductImage{
 	grid-column:1; 
@@ -80,6 +82,24 @@ a.CallToActionButton{
 	grid-column:1/6; 
 	text-align: center;
 }
+
+.InformationTabs{
+	grid-column: 2/9;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+.InformationTab{
+	text-decoration: underline;
+}
+
+.ProductDescription{
+	grid-column: 2/8;
+}
+
+/*.ProductDescription p{
+	width:clamp(45ch, 75%, 75ch);
+}*/
+/*--- End ---*/
 
 .InformationArea{
 	grid-column: 1/6;
