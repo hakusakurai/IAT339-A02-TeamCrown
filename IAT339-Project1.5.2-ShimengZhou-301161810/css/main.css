@@ -290,3 +290,28 @@ ol.NumberedList{
 select{
 	display: block;
 }
+
+footer{
+	margin-top: 4rem;
+	width:100%;
+	background-color: #34383B;
+	font-family: Josefin Sans;
+	height:26rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+footer ul{
+	list-style-type: none;
+	padding-top: 1.5rem;
+}
+
+footer a {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+footer a:hover {
+	background-color:#15B890;
+	color:#34383B;
+}
