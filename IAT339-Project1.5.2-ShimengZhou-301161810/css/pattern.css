@@ -145,6 +145,20 @@
   width:clamp(20ch, 75%, 85ch);
 }
 
+#deliverytype{
+  border: 0.15rem solid #F2F2F2;
+  display: block;
+  border-radius: .25rem;
+  font-family: Source Sans Pro;
+  font-size: 1rem;
+  height: 40px;
+} 
+
+#deliverytype:focus{
+  outline: none;
+  border: 0.15rem solid #15B890;
+}
+
 
 /*------------------For Homepage Cards-------------------*/
 #card1title{

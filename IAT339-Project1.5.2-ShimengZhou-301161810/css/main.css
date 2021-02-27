@@ -219,6 +219,7 @@ input[type=text]{
 	border-radius: .25rem;
 	font-family: Source Sans Pro;
 	font-size: 1rem;
+	height: 40px;
 }
 
 input[type=text]:focus{
@@ -229,6 +230,14 @@ input[type=text]:focus{
 input[type=text]:invalid{
 	outline: none;
 	border: 0.15rem solid #FF9090;
+}
+
+input[type=number]{
+  width: 40px;
+  height: 40px;
+  border: 2px #15B890 solid;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .PrimaryColour{
