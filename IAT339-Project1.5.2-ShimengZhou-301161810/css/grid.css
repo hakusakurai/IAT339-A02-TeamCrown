@@ -220,6 +220,26 @@ a.CallToActionButton{
  	grid-column-gap: .5rem;
 }
 
+
+
+/*---------------HomepageCard-----------------*/
+.gHomepageCard1{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
+	background-image: url(../img/HomepageCard1.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.gCard1Content{
+	display: grid;
+	grid-column: 7/11;
+	margin-top: 1rem;
+    margin-right: 1rem;
+}
+/*--------------------------------------------*/
+
 @media screen and (max-width:83em){
 	.GridContainer{
 		grid-template-rows: 5rem 10rem 1fr;
