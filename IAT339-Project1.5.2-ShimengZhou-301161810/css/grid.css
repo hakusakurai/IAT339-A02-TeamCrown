@@ -65,6 +65,10 @@ body{
 
 
 /* --- Detailed View of Single Product begin---*/
+.ProductDetailed{
+	display: grid;
+	grid-template-columns:repeat(2,1fr);
+}
 
 .ProductImage{
 	grid-column:1; 
@@ -74,6 +78,12 @@ body{
 	grid-column:2;
 }
 
+.ProductPrice{
+	display: grid;
+	grid-template-columns:repeat(6,1fr);
+	grid-template-rows:1fr 1fr;
+}
+
 .AddToCart{
 	grid-column:1/6; 
 }
@@ -81,6 +91,12 @@ body{
 a.CallToActionButton{
 	grid-column:1/6; 
 	text-align: center;
+}
+
+.ProductDetailedInformation{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: 5rem, 1fr;
 }
 
 .InformationTabs{
@@ -96,6 +112,15 @@ a.CallToActionButton{
 	grid-column: 2/8;
 	padding-left: 2rem;
 }
+
+.ReviewSlide{
+	display: grid;
+	grid-template-columns: repeat(9,1fr);
+}
+
+
+
+
 
 
 /*--- End ---*/

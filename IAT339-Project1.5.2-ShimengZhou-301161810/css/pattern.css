@@ -91,10 +91,7 @@
 
 
 /*---Detailed View of Single Product start---*/
-.ProductDetailed{
-	display: grid;
-	grid-template-columns:repeat(2,1fr);
-}
+
 
 .ProductTitle h3{
 	margin-bottom: .25rem;
@@ -117,11 +114,6 @@
 	margin-left: 0;
 }
 
-.ProductPrice{
-	display: grid;
-	grid-template-columns:repeat(6,1fr);
-	grid-template-rows:1fr 1fr;
-}
 
 .ProductPrice button{
 	border:none;
@@ -135,11 +127,7 @@
 	border-radius: 60%;
 }
 
-.ProductDetailedInformation{
-  display: grid;
-  grid-template-columns: repeat(9,1fr);
-  grid-template-rows: 5rem, 1fr;
-}
+
 
 .ProductTitle h3{
   width:clamp(20ch, 75%, 85ch);
