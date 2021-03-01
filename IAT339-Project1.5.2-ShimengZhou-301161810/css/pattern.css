@@ -101,9 +101,11 @@
 	margin-top: 0;
 }
 
+
 .ProductDetail h4{
 	margin-top: .25rem;
 	margin-bottom: .25rem;
+  display: block;
 }
 
 .ProductTitle img{
@@ -127,6 +129,13 @@
 	border-radius: 60%;
 }
 
+.ChangeQuatity{
+    margin-left: 2rem;
+}
+
+.ChangeQuantity form{
+  display: inline-block;
+}
 
 
 .ProductTitle h3{
