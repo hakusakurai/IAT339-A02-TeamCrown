@@ -8,84 +8,95 @@
  	grid-template-columns:repeat(9,1fr);
 }
 
-.MainNavigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #34383B;
+
+/* The root */
+.NavigationBar {
+    /* Border */
+    
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+
 }
 
-.MainNavigation li {
-  float: left;
+.NavigationBar li {
+    /* Spacing */
+    padding: 0.5rem;
+
+    /* Used to position the sub dropdown */
+    position: relative;
 }
 
-.MainNavigation li#logo{
-	float: left;
+/* The sub dropdown */
+.NavigationBar ul {
+    /* Border */
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    color:#333333;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    /*width: 10rem;*/
+
 }
 
 .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-.MainNavigation li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+/* The second level sub dropdown */
+.NavigationBar ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
 }
 
-.MainNavigation li.dropdown {
-  display: inline-block;
-}
-.dropdown-content-C2 {
-  display: none;
-  position: absolute;
-  color:#333333;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content-C2 .NavigationBarC2 {
-  color: black;
-  padding: 12px 16px;
+.NavigationBarC2{
+  color: #333333;
+  padding: 0.45rem .3rem;
   text-decoration: none;
   display: block;
   text-align: left;
+  width: max-content;
 }
 
-.dropdown-content-C2 .NavigationBarC2:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content-C2 {
-  display: block;
-}
-
-.dropdown-content-C3 {
-  display: none;
-  position: absolute;
-  color:#333333;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
-}
-
-.dropdown-content-C3 .NavigationBarC3 {
-  color: black;
-  padding: 12px 16px;
+.NavigationBarC3{
+  color: #333333;
+  padding: 0.3rem .3rem;
   text-decoration: none;
   display: block;
   text-align: left;
+  width: max-content;
 }
 
-.dropdown-content-C3 .NavigationBarC3:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content-C3 {
-  display: block;
+/* Change background color of list item when being hovered */
+.NavigationBar li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
+/* Show the direct sub dropdown when hovering the list item */
+.NavigationBar li:hover > ul {
+    display: block;
+}
+
 
 /*Learned Drop down menu from w3schools:https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
 
