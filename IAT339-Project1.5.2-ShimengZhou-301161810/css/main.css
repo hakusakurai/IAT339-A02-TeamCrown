@@ -94,7 +94,7 @@ h4{
 
 
 p{
-	width:clamp(65ch, 75%, 85ch);
+	width:clamp(45ch, 95%, 85ch);
 	font-family: Source Sans Pro;
 }
 
