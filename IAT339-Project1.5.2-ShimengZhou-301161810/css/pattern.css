@@ -1,3 +1,5 @@
+/*--MainNavigationBar section START--*/
+
 .MainNavigation{
 	background-color: #34383B;
 	font-size: .3rem;
@@ -97,8 +99,11 @@
     display: block;
 }
 
+/*Learned Drop down menu from https://csslayout.io/patterns/nested-dropdowns/*/
 
-/*Learned Drop down menu from w3schools:https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
+
+/*--MainNavigationBar section END--*/
+
 
 
 /*---Detailed View of Single Product START---*/
