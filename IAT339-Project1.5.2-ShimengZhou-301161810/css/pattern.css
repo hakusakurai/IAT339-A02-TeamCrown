@@ -90,7 +90,7 @@
 /*Learned Drop down menu from w3schools:https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
 
 
-/*---Detailed View of Single Product start---*/
+/*---Detailed View of Single Product START---*/
 
 
 .ProductTitle h3{
@@ -133,6 +133,74 @@
   width:clamp(20ch, 75%, 85ch);
 }
 
+/*--Review Section START--*/
+
+
+.ProdcutReviews{
+  position:relative;
+}
+
+.ProductReviewsTitle{
+  padding-left: 5.5rem;
+  margin-bottom: 1rem;
+}
+
+.ReviewSlide{
+  display: none;
+}
+
+
+.Previous, .Next{
+  cursor:pointer;
+  position: absolute;
+  top:50%;
+  width: auto;
+  padding:1rem;
+  margin-top: -1.4rem;
+  color:black;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.2rem 0.2rem 0;
+  user-select: none;
+}
+
+.Next{
+  right:0;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.ReviewDetailed h3,h4{
+  display: inline;
+  vertical-align: middle;
+}
+
+.HelpfulButtons{
+  margin-left: 1rem;
+}
+
+.HelpfulButtons button{
+  width: 100%;
+}
+
+.HelpfulButtons h3{
+  margin-bottom: 0;
+}
+
+.RatingStars{
+  display: inline;
+  vertical-align: middle;
+  color: #DA9B72;
+  font-size: 1.5rem;
+}
+
+/*--Review Section END--*/
+
+/*--Detailed View of Single Product END--*/
+
+
+/*--Check Out Module Process 2 START--*/
+
 #deliverytype{
   border: 0.15rem solid #F2F2F2;
   display: block;
@@ -146,6 +214,14 @@
   outline: none;
   border: 0.15rem solid #15B890;
 }
+
+.BillingInformation{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+}
+
+/*--Check Out Module Process 2 END--*/
+
 
 
 /*------------------For Homepage Cards-------------------*/
@@ -164,8 +240,4 @@
 }
 /* --- End --- */
 
-.BillingInformation{
-	display: grid;
-	grid-template-columns: repeat(9,1fr);
-}
 

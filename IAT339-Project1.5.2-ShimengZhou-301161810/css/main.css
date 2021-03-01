@@ -6,6 +6,7 @@ header{
 	background-color: #34383B;
 	font-family: Josefin Sans;
 	height:4rem;
+	z-index: 999;
 }
 
 

@@ -64,7 +64,7 @@ body{
 
 
 
-/* --- Detailed View of Single Product begin---*/
+/* --- Detailed View of Single Product START---*/
 .ProductDetailed{
 	display: grid;
 	grid-template-columns:repeat(2,1fr);
@@ -115,16 +115,26 @@ a.CallToActionButton{
 
 .ReviewSlide{
 	display: grid;
-	grid-template-columns: repeat(9,1fr);
+	grid-template-columns: 1fr 5fr 1fr .5fr;
+}
+
+.ReviewDetailed{
+	grid-column: 2;
+}
+.RatingHelpful{
+	grid-column: 2;
+}
+
+.HelpfulButtons{
+	grid-column: 3;
 }
 
 
 
+/*--- Detailed View of Single Product END ---*/
 
 
-
-/*--- End ---*/
-
+/*--Check Out Module Process 2 START--*/
 .InformationArea{
 	grid-column: 1/6;
 }
@@ -142,6 +152,11 @@ a.CallToActionButton{
 	grid-column:8/10; 
 }
 
+
+/*--Check Out Module Process 2 END--*/
+
+
+/*--Grid Structure Section START--*/
 .gNavigationBar{
 	display:grid;
  	grid-template-columns:repeat(9,1fr);
@@ -244,6 +259,8 @@ a.CallToActionButton{
  	border-style: solid;
  	grid-column-gap: .5rem;
 }
+
+/*--Grid Structure Section END--*/
 
 
 
