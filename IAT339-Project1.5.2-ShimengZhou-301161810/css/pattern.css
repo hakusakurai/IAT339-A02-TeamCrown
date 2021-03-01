@@ -94,10 +94,21 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+
+/*Changed text color when hover on it*/
+.NavigationBar li:hover > a{
+    color: #15B890;
+}
+.NavigationBar li:hover > div a{
+    color: #15B890;
+}
+
+
 /* Show the direct sub dropdown when hovering the list item */
 .NavigationBar li:hover > ul {
     display: block;
 }
+
 
 /*Learned Drop down menu from https://csslayout.io/patterns/nested-dropdowns/*/
 
