@@ -314,7 +314,7 @@ a.CallToActionButton{
 	}
 }
 
-@media screen and (max-width:50em){
+@media screen and (max-width:44em){
 .ProductDetailed{
 	display: grid;
 	grid-template-rows: 1fr 1fr;
@@ -361,7 +361,11 @@ p{
 header {
 	font-size: 1rem;
 }
-}
+
+@media screen and (max-width:24em){
+		.GridContainer{
+		grid-template-rows: 8rem 10rem 1fr;
+	}
 
 /*--PageNavigationBarToggleMenuSize--*/
 
