@@ -1,22 +1,6 @@
-header{
-	position:fixed;
-	top:0;
-	width:100%;
-	font-size:1.5rem;
-	background-color: #34383B;
-	font-family: Josefin Sans;
-	height:4rem;
-	z-index: 999;
-}
-
-
-header nav{
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
-}
+/* header */
 
 header a{
-	float:left;
 	color: #FFFFFF;
 	display: block;
 	text-align: center;
@@ -32,6 +16,124 @@ header a:hover{
 header a:focus{
 	color:#FFFFFF;
 }
+
+
+
+header {
+  background-color: #34383B;
+  font-family: Josefin Sans;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #34383B;
+}
+
+header li a {
+  display: block;
+  padding: 1.5rem 1.5rem;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+header li a:hover,
+header .TopNavigationButton:hover {
+  background-color: #15B890;
+}
+
+header .TopLogo {
+  display: block;
+  float: left;
+  font-size: 2rem;
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+}
+
+/* menu */
+
+header .TopNavigationList {
+  clear: both;
+  max-height:0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+header .ToggleMenuIcon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 1.75rem 1.25rem;
+  position: relative;
+  user-select: none;
+}
+
+header .ToggleMenuIcon .ToggleIcon {
+  background: #15B890;
+  display: block;
+  height: .125rem;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 1.125rem;
+}
+
+header .ToggleMenuIcon .ToggleIcon:before,
+header .ToggleMenuIcon .ToggleIcon:after {
+  background: #15B890;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+header .ToggleMenuIcon .ToggleIcon:before {
+  top: 5px;
+}
+
+header .ToggleMenuIcon .ToggleIcon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+header .TopNavigationButton {
+  display: none;
+}
+
+header .TopNavigationButton:checked ~ .TopNavigationList {
+  max-height: max-content;
+}
+
+
+/*the middle line of the toggle menu button*/
+header .TopNavigationButton:checked ~ .ToggleMenuIcon .ToggleIcon {
+  background: transparent;
+}
+
+header .TopNavigationButton:checked ~ .ToggleMenuIcon .ToggleIcon:before {
+  transform: rotate(-45deg);
+}
+
+header .TopNavigationButton:checked ~ .ToggleMenuIcon .ToggleIcon:after {
+  transform: rotate(45deg);
+}
+
+header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:before,
+header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:after {
+  top: 0;
+}
+
+
+
 
 .Title{
 	padding-left: 2rem;
@@ -61,6 +163,7 @@ h1,h2,h3{
 h1{
 	font-size:3rem;
 	color:#15B890;
+	display: block;
 }
 
 h2{

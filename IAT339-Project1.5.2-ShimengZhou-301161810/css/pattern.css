@@ -11,10 +11,8 @@
 }
 
 
-/* The root */
 .NavigationBar {
-    /* Border */
-    
+    /* Border */   
     display: flex;
 
     /* Reset list styles */
@@ -57,7 +55,7 @@
 
 }
 
-.dropbtn {
+.DropdownButton {
   display: inline-block;
   color: white;
   text-align: center;
