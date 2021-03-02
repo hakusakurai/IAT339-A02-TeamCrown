@@ -1,0 +1,19 @@
+#ModularPatternElementsT{
+	padding-left: 5rem;
+}
+
+#ModularPatternElementsT{
+	grid-column: 3/9;
+}
+
+
+@media screen and (max-width:83em){
+	#ModularPatternElementsT{
+		padding-left: 0;
+		grid-column: 1/9;
+	}
+}
+
+
+@media screen and (max-width:44em){
+}
