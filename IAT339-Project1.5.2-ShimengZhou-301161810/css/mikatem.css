@@ -3,7 +3,27 @@
 }
 
 #ModularPatternElementsT{
-	grid-column: 3/9;
+	grid-column: 1/9;
+}
+
+
+
+
+.gHomepageCard1{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
+	background-image: url(../img/HomepageCard1.png);
+	background-size: auto auto;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.gCard1Content{
+	display: grid;
+	grid-column: 7/11;
+	margin-top: 1rem;
+	margin-right: 1rem;
 }
 
 
