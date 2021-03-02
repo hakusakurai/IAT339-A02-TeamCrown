@@ -259,7 +259,7 @@
 
 
 
-/*--shopping cart one row 2 Start--*/
+/*--shopping cart one row Start--*/
 .ShoppingCartQuantityButton{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -370,7 +370,34 @@
   }
 
 }
-/*--shopping cart one row 2 END--*/
+/*--shopping cart one row END--*/
+
+
+
+/*--one section of account page END--*/
+
+/*--one section of account page END--*/
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  max-width: 400px;
+}
+
+/*input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #15B890;
+  border-radius: 4px;
+}*/
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
 
 /*------------------For Homepage Cards-------------------*/
 #card1title{
