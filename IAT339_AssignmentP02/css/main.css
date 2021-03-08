@@ -1,12 +1,596 @@
+/*--Basic CSS Section START--*/
+.Wrapper{
+	width:clamp(16rem, 90vw, 75rem);
+	padding: 1rem;
+	background-color: #f2f2f2;
+	margin:0 auto;
+}
 body{
 	font-family:helvetica, arial, sans-serif;
 }
 
-
-header{
-	background:rgb(190, 190, 190);
+h1,h2,h3, h4{
+	font-family:Montserrat, sans-serif;
 }
 
+h1{
+	font-size:3rem;
+	color:#15B890;
+	display: block;
+}
+
+h2{
+	font-size:2.25rem;
+	color:#1573B8;
+}
+
+h3{
+	font-size:1.75rem;	
+}
+
+h4{
+	font-size: 1rem;
+}
+
+p{
+	font-size: 1.125rem;
+	width:clamp(45ch, 95%, 85ch);
+	font-family: Source Sans Pro;
+}
+
+a.IntextLink:link {
+	color:#15B890;
+	text-decoration: none;
+}
+
+a.IntextLink:hover {
+	color:#15B890;
+	text-decoration: underline;
+}
+a.IntextLink:focus {
+	color:#1573B8;
+}
+
+a.IntextLink:visited {
+	color:#1573B8;
+}
+
+a.CallToActionButton{
+	font-family: Josefin Sans;
+}
+
+a.CallToActionButton:link {
+	color: #FFFFFF;
+	background-color:#15B890;
+	border-radius: 1rem;
+	padding: .75rem 1rem .5rem 1rem;
+	text-decoration: none;
+}
+
+a.CallToActionButton:hover {
+	color: #FFFFFF;
+	background-color:#1AD9AA;
+	border-radius: 1rem;
+	text-decoration: underline;
+}
+a.CallToActionButton:focus {
+	color:#1573B8;
+}
+
+a.CallToActionButton:visited {
+	color:#1573B8;
+}
+
+button{
+	font-family: Josefin Sans;
+	margin-top: 1rem;
+
+}
+
+button.SubmitButton{
+	background-color: white;
+	color: #15B890;
+	font-size: 1rem;
+	border:none;
+	padding: 0.5rem 1rem .25rem 1rem;
+	border-radius: 1rem;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #15B890;
+}
+
+button.SubmitButton:hover{
+	color: #1AD9AA;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #1AD9AA;
+}
+
+button.SubmitButton:active{
+	color: #15B890;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #333333;
+}
+
+button.ResetButton{
+	background-color: white;
+	color: #1573B8;
+	font-size: 1rem;
+	border:none;
+	padding: 0.5rem 1rem .25rem 1rem;
+	border-radius: 1rem;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #1573B8;
+}
+
+button.ResetButton:hover{
+	color: #46D7F6;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #46D7F6;
+}
+
+button.ResetButton:active{
+	color: #1573B8;
+	box-shadow:inset 0.05rem -0.2rem 0.4rem 0.04rem #333333;
+}
+
+label{
+	font-family: Montserrat;
+	font-size: 1.5rem;
+	color: #333333;
+}
+
+input[type=text]{
+	border: 0.15rem solid #F2F2F2;
+	display: block;
+	border-radius: .25rem;
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+	height: 40px;
+}
+
+input[type=text]:focus{
+	outline: none;
+	border: 0.15rem solid #15B890;
+}
+
+input[type=text]:invalid{
+	outline: none;
+	border: 0.15rem solid #FF9090;
+}
+
+input[type=number]{
+  width: 40px;
+  height: 40px;
+  border: 2px #15B890 solid;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+ul.ProductBenefit{
+	list-style: "- ";
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+}
+
+ol.NumberedList{
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+}
+
+select{
+	display: block;
+}
+
+footer{
+	margin-top: 4rem;
+	width:100%;
+	background-color: #34383B;
+	font-family: Josefin Sans;
+	height:26rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.BreadCrumbs{
+	padding-left: 5rem;
+}
+
+.BreadCrumbs a{
+	cursor: pointer;
+}
+
+/*--Basic CSS Section END--*/
+
+/*---Header Section START---*/
+/* header */
+
+header a{
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+	padding:0.4rem 0.5rem;
+	text-decoration: none;
+}
+
+header a:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	color:#34383B;
+}
+
+header a:focus{
+	color:#FFFFFF;
+}
+
+
+
+header {
+  background-color: #34383B;
+  font-family: Josefin Sans;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #34383B;
+}
+
+header li a {
+  display: block;
+  padding: 1.5rem 1.5rem;
+/*  border-right: 1px solid #f4f4f4;*/
+  text-decoration: none;
+}
+
+header li a:hover,
+header .TopNavigationButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header .TopLogo {
+  display: block;
+  float: left;
+  font-size: 2rem;
+  padding: .75rem 1.5rem 0 1.5rem;
+  text-decoration: none;
+}
+
+/* menu */
+
+header .TopNavigationList {
+  clear: both;
+  max-height:0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+header .ToggleMenuIcon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 1.75rem 1.25rem;
+  position: relative;
+  user-select: none;
+}
+
+header .ToggleMenuIcon .ToggleIcon {
+  background: #15B890;
+  display: block;
+  height: .125rem;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 1.125rem;
+}
+
+header .ToggleMenuIcon .ToggleIcon:before,
+header .ToggleMenuIcon .ToggleIcon:after {
+  background: #15B890;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+header .ToggleMenuIcon .ToggleIcon:before {
+  top: 5px;
+}
+
+header .ToggleMenuIcon .ToggleIcon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+header .TopNavigationButton {
+  display: none;
+}
+
+header .TopNavigationButton:checked ~ .TopNavigationList {
+  max-height: max-content;
+}
+
+
+/*the middle line of the toggle menu button*/
+header .TopNavigationButton:checked ~ .ToggleMenuIcon .ToggleIcon {
+  background: transparent;
+}
+
+header .TopNavigationButton:checked ~ .ToggleMenuIcon .ToggleIcon:before {
+  transform: rotate(-45deg);
+}
+
+header .TopNavigationButton:checked ~ .ToggleMenuIcon .ToggleIcon:after {
+  transform: rotate(45deg);
+}
+
+header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:before,
+header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:after {
+  top: 0;
+}
+
+
+/*---Header Section END---*/
+
+/*--MainNavigationBar section START--*/
+
+.MainNavigation{
+	background-color: #34383B;
+	font-size: .3rem;
+	font-family: Josefin Sans;
+	height: 4.5rem;
+	padding-top: 1rem;
+	display: grid;
+ 	grid-template-columns:repeat(9,1fr);
+}
+
+
+.NavigationBar {
+    /* Border */   
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+
+}
+
+.NavigationBar li {
+    /* Spacing */
+    padding: 0rem;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+}
+
+/* The sub dropdown */
+.NavigationBar ul {
+    /* Border */
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    color:#333333;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    /*width: 10rem;*/
+
+}
+
+.DropdownButton {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1.75rem;
+}
+
+/* The second level sub dropdown */
+.NavigationBar ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.NavigationBarC2{
+  color: #333333;
+  padding: 0.45rem .3rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+
+.NavigationBarC3{
+  color: #333333;
+  padding: 0.3rem .3rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+
+/* Change background color of list item when being hovered */
+.NavigationBar li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*Changed text color when hover on it*/
+.NavigationBar li:hover > a{
+    color: #15B890;
+}
+.NavigationBar li:hover > div a{
+    color: #15B890;
+}
+
+
+/* Show the direct sub dropdown when hovering the list item */
+.NavigationBar li:hover > ul {
+    display: block;
+}
+
+
+/*Learned Drop down menu from https://csslayout.io/patterns/nested-dropdowns/*/
+
+
+/*--MainNavigationBar section END--*/
+
+
+/*---Detailed View of Single Product START---*/
+
+
+.ProductTitle h3{
+	margin-bottom: .25rem;
+}
+
+.ProductTitle p{
+	margin-top: 0;
+}
+
+
+.ProductDetail h4{
+	margin-top: .25rem;
+	margin-bottom: .25rem;
+  display: block;
+}
+
+.ProductTitle img{
+	margin-top: .25rem;
+}
+
+.ProductImage figure{
+	margin-left: 0;
+}
+
+
+.ProductPrice button{
+	border:none;
+	background-color: #F2F2F2;
+}
+
+.ProductPrice input[type=number]{
+	width:3rem;
+	margin-left: .5rem;
+	margin-top: 1.7rem;
+	border-radius: 60%;
+}
+
+.ChangeQuatity{
+    margin-left: 2rem;
+}
+
+.ChangeQuantity form{
+  display: inline-block;
+}
+
+
+.ProductTitle h3{
+  width:clamp(20ch, 60%, 85ch);
+}
+
+/*--Review Section START--*/
+
+
+.ProdcutReviews{
+  position:relative;
+}
+
+.ProductReviewsTitle{
+  padding-left: 5.5rem;
+  margin-bottom: 1rem;
+}
+
+.ReviewSlide{
+  display: none;
+}
+
+
+.Previous, .Next{
+  cursor:pointer;
+  position: absolute;
+  top:50%;
+  width: auto;
+  padding:1rem;
+  margin-top: -1.4rem;
+  color:black;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.2rem 0.2rem 0;
+  user-select: none;
+}
+
+.Next{
+  right:0;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.ReviewDetailed h3,h4{
+  display: inline;
+  vertical-align: middle;
+}
+
+.HelpfulButtons{
+  margin-left: 1rem;
+}
+
+.HelpfulButtons button{
+  width: 100%;
+}
+
+.HelpfulButtons h3{
+  margin-bottom: 0;
+}
+
+.RatingStars{
+  display: inline;
+  vertical-align: middle;
+  color: #DA9B72;
+  font-size: 1.5rem;
+}
+
+/*--Review Section END--*/
+
+
+/*------------------For Product List-------------------*/
+  .ItemImage{
+    width: 100%;
+    height: auto;
+    left: 0px;
+  }
+  .ItemRating{
+    display: inline;
+  }
+/* --- Product List End --- */
+/*------------------For Recommendation Product List-------------------*/
+  .LeftArrow,.RightArrow{
+    cursor:pointer;
+    width: auto;
+    padding:1rem;
+    color:black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+    user-select: none;
+  }
+/* --- Recommendation Product List End --- */
+
+
+/*--Detailed View of Single Product END--*/
 .Account-Side-Bar{
 	background:rgb(150,150,150);
 }

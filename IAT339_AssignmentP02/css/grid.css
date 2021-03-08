@@ -5,169 +5,6 @@ body{
 	box-sizing: border-box;
 }
 
-/* navigation bar start */
-
-.MainNavigation{
-	background-color: #34383B;
-	font-size: .3rem;
-	font-family: Josefin Sans;
-	height: 4.5rem;
-	padding-top: 1rem;
-	display: grid;
- 	grid-template-columns:repeat(9,1fr);
-}
-
-
-.NavigationBar {
-    /* Border */   
-    display: flex;
-
-    /* Reset list styles */
-    list-style-type: none;
-
-}
-
-.NavigationBar li {
-    /* Spacing */
-    padding: 0.5rem;
-
-    /* Used to position the sub dropdown */
-    position: relative;
-}
-
-/* The sub dropdown */
-.NavigationBar ul {
-    /* Border */
-    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
-    color:#333333;
-    background-color: #f9f9f9;
-    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    /* Hidden by default */
-    display: none;
-
-    /* Absolute position */
-    left: 0;
-    position: absolute;
-    top: 100%;
-
-    /* Reset styles */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    /* Width */
-    /*width: 10rem;*/
-
-}
-
-.DropdownButton {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* The second level sub dropdown */
-.NavigationBar ul ul {
-    left: 100%;
-    position: absolute;
-    top: 0;
-}
-
-.NavigationBarC2{
-  color: #333333;
-  padding: 0.45rem .3rem;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  width: max-content;
-}
-
-.NavigationBarC3{
-  color: #333333;
-  padding: 0.3rem .3rem;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  width: max-content;
-}
-
-/* Change background color of list item when being hovered */
-.NavigationBar li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-
-/*Changed text color when hover on it*/
-.NavigationBar li:hover > a{
-    color: #15B890;
-}
-.NavigationBar li:hover > div a{
-    color: #15B890;
-}
-
-
-/* Show the direct sub dropdown when hovering the list item */
-.NavigationBar li:hover > ul {
-    display: block;
-}
-
-
-/*Learned Drop down menu from https://csslayout.io/patterns/nested-dropdowns/*/
-
-.Logo{
-	grid-column:1;
-	margin-top: .25rem;
-	margin-left: 1rem;
-}
-
-.Menu{
-	grid-column:3/8;
-	margin-left: 2.5rem;
-	justify-self: end;
-
-}
-
-.ShoppingCart{
-	margin-top: .25rem;
-	margin-left: 1.5rem;
-	grid-column:8;
-	justify-self: end;
-}
-
-.Account{
-	margin-top: .25rem;
-	margin-left: .5rem;
-	grid-column:9;
-	justify-self: center;
-}
-
-@media screen and (max-width:57em){
-	.Menu{
-		grid-column:2/8;
-		margin-left: 2.5rem;
-	}
-
-	/*------------------For Homepage Cards-------------------*/
-	#card1title{
-		font-size: 18pt;
-	}
-	#card1text{
-		font-size: 16pt;
-	}
-	.gCard1Content{
-		grid-column: 8/15;
-		margin-top: 1.5rem;
-		margin-left: 1rem;
-		margin-right: .5rem;
-		padding-top: 1.5rem;
-	}
-	/* --- Homepage Cards End --- */
-}
-
-/* navigation bar end */
 
 
 /* Account page grid start */
@@ -356,3 +193,376 @@ h2{
 }
 
 /* Footer end */
+
+
+
+	display: grid;
+	grid-template-columns:repeat(8,1fr);
+	grid-template-rows:10rem 1fr;
+	min-height:100vh;
+}
+
+.Title{
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+
+body{
+	margin:0;
+}
+
+.Wrapper{
+	padding-top: 4rem;
+}
+
+/* --- Detailed View of Single Product START---*/
+
+.BreadCrumbs{
+	grid-column: 1/9;
+	padding-left: 5rem;
+}
+/*---Basic Information of Product Section START---*/
+.ProductDetailedViewGridContainer{
+	display: grid;
+	grid-template-columns:repeat(8,1fr);
+	grid-template-rows:1rem,1fr .5fr .5fr 1fr;
+	min-height:100vh;
+}
+
+.ProductDetailed{
+	grid-column-start: 1;
+	grid-column-end: 9;
+	display: grid;
+	grid-template-columns:repeat(2,1fr);
+}
+
+.ProductImage{
+	grid-column:1; 
+}
+
+.ProductDetailedList{
+	grid-column:2;
+}
+
+.ProductPrice{
+	display: grid;
+	grid-template-columns:repeat(6,1fr);
+	grid-template-rows:1fr 1fr;
+}
+
+.ChangeQuantity{
+	grid-column: 2/6;
+}
+
+.AddToCart{
+	grid-column:1/6; 
+}
+
+a.CallToActionButton{
+	grid-column:1/6; 
+	text-align: center;
+}
+
+/*---Basic Information of Product Section END---*/
+
+/*---Product Detailed Information Section START---*/
+.ProductDetailedInformation{
+	grid-column: 1/9;
+	display: grid;
+	grid-template-columns: repeat(9,1fr);
+	grid-template-rows: 5rem, 1fr;
+}
+
+.InformationTabs{
+	grid-column: 2/9;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.5fr 1fr;
+}
+.InformationTab{
+	text-decoration: underline;
+}
+
+.ProductDescription{
+	grid-column: 2/8;
+	padding-left: 2rem;
+}
+
+/*---Product Detailed Information Section END---*/
+
+/*---Product Review Section START---*/
+.ProdcutReviews{
+	grid-column: 1/9;
+}
+
+.ReviewSlide{
+	display: grid;
+	grid-template-columns: 1fr 4.5fr 1fr .5fr;
+}
+
+.ReviewDetailed{
+	grid-column: 2;
+}
+.RatingHelpful{
+	grid-column: 2;
+}
+
+.HelpfulButtons{
+	grid-column: 3;
+}
+
+/*---Product Review Section END---*/
+
+
+
+/*---Recommandation List Section START---*/
+/*	.RecommandationList{
+		grid-column: 1/9;
+	}
+
+	.RecommandationListSlide{
+	display: grid;
+	grid-template-columns: .5fr 1fr 1fr 1fr 1fr .5fr;
+}
+	
+	.gProductListItem{
+		display: block;
+	}
+
+	.gSwitchItem{
+		display: grid;
+		grid-template-columns: 1fr 12fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	#recom-list{
+		grid-column: 2/3;
+	}
+
+	.gLeftArrow, .gRightArrow{
+		padding-top: 5rem;
+	}*/
+
+	/*------------------For Product List-------------------*/
+	.gProductListRow{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-gap: 1rem;
+	}
+	.gProductListItem1{
+		display: block;
+		grid-column: 1/2;
+	}
+	.gProductListItem2{
+		display: block;
+		grid-column: 2/3;
+	}
+	.gProductListItem3{
+		display: block;
+		grid-column: 3/4;
+	}
+	.gProductListItem4{
+		display: block;
+		grid-column: 4/5;
+	}
+/* --- ProductList End --- */
+/*------------------For Recommendation Product List-------------------*/
+	.RecommandationList{
+		grid-column: 1/9;
+	}
+
+	.gSwitchItem{
+		display: grid;
+		grid-template-columns: 1fr 12fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	#recom-list{
+		grid-column: 2/3;
+	}
+
+	.gLeftArrow, .gRightArrow{
+		padding-top: 5rem;
+	}
+
+	.gLeftArrow{
+		padding-right: 3.75rem;
+	}
+
+	.gRightArrow{
+		padding-left: 3.75rem;
+	}
+/* --- Recommendation Product List End --- */
+/*---Recommandation List Section END---*/
+
+
+
+/*--- Detailed View of Single Product END ---*/
+
+@media screen and (max-width:83em){
+	.GridContainer{
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+
+	.SideMenu{
+		padding-top: 0;
+		grid-column: 1/9;
+	}
+
+	.SideMenu li{
+		display: inline-block;
+	}
+
+	#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons, #Images{
+		padding-left: 0;
+		grid-column: 1/9;
+	}
+
+	/*------------------For Homepage Cards-------------------*/
+
+	#ModularPatternElementsT{
+		padding-left: 0;
+		grid-column: 1/9;
+	}
+
+	.gCard1Content{
+		padding-top: 2rem;
+	}
+
+	/* --- Homepage Cards End --- */
+}
+
+@media screen and (max-width:57em){
+	.Menu{
+		grid-column:2/8;
+		margin-left: 2.5rem;
+	}
+
+	/*------------------For Homepage Cards-------------------*/
+	#card1title{
+		font-size: 18pt;
+	}
+	#card1text{
+		font-size: 16pt;
+	}
+	.gCard1Content{
+		grid-column: 8/15;
+		margin-top: 1.5rem;
+		margin-left: 1rem;
+		margin-right: .5rem;
+		padding-top: 1.5rem;
+	}
+	/* --- Homepage Cards End --- */
+}
+
+@media screen and (max-width:44em){
+	.ProductDetailed{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.ProductDetailedList{
+		grid-column: 1/3;
+	}
+	.ProductImage{
+		grid-column: 1/3;
+	}
+
+
+	.InformationTabs{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.ProductDescription{
+		grid-column: 2/9;
+	}
+
+	.ReviewSlide{
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.ReviewDetailed{
+		grid-column: 2/4;
+	}
+
+
+	.HelpfulButtons{
+		grid-column: 2;
+	}
+
+	.HelpfulButtons h3{
+		text-align: center;
+	}
+
+	p{
+		width:clamp(20ch, 90%, 55ch);
+	}
+
+
+	header {
+		font-size: 1rem;
+	}
+
+
+/*------------------For Product List-------------------*/
+	.gProductListRow{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(2,1fr);
+		grid-gap: 1rem;
+	}
+	.gProductListItem1{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.gProductListItem2{
+		display: block;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.gProductListItem3{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.gProductListItem4{
+		display: block;
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+/* --- Product List End --- */
+/*------------------For Recommendation Product List-------------------*/
+	
+	.gLeftArrow, .gRightArrow{
+		padding-top: 10rem;
+	}
+
+/* --- Recommendation Product List End --- */
+}
+
+@media screen and (max-width:24em){
+	.GridContainer{
+		grid-template-rows: 8rem 10rem 1fr;
+	}
+}
+
+/*--PageNavigationBarToggleMenuSize--*/
+
+@media (min-width: 65em) {
+	header li {
+		float: left;
+	}
+	header li a {
+		padding: 1.25rem 2rem;
+	}
+	header .TopNavigationList {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	header .ToggleMenuIcon {
+		display: none;
+	}
+}
+.GridContainer{
