@@ -175,15 +175,6 @@ select{
 	display: block;
 }
 
-footer{
-	margin-top: 4rem;
-	width:100%;
-	background-color: #34383B;
-	font-family: Josefin Sans;
-	height:26rem;
-	text-align: center;
-	color: #FFFFFF;
-}
 
 .BreadCrumbs{
 	padding-left: 5rem;
