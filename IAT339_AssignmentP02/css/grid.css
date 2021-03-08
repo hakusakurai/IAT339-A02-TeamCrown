@@ -1,0 +1,343 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+.GridContainer{
+	display: grid;
+	grid-template-columns:repeat(8,1fr);
+	grid-template-rows:10rem 1fr;
+	min-height:100vh;
+}
+
+.Title{
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+
+body{
+	margin:0;
+}
+
+.Wrapper{
+	padding-top: 4rem;
+}
+
+/* --- Detailed View of Single Product START---*/
+.ProductDetailedViewGridContainer{
+	display: grid;
+	grid-template-columns:repeat(8,1fr);
+	grid-template-rows:1fr .5fr .5fr 1fr;
+	min-height:100vh;
+}
+
+.ProductDetailed{
+	grid-column-start: 1;
+	grid-column-end: 9;
+	display: grid;
+	grid-template-columns:repeat(2,1fr);
+}
+
+.ProductImage{
+	grid-column:1; 
+}
+
+.ProductDetailedList{
+	grid-column:2;
+}
+
+.ProductPrice{
+	display: grid;
+	grid-template-columns:repeat(6,1fr);
+	grid-template-rows:1fr 1fr;
+}
+
+.ChangeQuantity{
+	grid-column: 2/6;
+}
+
+.AddToCart{
+	grid-column:1/6; 
+}
+
+a.CallToActionButton{
+	grid-column:1/6; 
+	text-align: center;
+}
+
+.ProductDetailedInformation{
+	grid-column: 1/9;
+	display: grid;
+	grid-template-columns: repeat(9,1fr);
+	grid-template-rows: 5rem, 1fr;
+}
+
+.InformationTabs{
+	grid-column: 2/9;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.5fr 1fr;
+}
+.InformationTab{
+	text-decoration: underline;
+}
+
+.ProductDescription{
+	grid-column: 2/8;
+	padding-left: 2rem;
+}
+
+.ProdcutReviews{
+	grid-column: 1/9;
+}
+
+.ReviewSlide{
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr .5fr;
+}
+
+.ReviewDetailed{
+	grid-column: 2;
+}
+.RatingHelpful{
+	grid-column: 2;
+}
+
+.HelpfulButtons{
+	grid-column: 3;
+}
+
+
+
+/*------------------For Recommendation Product List-------------------*/
+	.RecommandationList{
+		grid-column: 1/9;
+	}
+	.gSwitchItem{
+		display: grid;
+		grid-template-columns: 1fr 12fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	#recom-list{
+		grid-column: 2/3;
+	}
+
+	.gLeftArrow, .gRightArrow{
+		padding-top: 5rem;
+	}
+/* --- Recommendation Product List End --- */
+
+
+
+/*--- Detailed View of Single Product END ---*/
+
+@media screen and (max-width:83em){
+	.GridContainer{
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+
+	.SideMenu{
+		padding-top: 0;
+		grid-column: 1/9;
+	}
+
+	.SideMenu li{
+		display: inline-block;
+	}
+
+	#BasicInteractiveElements, #TextStyling, #ModularPatternElements, #sitestructure, #wireframes, #mockup, #Fonts, #Icons, #Images{
+		padding-left: 0;
+		grid-column: 1/9;
+	}
+
+	/*------------------For Homepage Cards-------------------*/
+
+	#ModularPatternElementsT{
+		padding-left: 0;
+		grid-column: 1/9;
+	}
+
+	.gCard1Content{
+		padding-top: 2rem;
+	}
+
+	/* --- Homepage Cards End --- */
+}
+
+@media screen and (max-width:57em){
+	.Menu{
+		grid-column:2/8;
+		margin-left: 2.5rem;
+	}
+
+	/*------------------For Homepage Cards-------------------*/
+	#card1title{
+		font-size: 18pt;
+	}
+	#card1text{
+		font-size: 16pt;
+	}
+	.gCard1Content{
+		grid-column: 8/15;
+		margin-top: 1.5rem;
+		margin-left: 1rem;
+		margin-right: .5rem;
+		padding-top: 1.5rem;
+	}
+	/* --- Homepage Cards End --- */
+}
+
+@media screen and (max-width:44em){
+	.ProductDetailed{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.ProductDetailedList{
+		grid-column: 1/3;
+	}
+	.ProductImage{
+		grid-column: 1/3;
+	}
+
+
+	.InformationTabs{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.ProductDescription{
+		grid-column: 2/9;
+	}
+
+	.ReviewSlide{
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.ReviewDetailed{
+		grid-column: 2/4;
+	}
+
+
+	.HelpfulButtons{
+		grid-column: 2;
+	}
+
+	.HelpfulButtons h3{
+		text-align: center;
+	}
+
+	p{
+		width:clamp(20ch, 90%, 55ch);
+	}
+
+
+	header {
+		font-size: 1rem;
+	}
+
+	/*------------------For Homepage Cards-------------------*/
+	.gHomepageCard1{
+		display: grid;
+		background-image: none;
+		grid-template-rows:1fr 1fr;
+		min-height: 100%;
+		min-width: 100%;
+		position: relative;
+		grid-gap: 0;
+	}
+
+	.gCard1Image{
+		background-image: url(../img/HomepageCard11.png);
+		grid-column: 1/15;
+		grid-row: 1/2;
+		background-size: cover;
+		max-width: 100%;
+		min-height: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.gCard1Content{
+		grid-row: 2/3;
+		grid-column: 1/15;
+		background-color: #15b890;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	#card1title{
+	  	margin-bottom: 0;
+	}
+
+	#card1button{
+		align-self: center;
+		margin-left: 6rem;
+		margin-right: 6rem;
+	}
+/* --- Homepage Cards End --- */
+/*------------------For Product List-------------------*/
+	.gProductListRow{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(2,1fr);
+		grid-gap: 1rem;
+	}
+	.gProductListItem1{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.gProductListItem2{
+		display: block;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.gProductListItem3{
+		display: block;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	.gProductListItem4{
+		display: block;
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+/* --- Product List End --- */
+/*------------------For Recommendation Product List-------------------*/
+	
+	.gLeftArrow, .gRightArrow{
+		padding-top: 10rem;
+	}
+/* --- Recommendation Product List End --- */
+}
+
+@media screen and (max-width:24em){
+	.GridContainer{
+		grid-template-rows: 8rem 10rem 1fr;
+	}
+}
+
+/*--PageNavigationBarToggleMenuSize--*/
+
+@media (min-width: 65em) {
+	header li {
+		float: left;
+	}
+	header li a {
+		padding: 1.25rem 2rem;
+	}
+	header .TopNavigationList {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	header .ToggleMenuIcon {
+		display: none;
+	}
+}
