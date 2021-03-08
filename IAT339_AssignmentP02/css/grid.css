@@ -1,0 +1,352 @@
+body{
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+/* navigation bar start */
+
+.MainNavigation{
+	background-color: #34383B;
+	font-size: .3rem;
+	font-family: Josefin Sans;
+	height: 4.5rem;
+	padding-top: 1rem;
+	display: grid;
+ 	grid-template-columns:repeat(9,1fr);
+}
+
+
+.NavigationBar {
+    /* Border */   
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+
+}
+
+.NavigationBar li {
+    /* Spacing */
+    padding: 0.5rem;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+}
+
+/* The sub dropdown */
+.NavigationBar ul {
+    /* Border */
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    color:#333333;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    /*width: 10rem;*/
+
+}
+
+.DropdownButton {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* The second level sub dropdown */
+.NavigationBar ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.NavigationBarC2{
+  color: #333333;
+  padding: 0.45rem .3rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+
+.NavigationBarC3{
+  color: #333333;
+  padding: 0.3rem .3rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+
+/* Change background color of list item when being hovered */
+.NavigationBar li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*Changed text color when hover on it*/
+.NavigationBar li:hover > a{
+    color: #15B890;
+}
+.NavigationBar li:hover > div a{
+    color: #15B890;
+}
+
+
+/* Show the direct sub dropdown when hovering the list item */
+.NavigationBar li:hover > ul {
+    display: block;
+}
+
+
+/*Learned Drop down menu from https://csslayout.io/patterns/nested-dropdowns/*/
+
+.Logo{
+	grid-column:1;
+	margin-top: .25rem;
+	margin-left: 1rem;
+}
+
+.Menu{
+	grid-column:3/8;
+	margin-left: 2.5rem;
+	justify-self: end;
+
+}
+
+.ShoppingCart{
+	margin-top: .25rem;
+	margin-left: 1.5rem;
+	grid-column:8;
+	justify-self: end;
+}
+
+.Account{
+	margin-top: .25rem;
+	margin-left: .5rem;
+	grid-column:9;
+	justify-self: center;
+}
+
+@media screen and (max-width:57em){
+	.Menu{
+		grid-column:2/8;
+		margin-left: 2.5rem;
+	}
+
+	/*------------------For Homepage Cards-------------------*/
+	#card1title{
+		font-size: 18pt;
+	}
+	#card1text{
+		font-size: 16pt;
+	}
+	.gCard1Content{
+		grid-column: 8/15;
+		margin-top: 1.5rem;
+		margin-left: 1rem;
+		margin-right: .5rem;
+		padding-top: 1.5rem;
+	}
+	/* --- Homepage Cards End --- */
+}
+
+/* navigation bar end */
+
+
+/* Account page grid start */
+
+#Account-Grid-Container{
+	display: grid;
+  height: 100%;
+  grid-template-columns: auto 400px 50px 400px 50px 400px auto;
+}
+
+header{
+	margin: 0;
+	grid-column: 1/8;
+}
+
+.Account-Side-Bar{
+	margin: 0;
+	grid-column: 2/3;
+}
+
+.Account-Personal-Information{
+	margin: 0;
+	grid-column: 4/7;
+}
+
+.Account-Furry-Information{
+	margin: 0;
+	grid-column: 4/7;
+}
+
+.Account-Billing-Information{
+	margin: 0;
+	grid-column: 4/7;
+
+}
+.Account-Shipping-Information{
+	margin: 0;
+	grid-column: 4/7;
+}
+.Account-Payment-Information{
+	margin: 0;
+	grid-column:4/7;
+}
+
+
+footer{
+	margin: 0;
+	grid-column: 1/8;
+}
+
+h2{
+	margin:0;
+}
+
+/* Account page grid end */
+
+/* Footer start */
+
+.Footer-Grid-Container{
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(9,1fr);
+	position: relative;
+}
+
+.Footer-Email{
+	grid-column: 3/5;
+	justify-self: start;
+	margin:4rem 0;
+}
+
+.Footer-Fax-Number{
+	grid-column: 5/7;
+	justify-self: start;
+	margin:4rem 0;
+}
+
+.Footer-Office-Address{
+	grid-column: 7/9;
+	justify-self: start;
+	margin:4rem 0;
+}
+
+.Footer-Social-Media{
+	grid-column: 4/7;
+	justify-self: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	height: 100%;
+}
+
+.Footer-Facebook{
+	grid-column: 1/2;
+	justify-self: center;	
+	margin: 2rem 0.5rem;
+}
+
+.Footer-Instgram{
+	grid-column: 2/3;
+	justify-self: center;	
+	margin: 2rem 0.5rem;
+}
+
+.Footer-Youtube{
+	grid-column: 3/4;
+	justify-self: center;	
+	margin: 2rem 0.5rem;
+}
+
+.Footer-Linkedin{
+	grid-column: 4/5;
+	justify-self: center;	
+	margin: 2rem 0.5rem;
+}
+
+.Footer-Logo{
+	grid-column: 5/6;
+	justify-self: center;
+	margin:2rem 0;
+}
+
+
+@media screen and (max-width:50em){
+	.Footer-Email{
+		grid-column: 1/10;
+		justify-self: start;
+		margin-top: 7rem;
+		margin-bottom: 1rem;
+	}
+
+	.Footer-Fax-Number{
+		grid-column: 1/10;
+		justify-self: start;
+		margin:1rem 0;
+	}
+
+	.Footer-Office-Address{
+		grid-column: 1/10;
+		justify-self: start;
+		margin:1rem 0;
+	}
+
+	.Footer-Social-Media{
+		grid-column: 1/10;
+		justify-self: start;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		height: 100%;
+	}
+
+	.Footer-Facebook{
+		grid-column: 1/2;
+		justify-self: center;	
+		margin: 2rem 0.5rem;
+	}
+
+	.Footer-Instgram{
+		grid-column: 2/3;
+		justify-self: center;	
+		margin: 2rem 0.5rem;
+	}
+
+	.Footer-Youtube{
+		grid-column: 3/4;
+		justify-self: center;	
+		margin: 2rem 0.5rem;
+	}
+
+	.Footer-Linkedin{
+		grid-column: 4/5;
+		justify-self: center;	
+		margin: 2rem 0.5rem;
+	}
+
+	.Footer-Logo{
+		grid-column: 1/10;
+		justify-self: start;
+		margin:2rem 0;
+		position: absolute;
+		top:0;
+	}
+}
+
+/* Footer end */

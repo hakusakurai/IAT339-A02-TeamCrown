@@ -1,0 +1,53 @@
+body{
+	font-family:helvetica, arial, sans-serif;
+}
+
+
+header{
+	background:rgb(190, 190, 190);
+}
+
+.Account-Side-Bar{
+	background:rgb(150,150,150);
+}
+
+.Account-Personal-Information{
+	background:rgb(210,210,210);
+}
+
+.Account-Furry-Information{
+	background:rgb(175,175,175);
+}
+
+.Account-Billing-Information{
+	background:rgb(225,225,225);
+
+}
+.Account-Shipping-Information{
+	background:rgb(80,80,80);
+}
+.Account-Payment-Information{
+	background:rgb(30,30,30);
+}
+
+
+footer{
+	background: #34383B;
+	font-size: 1rem;
+	font-family: Montserrat;
+	color: #ffffff;
+}
+
+footer ul{
+	list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (max-width:81em){
+	footer{
+		background: #34383B;
+		font-size: 0.5rem;
+		font-family: Montserrat;
+		color: #ffffff;
+	}
+}
