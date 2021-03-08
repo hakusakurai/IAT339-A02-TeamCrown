@@ -2,7 +2,6 @@
 .Wrapper{
 	width:clamp(16rem, 90vw, 75rem);
 	padding: 1rem;
-	background-color: #f2f2f2;
 	margin:0 auto;
 }
 body{
@@ -493,6 +492,26 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
   width:clamp(20ch, 60%, 85ch);
 }
 
+.ProductDetailedInformation{
+	padding-top: 1.5rem;
+	background-color: #F2F2F2;
+}
+
+/*--Product Detailed Information Section START--*/
+
+	.InformationTab a.IntextLink {
+		font-family: Montserrat;
+		font-weight: bold;
+		color: #333333;
+	}
+
+	.InformationTab a.IntextLink:hover {
+		color: #15B890;
+	}
+
+/*--Product Detailed Information Section END--*/
+
+
 /*--Review Section START--*/
 
 
@@ -500,7 +519,7 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
   position:relative;
 }
 
-.ProductReviewsTitle{
+.ProductSectionTitle{
   padding-left: 5.5rem;
   margin-bottom: 1rem;
 }
@@ -556,8 +575,13 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
 
 /*--Review Section END--*/
 
+/* --- Recommendation Product List Section START --- */
+	.RecommandationList{
+	background-color: #F2F2F2;
+	margin-top: 2rem;
+	padding-bottom: 2rem;
+}
 
-/*------------------For Product List-------------------*/
   .ItemImage{
     width: 100%;
     height: auto;
@@ -566,8 +590,8 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
   .ItemRating{
     display: inline;
   }
-/* --- Product List End --- */
-/*------------------For Recommendation Product List-------------------*/
+
+
   .LeftArrow,.RightArrow{
     cursor:pointer;
     width: auto;
@@ -578,7 +602,7 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
     border-radius: 0 0.2rem 0.2rem 0;
     user-select: none;
   }
-/* --- Recommendation Product List End --- */
+/* --- Recommendation Product List Section End --- */
 
 
 /*--Detailed View of Single Product END--*/
