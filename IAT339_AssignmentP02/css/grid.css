@@ -26,6 +26,7 @@ body{
 }
 
 /* --- Detailed View of Single Product START---*/
+/*---Basic Information of Product Section START---*/
 .ProductDetailedViewGridContainer{
 	display: grid;
 	grid-template-columns:repeat(8,1fr);
@@ -67,6 +68,9 @@ a.CallToActionButton{
 	text-align: center;
 }
 
+/*---Basic Information of Product Section END---*/
+
+/*---Product Detailed Information Section START---*/
 .ProductDetailedInformation{
 	grid-column: 1/9;
 	display: grid;
@@ -88,13 +92,16 @@ a.CallToActionButton{
 	padding-left: 2rem;
 }
 
+/*---Product Detailed Information Section END---*/
+
+/*---Product Review Section START---*/
 .ProdcutReviews{
 	grid-column: 1/9;
 }
 
 .ReviewSlide{
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr .5fr;
+	grid-template-columns: 1fr 4.5fr 1fr .5fr;
 }
 
 .ReviewDetailed{
@@ -108,12 +115,66 @@ a.CallToActionButton{
 	grid-column: 3;
 }
 
+/*---Product Review Section END---*/
 
 
+
+/*---Recommandation List Section START---*/
+/*	.RecommandationList{
+		grid-column: 1/9;
+	}
+
+	.RecommandationListSlide{
+	display: grid;
+	grid-template-columns: .5fr 1fr 1fr 1fr 1fr .5fr;
+}
+	
+	.gProductListItem{
+		display: block;
+	}
+
+	.gSwitchItem{
+		display: grid;
+		grid-template-columns: 1fr 12fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	#recom-list{
+		grid-column: 2/3;
+	}
+
+	.gLeftArrow, .gRightArrow{
+		padding-top: 5rem;
+	}*/
+
+	/*------------------For Product List-------------------*/
+	.gProductListRow{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-gap: 1rem;
+	}
+	.gProductListItem1{
+		display: block;
+		grid-column: 1/2;
+	}
+	.gProductListItem2{
+		display: block;
+		grid-column: 2/3;
+	}
+	.gProductListItem3{
+		display: block;
+		grid-column: 3/4;
+	}
+	.gProductListItem4{
+		display: block;
+		grid-column: 4/5;
+	}
+/* --- ProductList End --- */
 /*------------------For Recommendation Product List-------------------*/
 	.RecommandationList{
 		grid-column: 1/9;
 	}
+
 	.gSwitchItem{
 		display: grid;
 		grid-template-columns: 1fr 12fr 1fr;
@@ -127,7 +188,12 @@ a.CallToActionButton{
 	.gLeftArrow, .gRightArrow{
 		padding-top: 5rem;
 	}
+
+	.gRightArrow{
+		padding-left: 3.75rem;
+	}
 /* --- Recommendation Product List End --- */
+/*---Recommandation List Section END---*/
 
 
 
@@ -238,49 +304,7 @@ a.CallToActionButton{
 		font-size: 1rem;
 	}
 
-	/*------------------For Homepage Cards-------------------*/
-	.gHomepageCard1{
-		display: grid;
-		background-image: none;
-		grid-template-rows:1fr 1fr;
-		min-height: 100%;
-		min-width: 100%;
-		position: relative;
-		grid-gap: 0;
-	}
 
-	.gCard1Image{
-		background-image: url(../img/HomepageCard11.png);
-		grid-column: 1/15;
-		grid-row: 1/2;
-		background-size: cover;
-		max-width: 100%;
-		min-height: 100%;
-		background-repeat: no-repeat;
-	}
-
-	.gCard1Content{
-		grid-row: 2/3;
-		grid-column: 1/15;
-		background-color: #15b890;
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 0;
-		margin-bottom: 0;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
-	}
-
-	#card1title{
-	  	margin-bottom: 0;
-	}
-
-	#card1button{
-		align-self: center;
-		margin-left: 6rem;
-		margin-right: 6rem;
-	}
-/* --- Homepage Cards End --- */
 /*------------------For Product List-------------------*/
 	.gProductListRow{
 		display: grid;
@@ -314,6 +338,7 @@ a.CallToActionButton{
 	.gLeftArrow, .gRightArrow{
 		padding-top: 10rem;
 	}
+
 /* --- Recommendation Product List End --- */
 }
 

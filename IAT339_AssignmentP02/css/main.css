@@ -568,4 +568,29 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
 
 /*--Review Section END--*/
 
+
+/*------------------For Product List-------------------*/
+  .ItemImage{
+    width: 100%;
+    height: auto;
+    left: 0px;
+  }
+  .ItemRating{
+    display: inline;
+  }
+/* --- Product List End --- */
+/*------------------For Recommendation Product List-------------------*/
+  .LeftArrow,.RightArrow{
+    cursor:pointer;
+    width: auto;
+    padding:1rem;
+    color:black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+    user-select: none;
+  }
+/* --- Recommendation Product List End --- */
+
+
 /*--Detailed View of Single Product END--*/
