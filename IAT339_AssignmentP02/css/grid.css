@@ -26,11 +26,16 @@ body{
 }
 
 /* --- Detailed View of Single Product START---*/
+
+.BreadCrumbs{
+	grid-column: 1/9;
+	padding-left: 5rem;
+}
 /*---Basic Information of Product Section START---*/
 .ProductDetailedViewGridContainer{
 	display: grid;
 	grid-template-columns:repeat(8,1fr);
-	grid-template-rows:1fr .5fr .5fr 1fr;
+	grid-template-rows:1rem,1fr .5fr .5fr 1fr;
 	min-height:100vh;
 }
 
@@ -187,6 +192,10 @@ a.CallToActionButton{
 
 	.gLeftArrow, .gRightArrow{
 		padding-top: 5rem;
+	}
+
+	.gLeftArrow{
+		padding-right: 3.75rem;
 	}
 
 	.gRightArrow{

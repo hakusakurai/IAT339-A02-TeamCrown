@@ -30,6 +30,7 @@ h4{
 }
 
 p{
+	font-size: 1.125rem;
 	width:clamp(45ch, 95%, 85ch);
 	font-family: Source Sans Pro;
 }
@@ -194,6 +195,14 @@ footer a {
 footer a:hover {
 	background-color:#15B890;
 	color:#34383B;
+}
+
+.BreadCrumbs{
+	padding-left: 5rem;
+}
+
+.BreadCrumbs a{
+	cursor: pointer;
 }
 
 /*--Basic CSS Section END--*/
