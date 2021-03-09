@@ -368,7 +368,7 @@ a.CallToActionButton{
 /* --- Recommendation Product List End --- */
 /*---Recommandation List Section END---*/
 
-/*---Purchase History Section START---*/
+/*---Purchase History and Shopping Cart Section START---*/
 .PurchaseHistoryShoppingCartGridContainer{
 	display: grid;
 	grid-template-columns:repeat(3,1fr);
@@ -386,20 +386,43 @@ a.CallToActionButton{
 }
 
 .ReviewSubmissionSection{
+	position: sticky;
 	grid-column: 3;
 	grid-row: 3/5;
 	margin-left:3rem; 
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+
+}
+
+.ShoppingCartCheckOutForm{
+	grid-column: 3;
+	grid-row: 3/5;
+	margin-left:3rem; 
+	align-items: center;
+}
+
+
+
+.ShoppingCartSubTotal{
+	padding-top: 2rem;
+	display: grid;
+	grid-template-columns: .5fr 1fr 1fr .5fr;
+}
+
+.SubTotalHeadings{
+	grid-column: 2;
+}
+
+.SubTotalPrice{
+	grid-column: 3;
+	padding-left: 3rem;
 }
 
 
 
 
-
-
-
-/*---Purchase History Section END---*/
+/*---Purchase History and Shopping Cart Section END---*/
 
 /*--- Detailed View of Single Product END ---*/
 
@@ -460,6 +483,8 @@ a.CallToActionButton{
 	}
 	/* --- Homepage Cards End --- */
 
+
+
 	.ShoppingCartPatternGrid{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -485,12 +510,32 @@ a.CallToActionButton{
 		grid-column:1;
 	}
 
+	.ShoppingCartUpadateButton{
+		grid-column: 1;
+		grid-row: 6;
+		margin-top: 0;
+	}
+
+	.ShoppingCartCheckOutButton{
+		text-align: center;
+	}
+
+	.ShoppingCartCheckOutButton button{
+		margin-left: -4rem;
+	}
+
+	.ShoppingCartAddDiscountCode input{
+		display: block;
+	}
+
+
+
 }
 
 @media screen and (max-width:71em){
 	.PurchaseHistoryShoppingCartGridContainer{
 		grid-template-columns:1fr 1fr;
-		grid-template-rows:6rem 5rem 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows:6rem 5rem 1fr 1fr 1fr 1fr;
 	}
 
 	.ShoppingCartPatternGrid{
@@ -498,15 +543,27 @@ a.CallToActionButton{
 	}
 
 	.ReviewSubmissionSection{
+		margin-top: 2rem;
 		grid-column: 1/3;
 		grid-row: 6;
 		margin-left:3rem; 
+	}
+
+	.ShoppingCartCheckOutForm{
+		margin-top: 2rem;
+		grid-column: 1/3;
+		grid-row: 6;
+		margin-left:3rem; 
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.ShoppingCartProductImage{
 		margin-top: auto;
 		margin-bottom: auto;
 	}
+
+
 
 
 

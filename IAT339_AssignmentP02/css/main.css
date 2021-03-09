@@ -792,6 +792,45 @@ textarea:invalid{
 	margin-top: 2rem;
 	margin-left: 5rem;
 }
+
+.ShoppingCartAddDiscountCode{
+	padding-top: 3rem;
+	text-align: center;
+
+}
+
+.ShoppingCartAddDiscountCode input{
+	margin-top: .5rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+.ShoppingCartAddDiscountCode button{
+	display: inline-block;
+
+}
+
+.ShoppingCartCheckOutForm{
+	background-color: #F2F2F2;
+}
+
+p.Subtotal{
+	font-weight: bold;
+}
+
+.ShoppingCartCheckOutButton{
+	padding-top: 2rem;
+	padding-left: 6rem;
+}
+
+.ShoppingCartCheckOutButton button{
+	padding-left: 2.25rem;
+	padding-right: 2.25rem;
+	margin-bottom: 1rem;
+}
+
+
 /*--Shopping Cart & Purchase History One Row END--*/
 
 
