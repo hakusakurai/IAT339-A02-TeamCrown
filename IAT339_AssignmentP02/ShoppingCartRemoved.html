@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/pattern.css" type="text/css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
+
+</head>
+
+<body>
+	<header>
+		<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+		<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
+		<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
+		<ul class="TopNavigationList NavigationBar">
+			<li>
+				<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
+				<ul>
+					<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
+					<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
+					<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
+				</ul>
+			</li>
+			<li>
+				<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
+				<ul>
+					<li>
+						<div><a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a></div>
+						<ul>
+							<li><a href="#" class="NavigationBarC3">Chicken</a></li>
+							<li><a href="#" class="NavigationBarC3">Fish</a></li>
+							<li><a href="#" class="NavigationBarC3">Beef</a></li>
+							<li><a href="#" class="NavigationBarC3">Lamb</a></li>
+						</ul>
+					</li>						
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+				</ul>
+			</li>
+			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
+			<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
+			<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
+		</ul>
+
+
+	</header>
+
+
+
+
+	<main class="Wrapper">
+		<div class="PurchaseHistoryShoppingCartGridContainer">
+			<div class="Title">
+				<h1>Shopping Cart</h1>
+			</div>
+
+
+			<div class="ShoppingCartPatternGridHeader">
+				<div class="ShoppingCartPatternGridHeaderDate">
+					<h3>QTY</h3>
+				</div>
+				<div class="ShoppingCartPatternGridHeaderTotal">
+					<h3>TOTAL</h3>
+				</div>
+			</div>
+
+			<div class="ShoppingCartPatternGrid">
+				<!-- <div class="ShoppingCartProductGrid"> -->
+					<div class="ShoppingCartProductImage">
+						<img src="img/ProductImg1.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="200" height="160">
+					</div>
+					<div class="ShoppingCartProductInformation">
+						<h3>Kafka’s Organic</h3>
+						<p>Occean Fish Feast - Fresh Cat Food</p>
+					</div>
+					<!-- </div> -->
+					<div class="ShoppingCartQuantityButton">
+						<button type="button" class="ProductQuantity" >-</button>
+						<form>
+							<input type="number" name="quantity">
+						</form>
+						<button type="button" class="ProductQuantity">+</button>
+					</div>
+					<div class="ShoppingCartProductPrice">
+						<h4>$42.65</h4>
+					</div>
+					<div class="ShoppingCartRemoveButton">
+						<a class="IntextLink" href="#ShoppingCartPattern">Remove</a>
+					</div>
+				</div>
+
+				<div class="ShoppingCartPatternGrid">
+					<!-- <div class="ShoppingCartProductGrid"> -->
+						<div class="ShoppingCartProductImage">
+							<img src="img/ProductImg1.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="200" height="160">
+						</div>
+						<div class="ShoppingCartProductInformation">
+							<h3>Kafka’s Organic</h3>
+							<p>Occean Fish Feast - Fresh Cat Food</p>
+						</div>
+						<!-- </div> -->
+						<div class="ShoppingCartQuantityButton">
+							<button type="button" class="ProductQuantity" >-</button>
+							<form>
+								<input type="number" name="quantity">
+							</form>
+							<button type="button" class="ProductQuantity">+</button>
+						</div>
+						<div class="ShoppingCartProductPrice">
+							<h4>$42.65</h4>
+						</div>
+						<div class="ShoppingCartRemoveButton">
+							<a class="IntextLink" href="#ShoppingCartPattern">Remove</a>
+						</div>
+					</div>
+
+
+
+
+
+						<div class="ShoppingCartCheckOutForm">
+							<div class="ShoppingCartAddDiscountCode">
+								<form>
+									<label class="DiscountCode" for="discountcode">ADD DISCOUNT CODE</label>
+									<input type="text" class="DiscountCode" placeholder="Enter Here" id="discountcode">
+									<button class="SubmitButton">ADD</button>
+								</form>
+							</div>
+							<div class="ShoppingCartSubTotal">
+								<div class="SubTotalHeadings">
+									<p>ORDER VALUE</p>
+									<p>SAVE VALUE</p>
+									<p class="Subtotal">SUBTOTAL</p>
+								</div>
+								<div class="SubTotalPrice">
+									<p>$130.12</p>
+									<p>$32.00</p>
+									<p class="Subtotal">$98.12</p>
+								</div>
+							</div>
+							<div class="ShoppingCartCheckOutButton">
+								<button class="ResetButton">UPDATE</button>
+								<p><a class="CallToActionButton" href="CheckOut1.html">CHECK OUT</a></p>
+							</div>
+						</div>
+
+
+
+
+
+
+					</div>
+
+
+
+
+				</main>
+
+				<footer>
+					<div class="Footer-Grid-Container">
+						<ul class="Footer-Email">
+							<h3>EMAIL</h3>
+							<li>Crown_organicCatFoof@gmail.com</li>
+						</ul>
+						<ul class="Footer-Fax-Number">
+							<h3>FAX NUMBER</h3>
+							<li>(123) 456 7890 / (098) 765 4321</li>
+						</ul>
+						<ul class="Footer-Office-Address">
+							<h3>OFFICE ADDRESS</h3>
+							<li>8888 University Dr, Burnaby, BC V5A 1S6</li>
+						</ul>
+						<div class="Footer-Social-Media">
+							<a class="Footer-Facebook" href=""><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
+							<a class="Footer-Instgram" href=""><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
+							<a class="Footer-Youtube" href=""><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
+							<a class="Footer-Linkedin" href=""><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
+						</div>
+						<a class="Footer-Logo" href=""><img src="img/Logo.png" alt="Logo" width="180" height="60"></a>
+					</div>
+				</footer>
+			</body>
+			</html>
