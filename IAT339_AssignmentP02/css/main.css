@@ -867,25 +867,31 @@ footer a{
 
 .Account-Side-Bar{
   background:#F2F2F2;
+  display: block;
 }
 
-.Account-Personal-Information{
+#Account-Personal-Information{
   background:#F2F2F2;
+  display: block;
 }
 
-.Account-Furry-Information{
+#Account-Furry-Information{
   background:#F2F2F2;
+  display: block;
 }
 
-.Account-Billing-Information{
+#Account-Billing-Information{
   background:#F2F2F2;
+  display: block;
 
 }
-.Account-Shipping-Information{
+#Account-Shipping-Information{
   background:#F2F2F2;
+  display: block;
 }
-.Account-Payment-Information{
+#Account-Payment-Information{
   background:#F2F2F2;
+  display: block;
 }
 
 .Account-Grid-Container input[type=text] {
@@ -907,6 +913,55 @@ label {
   display: block;
 }
 
+.Account-Side-Bar ul{
+  list-style-type: none;
+    padding-top: 1rem;
+}
+
+.Account-Side-Bar li{
+    padding-top: .5rem;
+}
+
+.Account-Side-Bar a{
+  color:#1D1D1D;
+  font-family: Montserrat;
+  font-size: 1.75rem;
+  text-decoration: none;
+
+}
 
 
 /* Account page END*/
+.Reference-Container{
+  position: relative;
+}
+
+.Reference-Container img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.Reference-Title {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  font-size: 4vw;
+}
+
+.Reference-Ul ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.Reference-Ul li{
+    padding-top: 1rem;
+}
+
+.Reference-Ul a{
+  color:#1D1D1D;
+  font-family: Montserrat;
+  text-decoration: none;
+
+}
+/*Reference Page START*/
+/*Reference Page END*/
