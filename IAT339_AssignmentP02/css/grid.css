@@ -257,6 +257,48 @@ body{
 	margin-bottom: 2rem;
 }
 
+@media screen and (max-width:60rem){
+	.Account-Side-Bar{
+		margin-top: 4rem;
+		margin-right: 0rem;
+		padding-left: 2rem;
+		grid-column: 1/9;
+	}
+
+	#Account-Personal-Information{
+		display: grid;
+		margin-top: 4rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+	}
+
+	#Account-Furry-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+	}
+
+	#Account-Billing-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+
+	}
+	#Account-Shipping-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+	}
+	#Account-Payment-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column:1/9;
+	}
+}
 
 /* Account page grid end */
 

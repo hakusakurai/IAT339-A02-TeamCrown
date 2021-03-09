@@ -932,3 +932,36 @@ label {
 
 
 /* Account page END*/
+.Reference-Container{
+  position: relative;
+}
+
+.Reference-Container img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.Reference-Title {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  font-size: 4vw;
+}
+
+.Reference-Ul ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.Reference-Ul li{
+    padding-top: 1rem;
+}
+
+.Reference-Ul a{
+  color:#1D1D1D;
+  font-family: Montserrat;
+  text-decoration: none;
+
+}
+/*Reference Page START*/
+/*Reference Page END*/
