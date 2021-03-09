@@ -7,48 +7,7 @@ body{
 
 
 
-/* Account page grid start */
-
-#Account-Grid-Container{
-	display: grid;
-	height: 100%;
-	grid-template-columns: auto 400px 50px 400px 50px 400px auto;
-}
-
-header{
-	margin: 0;
-	grid-column: 1/8;
-}
-
-.Account-Side-Bar{
-	margin: 0;
-	grid-column: 2/3;
-}
-
-.Account-Personal-Information{
-	margin: 0;
-	grid-column: 4/7;
-}
-
-.Account-Furry-Information{
-	margin: 0;
-	grid-column: 4/7;
-}
-
-.Account-Billing-Information{
-	margin: 0;
-	grid-column: 4/7;
-
-}
-.Account-Shipping-Information{
-	margin: 0;
-	grid-column: 4/7;
-}
-.Account-Payment-Information{
-	margin: 0;
-	grid-column:4/7;
-}
-
+/* Footer start */
 
 footer{
 	margin: 0;
@@ -58,10 +17,6 @@ footer{
 h2{
 	margin:0;
 }
-
-/* Account page grid end */
-
-/* Footer start */
 
 .Footer-Grid-Container{
 	display: grid;
@@ -242,6 +197,69 @@ body{
 .Wrapper{
 	padding-top: 4rem;
 }
+
+
+/* Account page grid start */
+
+.Account-Title{
+	margin-top: 3rem;
+}
+
+.Account-Grid-Container{
+	display: grid;
+    grid-template-columns: repeat(8,1fr);
+    min-height: 100vh;
+}
+
+.Account-Side-Bar{
+	margin-top: 4rem;
+	margin-right: 2rem;
+	padding-left: 2rem;
+	grid-column: 1/4;
+}
+
+.Account-Personal-Information{
+	display: grid;
+	margin-top: 4rem;
+	padding: 0 2rem;
+	grid-column: 4/9;
+}
+
+.Account-Furry-Information{
+	display: grid;
+	margin-top: 3rem;
+	padding: 0 2rem;
+	grid-column: 4/9;
+}
+
+.Account-Billing-Information{
+	display: grid;
+	margin-top: 3rem;
+	padding: 0 2rem;
+	grid-column: 4/9;
+
+}
+.Account-Shipping-Information{
+	display: grid;
+	margin-top: 3rem;
+	padding: 0 2rem;
+	grid-column: 4/9;
+}
+.Account-Payment-Information{
+	display: grid;
+	margin-top: 3rem;
+	padding: 0 2rem;
+	grid-column:4/9;
+}
+
+.Account-Button{
+	justify-self: center;
+	margin-bottom: 2rem;
+}
+
+
+/* Account page grid end */
+
 
 /* --- Detailed View of Single Product START---*/
 

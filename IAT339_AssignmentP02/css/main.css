@@ -834,34 +834,7 @@ p.Subtotal{
 /*--Shopping Cart & Purchase History One Row END--*/
 
 
-
-
-
-
-.Account-Side-Bar{
-	background:rgb(150,150,150);
-}
-
-.Account-Personal-Information{
-	background:rgb(210,210,210);
-}
-
-.Account-Furry-Information{
-	background:rgb(175,175,175);
-}
-
-.Account-Billing-Information{
-	background:rgb(225,225,225);
-
-}
-.Account-Shipping-Information{
-	background:rgb(80,80,80);
-}
-.Account-Payment-Information{
-	background:rgb(30,30,30);
-}
-
-
+/*footer seeting START*/
 footer{
 	background: #34383B;
 	font-size: 1rem;
@@ -886,3 +859,54 @@ footer a{
 		color: #ffffff;
 	}
 }
+
+/*footer seeting END*/
+
+
+/* Account page START*/
+
+.Account-Side-Bar{
+  background:#F2F2F2;
+}
+
+.Account-Personal-Information{
+  background:#F2F2F2;
+}
+
+.Account-Furry-Information{
+  background:#F2F2F2;
+}
+
+.Account-Billing-Information{
+  background:#F2F2F2;
+
+}
+.Account-Shipping-Information{
+  background:#F2F2F2;
+}
+.Account-Payment-Information{
+  background:#F2F2F2;
+}
+
+.Account-Grid-Container input[type=text] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+
+/*input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #15B890;
+  border-radius: 4px;
+}*/
+
+label {
+  display: block;
+}
+
+
+
+/* Account page END*/

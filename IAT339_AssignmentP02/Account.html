@@ -1,12 +1,16 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Account</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/grid.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Account</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/pattern.css" type="text/css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
+
 	</head>
 	<body>
 		<header>
@@ -48,26 +52,69 @@
 			
 		</header>
 
-			<div class="Account-Side-Bar">
-				<h2>sidebar</h2>
-			</div>
-			<div class="Account-Personal-Information">
-				<h2>Personal</h2>
-			</div>
-			<div class="Account-Furry-Information">
-				<h2>Furry</h2>
-			</div>
-			<div class="Account-Billing-Information">
-				<h2>Billing</h2>
-			</div>
-			<div class="Account-Shipping-Information">
-				<h2>Shipping</h2>
-			</div>
-			<div class="Account-Payment-Information">
-				<h2>Payment</h2>
-			</div>
 
-			<footer>
+		<main class="Wrapper">
+			<h2 class="Account-Title">ACCOUNT</h2>
+			<div class="Account-Grid-Container">
+				<div class="Account-Side-Bar">
+					<h2>sidebar</h2>
+				</div>
+				<div class="Account-Personal-Information">
+					<h3>PERSONAL INFORMATION</h3>
+					<label for="fullname">Username</label>
+		            			<input type="text" id="fullname" name="fullname" placeholder="Wadew"><br>
+
+		            			<label for="email">Email Address</label>
+		            			<input type="text" id="email" name="email" placeholder="wadew@gmail.com"><br>
+
+		            			<label for="password">Change Password</label>
+		            			<input type="text" id="password" name="password" placeholder="wadew@gmail.com">
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Edit</button>
+		        	</div>
+				</div>
+
+				<div class="Account-Furry-Information">
+					<h3>FURRY INFORMATION</h3>
+					<label for="petid">Furry Name</label>
+		            			<input type="text" id="petid" name="petid" placeholder="meowee"><br>
+
+		            			<label for="birthday">Birtyday (mm/dd/yyyy)</label>
+		            			<input type="text" id="birthday" name="birthday" placeholder="q0/26/2012"><br>
+
+		            			<label for="gender">Gender</label>
+		            			<input type="text" id="gender" name="gender" placeholder="Female">
+
+		            			<label for="Breed">Breed</label>
+		            			<input type="text" id="Breed" name="Breed" placeholder="Domestic Shorthair">
+
+		            			<label for="Color">Color</label>
+		            			<input type="text" id="Color" name="Color" placeholder="Black">
+
+		            			<label for="Weight">Weight(lbs)</label>
+		            			<input type="text" id="Weight" name="Weight" placeholder="12.5">
+		            			
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Edit</button>
+		        	</div>
+				</div>
+
+				<div class="Account-Billing-Information">
+					<h2>Billing</h2>
+				</div>
+				<div class="Account-Shipping-Information">
+					<h2>Shipping</h2>
+				</div>
+				<div class="Account-Payment-Information">
+					<h2>Payment</h2>
+				</div>
+			</div>
+		</main>
+
+
+
+
+		<footer>
 				<div class="Footer-Grid-Container">
 				<ul class="Footer-Email">
 					<h4>EMAIL</h4>
@@ -98,7 +145,6 @@
 
 				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
 			</div>
-			</footer>
-		</div>
+		</footer>
 	</body>
 </html>
