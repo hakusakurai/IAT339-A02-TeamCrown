@@ -7,6 +7,7 @@
 		<title>Product List</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/MikaTem.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
 	</head>
 	<body>
@@ -46,6 +47,149 @@
 				<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
 			</ul>			
 		</header>
+
+		<main class="Wrapper">
+			<div class="gProductListContainer">
+				<div class="gSortFilter">
+					<div class="Sorter">
+					<ul style="list-style-type:none;" class="Sort">
+						<li><h4 class="SortHead">Sort</h4></li>
+						<li><input type="checkbox" id="sort1"><label for="sort1" class="SortFont"> Recently Added</label><br></li>
+						<li><input type="checkbox" id="sort2"><label for="sort2" class="SortFont"> Most Rated</label><br></li>
+						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: Low→High</label><br></li>
+						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: High→Low</label><br></li>
+						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Discount: Low→High</label><br></li>
+						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Discount: High→Low</label><br></li>
+				    </ul>
+					</div>
+					<button class="SubmitButton" id="filterbutton">FILTER</button>
+					<ul style="list-style-type: none;" class="Filter">
+						<li><h4 class="SortHead">All Categories</h4></li>
+						
+						<ul style="list-style-type: none;">
+							<li><h4 class="SortHead">Food Type</h4></li>
+							<li><b>Flavor</b></li>
+							<li>Chicken</li>
+							<li>Fish</li>
+							<li>Beef</li>
+							<li>Lamb</li>
+						</ul>
+							<button class="SubmitButton">VIEW MORE</button>
+						<li><h4 class="SortHead">Series</h4></li>
+						<li><h4 class="SortHead">Health Consideration</h4></li>
+						<li><h4 class="SortHead">Life Stage</h4></li>
+						<button class="SubmitButton" id="collapseFilterButton">Collapsed filters</button>
+					</ul>
+
+				</div>
+				<div class="gProductLists">
+					<div class="gBrand">					
+						<div id="brand1"></div>
+						<div id="brand2"></div>
+						<div id="brand3"></div>
+					</div>
+
+					<div class="gSearchLine">
+						<div class="gPLTitle"><h3>Product</h3></div>
+						<div class="gSearchForm">
+							<form id="keyword">
+								<input type="text" name="keyword" placeholder="healthy organic">
+							</form>
+							<a href="#" class="CallToActionButton" id="searchbutton">SEARCH</a>
+						</div>
+					</div>
+
+								<div class="gProductListRow" id="recom-list">
+									<div class="gProductListItem1">
+										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+										<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem2">
+										<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem3">
+										<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+										<h4>Lamb Affair - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem4">
+										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+								</div>
+								<div class="gProductListRow" id="recom-list">
+									<div class="gProductListItem1">
+										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+										<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem2">
+										<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem3">
+										<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+										<h4>Lamb Affair - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem4">
+										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+								</div>
+								<div class="gProductListRow" id="recom-list">
+									<div class="gProductListItem1">
+										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+										<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem2">
+										<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem3">
+										<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+										<h4>Lamb Affair - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+									<div class="gProductListItem4">
+										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+										<h4>$12.99</h4>
+									</div>
+								</div>
+					
+					
+					
+				</div>
+
+			</div>
+
+			<div>
+				
+			</div>
+		</main>
+
+
 
 
 		<footer>

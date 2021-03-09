@@ -79,15 +79,217 @@ h2.BlueCatTitle{
 }
 /*---------------------------------*/
 
-
 /*----------------SignUp-----------------*/
 .gSignUp{
 	display: grid;
 	grid-template-columns:repeat(2,1fr);
 	border: 1px solid #15B890;
-	filter: drop-shadow(4px 3px 8px #15B890);
+	margin-top: 3rem;
+	margin-bottom: 4rem;
 }
 
+.SignUpImage{
+	display: block;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-color: #E7F3FD;
+}
+
+.gSignUpForm{
+	display: block;
+	filter: none;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	padding-top: 2rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-bottom: 3rem;
+}
+
+input[type=text]{
+  width: 90%;
+  height: 40px;
+  border: 0.8px #15B890 solid;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 6.24057px;
+  resize: vertical;
+}
+
+.CheckboxFont{
+	font-size: 12pt;
+}
+
+#signupbutton{
+	display: inline-block;
+}
+
+#signin1{
+	padding-left: 4rem;
+}
+
+#signin2{
+	padding-left: 2rem;
+}
+
+.TemHolder{
+	background-color: #BBBBBB;
+}
+
+/*---------------------------------*/
+
+
+/*----------------ProductList-----------------*/
+#keyword, #subscribe{
+	display:inline-block;
+	width: 60%;
+}
+.gProductListContainer{
+	grid-column-start: 1;
+	grid-column-end: 9;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	margin-top: 3rem;
+}
+.SortFont{
+	font-family: "Montserrant";
+	padding-left: 6px;
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	color: #19191D;
+	text-decoration: none;
+}
+.gSortFilter{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	display: grid;
+}
+.gProductLists{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-template-columns: repeat(12,1fr);
+}
+.gBrand{
+	grid-column-start: 1;
+	grid-column-end: 13;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	min-height: 15vh;
+}
+
+#brand1{
+	display: block;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-color: blue;
+}
+#brand2{
+	display: block;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background-color: green;
+}
+#brand3{
+	display: block;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background-color: pink;
+}
+.gSearchLine{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 10vh;
+}
+.gPLTitle{
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.gSearchForm{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	padding-top: 1.5rem;
+	display: inline-block;
+}
+.SortHead{
+	font-weight: 300;
+}
+#filterbutton{
+	height:30px;
+	width: 80%;
+}
+.Sorter{
+	background-color: #F4F4F7;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-right: .5rem;
+}
+.Sorter ul{
+	margin-bottom: 0;
+}
+/*---------------------------------*/
+
+
+/*----------------Index-----------------*/
+.gSortFilter{
+	padding-top: 8rem;
+}
+.gHomeTopCard{
+	display: grid;
+	grid-template-columns:repeat(12,1fr);
+	min-height: 60vh;
+	padding-bottom: 4rem;
+}
+.gHomeTopCardContent{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 15%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	grid-column-start: 8;
+	grid-column-end: 13;
+	background-color: #15B890;
+	color: #ffffff;
+}
+.gHomeTopCardContent h2{
+	color: #ffffff;
+}
+.gHomeTopCardImage{
+	grid-column-start: 1;
+	grid-column-end: 8;
+	background-color: #DDDDDD;
+}
+#homepagerecommandation{
+	text-align: center;
+	background-color: #ffffff;
+}
+.C1G2{
+	padding-top: 15%;
+	padding-left: 4rem;
+	padding-right:4rem;
+	grid-column-start: 8;
+	grid-column-end: 13;
+	background-color: #E7F3FD;
+	text-align: center;
+}
+.C2G1{
+	display: block;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	padding-top: 15%;
+	padding-left: 4rem;
+	padding-right:4rem;
+	background-color: #E7F3FD;
+	text-align: center;
+}
+.Subscribe{
+	background-color: #1573b8;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: .5rem;
+	padding-bottom: 2rem;
+}
 /*---------------------------------*/
 
 
@@ -97,7 +299,6 @@ h2.BlueCatTitle{
 .gAboutUsImage{
 	background-image: url(../img/BlueCat0.png);
 }
-
 .gBlueCatText{
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -107,27 +308,22 @@ h2.BlueCatTitle{
 	color: #333333;
 	margin-top: 80%;
 }
-
 .gUs{
 	grid-template-rows: repeat(2,1fr);
 }
-
 .S1G1{
 	grid-column-end: 13; 
 }
-
 .S1G2{
 	grid-column-start: 1;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
-
 .S2G1{
 	grid-column-end: 13;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
-
 .S2G2{
 	grid-column-start: 1;
 }
@@ -135,4 +331,60 @@ h2.BlueCatTitle{
 
 
 
+/*----------------SignUp-----------------*/
+.gSignUp{
+	grid-template-rows:repeat(2,1fr);
+}
+
+.SignUpImage{
+	grid-column-end: 3;
+}
+
+.gSignUpForm{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+
+#signin1{
+	padding-left: 2rem;
+}
+
+#signin2{
+	padding-left: 0rem;
+}
+
+/*---------------------------------*/
+
+
+
+/*----------------ProductList-----------------*/
+.gSearchForm{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.C1G2{
+	grid-column-start: 1;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.C2G1{
+	grid-column-end: 13;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.gHomeTopCardContent{
+	grid-column-start: 1;
+}
+.gHomeTopCardImage{
+	grid-column-start: 1;
+	grid-column-end: 13;
+	min-height: 40vh;
+}
 }
