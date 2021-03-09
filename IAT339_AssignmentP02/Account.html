@@ -1,103 +1,150 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Account</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/grid.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Account</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/pattern.css" type="text/css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
+
 	</head>
 	<body>
-		<div id="Account-Grid-Container">
-			<header>
-				<div class="MainNavigation">
-					<div class="Logo">
-						<a href="homepage" ><img src="img/Logo.png" alt="Logo" width="87" height="28"></a>
-					</div>
-				<div class="Menu">
-
-					<ul class="NavigationBar">
-						<li>
-							<div><a href="#" class="DropdownButton">SHOP BY BRAND</a></div>
-							<ul>
-								<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
-								<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
-								<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
-							</ul>
-						</li>
-						<li>
-							<div><a href="#" class="DropdownButton">SHOP BY CATEGORY</a></div>
-							<ul>
-								<li>
-								<div><a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a></div>
-									<ul>
-										<li><a href="#" class="NavigationBarC3">Chicken</a></li>
-										<li><a href="#" class="NavigationBarC3">Fish</a></li>
-										<li><a href="#" class="NavigationBarC3">Beef</a></li>
-										<li><a href="#" class="NavigationBarC3">Lamb</a></li>
-									</ul>
-								</li>						
-								<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-								<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-								<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-								<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-							</ul>
-						</li>
-						<li><a href="" class="DropdownButton">ABOUT US</a></li>
+		<header>
+			<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+			<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
+			<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
+			<ul class="TopNavigationList NavigationBar">
+				<li>
+					<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
+					<ul>
+						<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
+						<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
+						<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
 					</ul>
-				</div>
-				<div class="ShoppingCart">
-					<a href=""><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="25" height="25"></a>
-				</div>
-				<div class="Account">
-					<a href=""><img src="img/Account.png" alt="accounticon" width="25" height="25"></a>
-				</div>
-			</div>
-			</header>
+				</li>
+				<li>
+					<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
+					<ul>
+						<li>
+							<div><a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a></div>
+							<ul>
+								<li><a href="#" class="NavigationBarC3">Chicken</a></li>
+								<li><a href="#" class="NavigationBarC3">Fish</a></li>
+								<li><a href="#" class="NavigationBarC3">Beef</a></li>
+								<li><a href="#" class="NavigationBarC3">Lamb</a></li>
+							</ul>
+						</li>						
+						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					</ul>
+				</li>
+				<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
+				<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
+				<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
+			</ul>
+			
+			
+		</header>
 
-			<div class="Account-Side-Bar">
-				<h2>sidebar</h2>
-			</div>
-			<div class="Account-Personal-Information">
-				<h2>Personal</h2>
-			</div>
-			<div class="Account-Furry-Information">
-				<h2>Furry</h2>
-			</div>
-			<div class="Account-Billing-Information">
-				<h2>Billing</h2>
-			</div>
-			<div class="Account-Shipping-Information">
-				<h2>Shipping</h2>
-			</div>
-			<div class="Account-Payment-Information">
-				<h2>Payment</h2>
-			</div>
 
-			<footer>
+		<main class="Wrapper">
+			<h2 class="Account-Title">ACCOUNT</h2>
+			<div class="Account-Grid-Container">
+				<div class="Account-Side-Bar">
+					<h2>sidebar</h2>
+				</div>
+				<div class="Account-Personal-Information">
+					<h3>PERSONAL INFORMATION</h3>
+					<label for="fullname">Username</label>
+		            			<input type="text" id="fullname" name="fullname" placeholder="Wadew"><br>
+
+		            			<label for="email">Email Address</label>
+		            			<input type="text" id="email" name="email" placeholder="wadew@gmail.com"><br>
+
+		            			<label for="password">Change Password</label>
+		            			<input type="text" id="password" name="password" placeholder="wadew@gmail.com">
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Edit</button>
+		        	</div>
+				</div>
+
+				<div class="Account-Furry-Information">
+					<h3>FURRY INFORMATION</h3>
+					<label for="petid">Furry Name</label>
+		            			<input type="text" id="petid" name="petid" placeholder="meowee"><br>
+
+		            			<label for="birthday">Birtyday (mm/dd/yyyy)</label>
+		            			<input type="text" id="birthday" name="birthday" placeholder="q0/26/2012"><br>
+
+		            			<label for="gender">Gender</label>
+		            			<input type="text" id="gender" name="gender" placeholder="Female">
+
+		            			<label for="Breed">Breed</label>
+		            			<input type="text" id="Breed" name="Breed" placeholder="Domestic Shorthair">
+
+		            			<label for="Color">Color</label>
+		            			<input type="text" id="Color" name="Color" placeholder="Black">
+
+		            			<label for="Weight">Weight(lbs)</label>
+		            			<input type="text" id="Weight" name="Weight" placeholder="12.5">
+		            			
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Edit</button>
+		        	</div>
+				</div>
+
+				<div class="Account-Billing-Information">
+					<h2>Billing</h2>
+				</div>
+				<div class="Account-Shipping-Information">
+					<h2>Shipping</h2>
+				</div>
+				<div class="Account-Payment-Information">
+					<h2>Payment</h2>
+				</div>
+			</div>
+		</main>
+
+
+
+
+		<footer>
 				<div class="Footer-Grid-Container">
 				<ul class="Footer-Email">
-					<h3>EMAIL</h3>
+					<h4>EMAIL</h4>
 					<li>Crown_organicCatFoof@gmail.com</li>
 				</ul>
 				<ul class="Footer-Fax-Number">
-					<h3>FAX NUMBER</h3>
+					<h4>FAX NUMBER</h4>
 					<li>(123) 456 7890 / (098) 765 4321</li>
 				</ul>
 				<ul class="Footer-Office-Address">
-					<h3>OFFICE ADDRESS</h3>
+					<h4>OFFICE ADDRESS</h4>
 					<li>8888 University Dr, Burnaby, BC V5A 1S6</li>
 				</ul>
+				<ul class="Footer-Quick-Link">
+					<li><a href="http://www.sfu.ca/~nza21/IAT339-Project1.5.2-ShimengZhou-301161810/PatternLibrary.html">Style Guide</a></li>
+				</ul>
+
 				<div class="Footer-Social-Media">
-					<a class="Footer-Facebook" href=""><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
-					<a class="Footer-Instgram" href=""><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
-					<a class="Footer-Youtube" href=""><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
-					<a class="Footer-Linkedin" href=""><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
+					<a class="Footer-Facebook" href="https://www.facebook.com/"><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
+					<a class="Footer-Instgram" href="https://www.instagram.com/"><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
+					<a class="Footer-Youtube" href="https://www.youtube.com/"><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
+					<a class="Footer-Linkedin" href="https://www.linkedin.com/feed/"><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
 				</div>
-				<a class="Footer-Logo" href=""><img src="img/Logo.png" alt="Logo" width="180" height="60"></a>
+
+				<ul class="Footer-Source-Code">
+					<li><a href="https://github.com/hakusakurai/IAT339-A02-TeamCrown">Visit gitHub repository</a></li>
+				</ul>
+
+				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
 			</div>
-			</footer>
-		</div>
+		</footer>
 	</body>
 </html>
