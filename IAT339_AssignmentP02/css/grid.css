@@ -130,23 +130,23 @@ h2{
 	.Footer-Email{
 		grid-column: 1/10;
 		justify-self: start;
-		margin-top: 7rem;
+		margin-top: 5rem;
 		margin-bottom: 1rem;
-		margin-left: 3rem;
+		margin-left: 1.5rem;
 	}
 
 	.Footer-Fax-Number{
 		grid-column: 1/10;
 		justify-self: start;
 		margin:1rem 0;
-		margin-left: 3rem;
+		margin-left: 1.5rem;
 	}
 
 	.Footer-Office-Address{
 		grid-column: 1/10;
 		justify-self: start;
 		margin:1rem 0;
-		margin-left: 3rem;
+		margin-left: 1.5rem;
 	}
 
 	.Footer-Social-Media{
@@ -154,8 +154,8 @@ h2{
 		justify-self: start;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		height: 100%;
-		margin-left: 3rem;
-		padding-bottom: 3rem;
+		margin-left: 1.5rem;
+		padding: 1rem 0 2rem 0;
 	}
 
 	.Footer-Facebook{
@@ -185,10 +185,10 @@ h2{
 	.Footer-Logo{
 		grid-column: 1/10;
 		justify-self: start;
-		margin:2rem 0;
+		margin:1rem 0;
 		position: absolute;
 		top:0;
-		margin-left: 3rem;
+		margin-left: 1.5rem;
 	}
 }
 
