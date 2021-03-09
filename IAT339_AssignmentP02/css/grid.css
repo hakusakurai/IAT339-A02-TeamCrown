@@ -359,7 +359,7 @@ a.CallToActionButton{
 	grid-column: 1/9;
 	display: grid;
 	grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 5rem 1fr;
+	grid-template-rows: 2rem 1fr;
 }
 
 .InformationTabs{
