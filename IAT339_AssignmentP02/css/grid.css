@@ -88,9 +88,22 @@ h2{
 	margin:4rem 0;
 }
 
+.Footer-Quick-Link{
+	grid-column: 3/4;
+	justify-self: start;
+	margin:2rem 0;
+}
+
+.Footer-Source-Code{
+	grid-column: 7/8;
+	justify-self: start;
+	margin:2rem 0;
+}
+
 .Footer-Social-Media{
 	grid-column: 4/7;
 	justify-self: center;
+	margin:2rem 0;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	height: 100%;
 }
@@ -149,13 +162,27 @@ h2{
 		margin-left: 1.5rem;
 	}
 
+	.Footer-Quick-Link{
+	grid-column: 1/10;
+	justify-self: start;
+	margin:1rem 0;
+	margin-left: 1.5rem;
+	}
+
+	.Footer-Source-Code{
+		grid-column: 1/10;
+		justify-self: start;
+		margin-left: 1.5rem;
+		position: absolute;
+		bottom: 3rem;
+	}
+
 	.Footer-Social-Media{
 		grid-column: 1/10;
 		justify-self: start;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		height: 100%;
-		margin-left: 1.5rem;
-		padding: 1rem 0 2rem 0;
+		margin: 2rem 0 3rem 1.5rem;
 	}
 
 	.Footer-Facebook{
