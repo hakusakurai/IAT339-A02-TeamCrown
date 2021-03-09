@@ -963,5 +963,48 @@ label {
   text-decoration: none;
 
 }
-/*Reference Page START*/
-/*Reference Page END*/
+/*checkout Page START*/
+.CheckOut1-Billing-Information ul{
+ list-style-type: none;
+  padding-left: 0;
+}
+
+.CheckOut1-Billing-Information {
+ background:#F2F2F2; 
+  display: block;
+}
+
+.CheckOut-Side-Bar ul{
+  margin-left: 2rem;
+  margin-top: 6rem;
+   list-style-type: none;
+  padding-left: 0;
+}
+
+.CheckOut-Side-Bar {
+  background:#F2F2F2; 
+  display: block;
+}
+
+.Checkout2PaymentInformation ul{
+ list-style-type: none;
+  padding-left: 0;
+}
+
+.CheckOut4-Container{
+  position: relative;
+}
+
+.CheckOut4-Container img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.CheckOut4-Title {
+  position: absolute;
+  top: 40%;
+  right: 3rem;
+  font-size: 4vw;
+}
+/*checkout Page END*/

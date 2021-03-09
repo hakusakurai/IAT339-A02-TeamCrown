@@ -303,6 +303,117 @@ body{
 /* Account page grid end */
 
 
+/* Check out page grid START */
+.CheckOut-Title{
+	margin-top: 3rem;
+}
+
+
+.CheckOut-Grid-Container{
+	display: grid;
+    grid-template-columns: repeat(8,1fr);
+    min-height: 100vh;
+}
+
+.ProgressBar{
+	grid-column: 1/9;
+}
+
+.ProgressBar img{
+	width: 100%;
+	height: auto;
+}
+
+
+.CheckOut-Side-Bar{
+	margin-top: 4rem;
+	grid-column: 7/9;
+}
+
+.CheckOut1-Billing-Information{
+	margin-top: 4rem;
+	margin-right: 2rem;
+	padding: 4rem 2rem;
+	grid-column: 1/7;
+}
+
+.CheckOut2-Code-Information{
+		display: block;
+	background: #F2F2F2;
+	margin-top: 4rem;
+	margin-right: 2rem;
+	padding: 4rem 2rem;
+	grid-column: 1/7;
+}
+
+.Checkout2PaymentInformation{
+	display: block;
+	background: #F2F2F2;
+	margin-top: 4rem;
+	margin-right: 2rem;
+	padding: 4rem 2rem;
+	grid-column: 1/7;
+}
+
+
+.CheckOut-Button{
+	justify-self: center;
+}
+
+.Back{
+	margin-top: 3rem;
+	grid-column: 1/3;
+}
+
+.CheckOutNext{
+	margin-top: 3rem;
+	justify-self:end;
+	grid-column: 7/9;
+}
+
+
+@media screen and (max-width:60rem){
+	.CheckOut-Side-Bar{
+		margin-top: 4rem;
+		padding-left: 2rem;
+		grid-column: 1/9;
+	}
+
+	.CheckOut1-Billing-Information{
+		display: grid;
+		margin-top: 3rem;
+		margin-right: 0rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+
+	}
+
+	.CheckOut2-Code-Information{
+		display: grid;
+		margin-top: 3rem;
+		margin-right: 0rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+
+	}
+
+	.Checkout2PaymentInformation{
+		display: grid;
+		margin-top: 3rem;
+		margin-right: 0rem;
+		padding: 4rem 2rem;
+		grid-column: 1/9;
+	}
+}
+
+
+/* Check out page grid end */
+
+
+
+
+
+
 /* --- Detailed View of Single Product START---*/
 
 .BreadCrumbs{
