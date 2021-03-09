@@ -218,37 +218,37 @@ body{
 	grid-column: 1/4;
 }
 
-.Account-Personal-Information{
+#Account-Personal-Information{
 	display: grid;
 	margin-top: 4rem;
-	padding: 0 2rem;
+	padding: 4rem 2rem;
 	grid-column: 4/9;
 }
 
-.Account-Furry-Information{
+#Account-Furry-Information{
 	display: grid;
 	margin-top: 3rem;
-	padding: 0 2rem;
+	padding: 4rem 2rem;
 	grid-column: 4/9;
 }
 
-.Account-Billing-Information{
+#Account-Billing-Information{
 	display: grid;
 	margin-top: 3rem;
-	padding: 0 2rem;
+	padding: 4rem 2rem;
 	grid-column: 4/9;
 
 }
-.Account-Shipping-Information{
+#Account-Shipping-Information{
 	display: grid;
 	margin-top: 3rem;
-	padding: 0 2rem;
+	padding: 4rem 2rem;
 	grid-column: 4/9;
 }
-.Account-Payment-Information{
+#Account-Payment-Information{
 	display: grid;
 	margin-top: 3rem;
-	padding: 0 2rem;
+	padding: 4rem 2rem;
 	grid-column:4/9;
 }
 

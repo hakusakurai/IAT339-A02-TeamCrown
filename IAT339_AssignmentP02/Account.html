@@ -57,9 +57,18 @@
 			<h2 class="Account-Title">ACCOUNT</h2>
 			<div class="Account-Grid-Container">
 				<div class="Account-Side-Bar">
-					<h2>sidebar</h2>
+					<ul>
+					<li><a href="#Account-Personal-Information">Personal Information</a><li>
+					<li><a href="#Account-Furry-Information">Furry Information</a><li>
+					<li><a href="#Account-Billing-Information">Billing Address</a><li>
+					<li><a href="#Account-Shipping-Information">Shipping Address</a><li>
+					<li><a href="#Account-Payment-Information">Payment Information</a><li>
+					<li><a href="PurchaseHistory.html">Purchase History</a><li>
+					<li><a href="SignUpAndSignIn.html">Sign Off</a><li>
+				</ul>
 				</div>
-				<div class="Account-Personal-Information">
+
+				<div id="Account-Personal-Information">
 					<h3>PERSONAL INFORMATION</h3>
 					<label for="fullname">Username</label>
 		            			<input type="text" id="fullname" name="fullname" placeholder="Wadew"><br>
@@ -74,7 +83,7 @@
 		        	</div>
 				</div>
 
-				<div class="Account-Furry-Information">
+				<div id="Account-Furry-Information">
 					<h3>FURRY INFORMATION</h3>
 					<label for="petid">Furry Name</label>
 		            			<input type="text" id="petid" name="petid" placeholder="meowee"><br>
@@ -93,21 +102,89 @@
 
 		            			<label for="Weight">Weight(lbs)</label>
 		            			<input type="text" id="Weight" name="Weight" placeholder="12.5">
+
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Edit</button>
+		        	</div>
+				</div>
+
+				<div id="Account-Billing-Information">
+					<h3>BILLING INFORMATION</h3>
+					<label for="firstname">First Name</label>
+		            			<input type="text" id="firstname" name="firstname" placeholder="Wade"><br>
+
+		            			<label for="lastname">Last Name</label>
+		            			<input type="text" id="lastname" name="lastname" placeholder="Warren"><br>
+
+		            			<label for="postcode">Postal Code</label>
+		            			<input type="text" id="postcode" name="postcode" placeholder="L9H 1E6">
+
+		            			<label for="unitsuite">Unit/ Suite</label>
+		            			<input type="text" id="unitsuite" name="unitsuite" placeholder="1107">
+
+		            			<label for="City">City</label>
+		            			<input type="text" id="City" name="City" placeholder="Hamilton">
+
+		            			<label for="Province">Province</label>
+		            			<input type="text" id="Province" name="Province" placeholder="Ontario">
+
+		            			<label for="street">Street Address</label>
+		            			<input type="text" id="street" name="street" placeholder="4912  Smith Avenue">
 		            			
 		            <div class="Account-Button">
 		            <button class="SubmitButton">Edit</button>
 		        	</div>
 				</div>
 
-				<div class="Account-Billing-Information">
-					<h2>Billing</h2>
+
+				<div id="Account-Shipping-Information">
+					<h3>SHIPPING INFORMATION</h3>
+					<label for="sfirstname">First Name</label>
+		            			<input type="text" id="sfirstname" name="sfirstname" placeholder="Wade"><br>
+
+		            			<label for="slastname">Last Name</label>
+		            			<input type="text" id="slastname" name="slastname" placeholder="Warren"><br>
+
+		            			<label for="spostcode">Postal Code</label>
+		            			<input type="text" id="spostcode" name="spostcode" placeholder="L9H 1E6">
+
+		            			<label for="sunitsuite">Unit/ Suite</label>
+		            			<input type="text" id="sunitsuite" name="sunitsuite" placeholder="1107">
+
+		            			<label for="sCity">City</label>
+		            			<input type="text" id="sCity" name="sCity" placeholder="Hamilton">
+
+		            			<label for="sProvince">Province</label>
+		            			<input type="text" id="sProvince" name="sProvince" placeholder="Ontario">
+
+		            			<label for="sstreet">Street Address</label>
+		            			<input type="text" id="sstreet" name="sstreet" placeholder="4912 Smith Avenue">
+		            			
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Edit</button>
+		        	</div>
 				</div>
-				<div class="Account-Shipping-Information">
-					<h2>Shipping</h2>
+
+
+				<div id="Account-Payment-Information">
+					<h3>PAYMENT INFORMATION</h3>
+					<label for="card1number">Card 1 Number</label>
+		            			<input type="text" id="card1number" name="card1number" placeholder="4243 7931 0545 3344"><br>
+
+		            			<label for="expiry1date">Expiry Date</label>
+		            			<input type="text" id="expiry1date" name="expiry1date" placeholder="04/23"><br>
+
+		            			<label for="card2number">Card 2 Number</label>
+		            			<input type="text" id="card2number" name="card2number" placeholder="5291 5258 9457 5566">
+
+		            			<label for="expiry2date">Expiry Date</label>
+		            			<input type="text" id="expiry2date" name="expiry2date" placeholder="01/25"><br>
+		            			
+		            <div class="Account-Button">
+		            <button class="SubmitButton">Add New Card</button>
+		        	</div>
 				</div>
-				<div class="Account-Payment-Information">
-					<h2>Payment</h2>
-				</div>
+
 			</div>
 		</main>
 
