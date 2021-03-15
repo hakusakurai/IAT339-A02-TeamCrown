@@ -432,6 +432,7 @@ body{
 	grid-column-end: 9;
 	display: grid;
 	grid-template-columns:repeat(2,1fr);
+	grid-gap: 5rem;
 	padding-left: 8rem;
 	padding-right: 8rem;
 }
@@ -448,14 +449,17 @@ body{
 	display: grid;
 	grid-template-columns:repeat(6,1fr);
 	grid-template-rows:1fr 1fr;
+	padding-top: -1rem;
 }
 
 .ChangeQuantity{
 	grid-column: 2/6;
+	padding-left: 2rem;
 }
 
 .AddToCart{
 	grid-column:1/6; 
+
 }
 
 a.CallToActionButton{
@@ -473,12 +477,6 @@ a.CallToActionButton{
 	grid-template-rows: 2rem 1fr;
 }
 
-.InformationTabs{
-	grid-column: 2/9;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1.5fr 1fr;
-	padding-left: 2rem;
-}
 .InformationTab{
 	text-decoration: underline;
 }
@@ -540,6 +538,37 @@ a.CallToActionButton{
 /*------------------For Recommendation Product List-------------------*/
 .RecommandationList{
 	grid-column: 1/9;
+}
+.gRProductListRow{
+	display: grid;
+	grid-template-columns: .3fr 1fr 1fr 1fr 1fr .3fr;
+	grid-gap: 1rem;
+}
+
+
+.RPrevious,{
+	grid-column: 1;
+	}
+
+.gRProductListItem1{
+	display: block;
+	grid-column: 2/3;
+}
+.gRProductListItem2{
+	display: block;
+	grid-column: 3/4;
+}
+.gRProductListItem3{
+	display: block;
+	grid-column: 4/5;
+}
+.gRProductListItem4{
+	display: block;
+	grid-column: 5/6;
+}
+
+.RNext{
+	grid-column: 6/7;
 }
 
 .gSwitchItem{
