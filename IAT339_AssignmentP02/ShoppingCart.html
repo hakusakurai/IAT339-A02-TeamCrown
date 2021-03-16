@@ -7,7 +7,6 @@
 
 	<title>Shopping Cart</title>
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<link rel="stylesheet" href="css/pattern.css" type="text/css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
 
@@ -54,14 +53,13 @@
 	</header>
 
 
-
+<div>
 
 	<main class="Wrapper">
-		<div class="PurchaseHistoryShoppingCartGridContainer">
+		<div class="PurchaseHistoryShoppingCartGridContainer ">
 			<div class="Title">
 				<h1>Shopping Cart</h1>
 			</div>
-
 
 			<div class="ShoppingCartPatternGridHeader">
 				<div class="ShoppingCartPatternGridHeaderDate">
@@ -83,11 +81,12 @@
 					</div>
 					<!-- </div> -->
 					<div class="ShoppingCartQuantityButton">
-						<button type="button" class="ProductQuantity" >-</button>
-						<form>
-							<input type="number" name="quantity">
-						</form>
-						<button type="button" class="ProductQuantity">+</button>
+						<div class="ChangeQuantity">
+							<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus()">
+							<input type="number"  value="1" id="count">
+							<input type="button" value="+" class="ButtonPlus" onclick="plus()">
+						</div>
+
 					</div>
 					<div class="ShoppingCartProductPrice">
 						<h4>$42.65</h4>
@@ -108,11 +107,12 @@
 						</div>
 						<!-- </div> -->
 						<div class="ShoppingCartQuantityButton">
-							<button type="button" class="ProductQuantity" >-</button>
-							<form>
-								<input type="number" name="quantity">
-							</form>
-							<button type="button" class="ProductQuantity">+</button>
+							<div class="ChangeQuantity">
+								<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus1()">
+								<input type="number" size="25" value="1" id="count1">
+								<input type="button" value="+" class="ButtonPlus" onclick="plus1()">
+							</div>
+
 						</div>
 						<div class="ShoppingCartProductPrice">
 							<h4>$42.65</h4>
@@ -133,11 +133,12 @@
 							</div>
 							<!-- </div> -->
 							<div class="ShoppingCartQuantityButton">
-								<button type="button" class="ProductQuantity" >-</button>
-								<form>
-									<input type="number" name="quantity">
-								</form>
-								<button type="button" class="ProductQuantity">+</button>
+								<div class="ChangeQuantity">
+									<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus2()">
+									<input type="number" size="25" value="1" id="count2">
+									<input type="button" value="+" class="ButtonPlus" onclick="plus2()">
+								</div>
+
 							</div>
 							<div class="ShoppingCartProductPrice">
 								<h4>$42.65</h4>
@@ -177,11 +178,6 @@
 							</div>
 						</div>
 
-
-
-
-
-
 					</div>
 
 
@@ -190,36 +186,37 @@
 				</main>
 
 				<footer>
-				<div class="Footer-Grid-Container">
-				<ul class="Footer-Email">
-					<h4>EMAIL</h4>
-					<li>Crown_organicCatFoof@gmail.com</li>
-				</ul>
-				<ul class="Footer-Fax-Number">
-					<h4>FAX NUMBER</h4>
-					<li>(123) 456 7890 / (098) 765 4321</li>
-				</ul>
-				<ul class="Footer-Office-Address">
-					<h4>OFFICE ADDRESS</h4>
-					<li>8888 University Dr, Burnaby, BC V5A 1S6</li>
-				</ul>
-				<ul class="Footer-Quick-Link">
-					<li><a href="http://www.sfu.ca/~nza21/IAT339-Project1.5.2-ShimengZhou-301161810/PatternLibrary.html">Style Guide</a></li>
-				</ul>
+					<div class="Footer-Grid-Container">
+						<ul class="Footer-Email">
+							<h4>EMAIL</h4>
+							<li>Crown_organicCatFoof@gmail.com</li>
+						</ul>
+						<ul class="Footer-Fax-Number">
+							<h4>FAX NUMBER</h4>
+							<li>(123) 456 7890 / (098) 765 4321</li>
+						</ul>
+						<ul class="Footer-Office-Address">
+							<h4>OFFICE ADDRESS</h4>
+							<li>8888 University Dr, Burnaby, BC V5A 1S6</li>
+						</ul>
+						<ul class="Footer-Quick-Link">
+							<li><a href="http://www.sfu.ca/~nza21/IAT339-Project1.5.2-ShimengZhou-301161810/PatternLibrary.html">Style Guide</a></li>
+						</ul>
 
-				<div class="Footer-Social-Media">
-					<a class="Footer-Facebook" href="https://www.facebook.com/"><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
-					<a class="Footer-Instgram" href="https://www.instagram.com/"><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
-					<a class="Footer-Youtube" href="https://www.youtube.com/"><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
-					<a class="Footer-Linkedin" href="https://www.linkedin.com/feed/"><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
-				</div>
+						<div class="Footer-Social-Media">
+							<a class="Footer-Facebook" href="https://www.facebook.com/"><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
+							<a class="Footer-Instgram" href="https://www.instagram.com/"><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
+							<a class="Footer-Youtube" href="https://www.youtube.com/"><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
+							<a class="Footer-Linkedin" href="https://www.linkedin.com/feed/"><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
+						</div>
 
-				<ul class="Footer-Source-Code">
-					<li><a href="https://github.com/hakusakurai/IAT339-A02-TeamCrown">Visit gitHub repository</a></li>
-				</ul>
+						<ul class="Footer-Source-Code">
+							<li><a href="https://github.com/hakusakurai/IAT339-A02-TeamCrown">Visit gitHub repository</a></li>
+						</ul>
 
-				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
-			</div>
-			</footer>
+						<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+					</div>
+				</footer>
+				<script src="js/ShoppingCart.js"></script>
 			</body>
 			</html>
