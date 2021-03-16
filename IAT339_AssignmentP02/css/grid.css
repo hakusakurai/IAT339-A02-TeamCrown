@@ -118,10 +118,10 @@ h2{
 	}
 
 	.Footer-Quick-Link{
-	grid-column: 1/10;
-	justify-self: start;
-	margin:1rem 0;
-	margin-left: 1.5rem;
+		grid-column: 1/10;
+		justify-self: start;
+		margin:1rem 0;
+		margin-left: 1.5rem;
 	}
 
 	.Footer-Source-Code{
@@ -207,8 +207,8 @@ body{
 
 .Account-Grid-Container{
 	display: grid;
-    grid-template-columns: repeat(8,1fr);
-    min-height: 100vh;
+	grid-template-columns: repeat(8,1fr);
+	min-height: 100vh;
 }
 
 .Account-Side-Bar{
@@ -311,8 +311,8 @@ body{
 
 .CheckOut-Grid-Container{
 	display: grid;
-    grid-template-columns: repeat(8,1fr);
-    min-height: 100vh;
+	grid-template-columns: repeat(8,1fr);
+	min-height: 100vh;
 }
 
 .ProgressBar{
@@ -338,7 +338,7 @@ body{
 }
 
 .CheckOut2-Code-Information{
-		display: block;
+	display: block;
 	background: #F2F2F2;
 	margin-top: 4rem;
 	margin-right: 2rem;
@@ -548,7 +548,7 @@ a.CallToActionButton{
 
 .RPrevious,{
 	grid-column: 1;
-	}
+}
 
 .gRProductListItem1{
 	display: block;
@@ -796,13 +796,26 @@ a.CallToActionButton{
 
 }
 
-@media screen and (max-width:60em){
+@media screen and (max-width:70em){
+
+	.ProductDetailedViewGridContainer{
+	display: grid;
+	grid-template-columns:repeat(8,1fr);
+	grid-template-rows:4rem .3fr .3fr .3fr 1.5fr;
+	min-height:100vh;
+}
+
+
 	.ProductDetailed{
 		display: grid;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: .5fr 1fr;
+		grid-gap: .3rem;
+		padding-left: 4rem; 
+		padding-right: 4rem;
 	}
 	.ProductDetailedList{
 		grid-column: 1/3;
+		padding-left: 3rem;
 	}
 	.ProductImage{
 		grid-column: 1/3;
@@ -817,6 +830,44 @@ a.CallToActionButton{
 	.ProductDescription{
 		grid-column: 2/9;
 	}
+
+
+
+	[role="tablist"] {
+		padding: 0;
+	}
+
+
+	.InformationTabs section{
+		padding-left: 1rem;
+	}
+
+	[role="tablist"] li, [role="tablist"] a {
+		display: block;
+		position: static;
+	}
+
+	[role="tablist"] a {
+		border: 2px solid #222 !important;
+	}
+
+	[role="tablist"] li + li a {
+		border-top: 0 !important;
+	}
+
+	[role="tablist"] [aria-selected] {
+		position: static;
+	}
+
+	[role="tablist"] [aria-selected]::after {
+		content: '\0020⬅';
+	}
+
+	[role="tabpanel"] {
+		border-top: 0;
+	}
+
+
 
 	.ReviewSlide{
 		grid-template-rows: 1fr 1fr;
@@ -875,43 +926,83 @@ a.CallToActionButton{
 	/* --- Product List End --- */
 	/*------------------For Recommendation Product List-------------------*/
 	
-	.gLeftArrow, .gRightArrow{
+/*	.gLeftArrow, .gRightArrow{
 		padding-top: 10rem;
+		}*/
+
+		.gRProductListRow{
+			display: grid;
+			grid-template-columns: .3fr 1fr .3fr;
+			grid-template-rows: repeat(4,1fr);
+			grid-gap: 1rem;
+		}
+		.gRProductListItem1{
+			display: block;
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+		.gRProductListItem2{
+			display: block;
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+		.gRProductListItem3{
+			display: block;
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
+		.gRProductListItem4{
+			display: block;
+			grid-column: 2/3;
+			grid-row: 4/5;
+		}
+
+		.RPrevious,{
+			display: block;
+			grid-column: 1/2;
+			grid-row: 4/5;
+		}
+
+		.RNext{
+			display: block;
+			grid-column: 3/4;
+			grid-row: 4/5;
+		}
+
+
+		/* --- Recommendation Product List End --- */
 	}
 
-	/* --- Recommendation Product List End --- */
-}
-
-@media screen and (max-width:35em){
-	.ProductDetailed{
-		padding: 0;
+	@media screen and (max-width:35em){
+		.ProductDetailed{
+			padding: 0;
+		}
 	}
-}
 
-@media screen and (max-width:24em){
+	@media screen and (max-width:24em){
+		.GridContainer{
+			grid-template-rows: 8rem 10rem 1fr;
+		}
+	}
+
+
+
+	/*--PageNavigationBarToggleMenuSize--*/
+
+	@media (min-width: 65em) {
+		header li {
+			float: left;
+		}
+		header li a {
+			padding: 1.25rem 2rem;
+		}
+		header .TopNavigationList {
+			clear: none;
+			float: right;
+			max-height: none;
+		}
+		header .ToggleMenuIcon {
+			display: none;
+		}
+	}
 	.GridContainer{
-		grid-template-rows: 8rem 10rem 1fr;
-	}
-}
-
-
-
-/*--PageNavigationBarToggleMenuSize--*/
-
-@media (min-width: 65em) {
-	header li {
-		float: left;
-	}
-	header li a {
-		padding: 1.25rem 2rem;
-	}
-	header .TopNavigationList {
-		clear: none;
-		float: right;
-		max-height: none;
-	}
-	header .ToggleMenuIcon {
-		display: none;
-	}
-}
-.GridContainer{
