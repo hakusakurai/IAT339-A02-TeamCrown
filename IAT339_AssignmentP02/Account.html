@@ -52,9 +52,21 @@
 			
 		</header>
 
+		<div id="AccountToggleSideBar" class="AccountSideBar ToggleSideBar">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+					<a href="#Account-Personal-Information">Personal Information</a>
+					<a href="#Account-Furry-Information">Furry Information</a>
+					<a href="#Account-Billing-Information">Billing Address</a>
+					<a href="#Account-Shipping-Information">Shipping Address</a>
+					<a href="#Account-Payment-Information">Payment Information</a>
+					<a href="PurchaseHistory.html">Purchase History</a>
+					<a href="SignUpAndSignIn.html">Sign Off</a>
+
+		</div>
 
 		<main class="Wrapper">
 			<h2 class="Account-Title">ACCOUNT</h2>
+			<button class="openbtn ToggleSideBar" onclick="openNav()">☰</button> 
 			<div class="Account-Grid-Container">
 				<div class="Account-Side-Bar">
 					<ul>
@@ -66,9 +78,7 @@
 					<li><a href="PurchaseHistory.html">Purchase History</a><li>
 					<li><a href="SignUpAndSignIn.html">Sign Off</a><li>
 				</ul>
-
-				
-				</div>
+			</div>
 
 				<div id="Account-Personal-Information">
 					<h3>PERSONAL INFORMATION</h3>
@@ -225,5 +235,6 @@
 				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
 			</div>
 		</footer>
+		<script src="js/main.js"></script>
 	</body>
 </html>

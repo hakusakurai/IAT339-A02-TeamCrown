@@ -146,3 +146,12 @@ function minus(){
 }
 // Leanred from:https://codepen.io/nevcanuludas/pen/WbNbow
 // --The function of Changing Quantity Section END--
+function openNav() {
+  document.getElementById("AccountToggleSideBar").style.width = "250px";
+  document.getElementsByClassName("Wrapper").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("AccountToggleSideBar").style.width = "0";
+  document.getElementsByClassName("Wrapper").style.marginLeft= "0";
+}
