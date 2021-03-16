@@ -48,7 +48,6 @@ h2.BlueCatTitle{
 	display: grid;
 	grid-template-columns:repeat(12,1fr);
 	min-height: 70vh;
-	padding-bottom: 4rem;
 }
 .gUs img{
 	width: 100%;
@@ -58,6 +57,7 @@ h2.BlueCatTitle{
 	display: block;
 	grid-column-start: 1;
 	grid-column-end: 8;
+	padding-bottom: 4rem;
 
 }
 .S1G2{
@@ -66,6 +66,7 @@ h2.BlueCatTitle{
 	grid-column-start: 8;
 	grid-column-end: 13;
 	background-color: #E7F3FD;
+	margin-bottom: 4rem;
 }
 .S2G1{
 	display: block;
@@ -74,15 +75,12 @@ h2.BlueCatTitle{
 	padding-top: 15%;
 	padding-left: 4rem;
 	background-color: #E7F3FD;
+	margin-bottom: 4rem;
 }
 .S2G2{
 	grid-column-start: 6;
 	grid-column-end: 13;
-}
-
-.gUs img{
-	width: 100%;
-    min-height: 50vh;
+	margin-bottom: 4rem;
 }
 
 /*---------------------------------*/
@@ -291,10 +289,12 @@ input[type=text]{
 .C1G2{
 	padding-top: 15%;
 	padding-left: 4rem;
-	padding-right: 4rem;
+	padding-right: 1rem;
+	margin-bottom: 10%;
+	margin-right: 1rem;
+	padding-bottom: 0;
 	grid-column-start: 8;
 	grid-column-end: 13;
-	background-color: #E7F3FD;
 }
 .C2G1{
 	display: block;
@@ -302,8 +302,10 @@ input[type=text]{
 	grid-column-end: 6;
 	padding-top: 15%;
 	padding-left: 4rem;
-	padding-right:4rem;
-	background-color: #E7F3FD;
+	padding-right: 1rem;
+	margin-bottom: 10%;
+	margin-right: 1rem;
+	padding-bottom: 0;
 }
 .Subscribe{
 	background-color: #1573b8;
@@ -312,7 +314,69 @@ input[type=text]{
 	padding-top: .5rem;
 	padding-bottom: 2rem;
 }
+
+#homepage-card2{
+	background-image: url(../img/HomepageCard3.png);
+	background-position: right 45% bottom 50%;
+	background-size: cover;
+	min-height: 30vh;
+	max-height: 50vh;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#homepage-card3{
+	background-image: url(../img/HomepageCard2.png);
+	background-position: right 45% bottom 50%;
+	background-size: cover;
+	min-height: 30vh;
+	max-height: 50vh;
+	background-repeat: no-repeat;
+	position: relative;
+}
 /*---------------------------------*/
+/*------------------For Homepage Cards-------------------*/
+	#card1title{
+	  color: #ffffff;
+	  text-align: center;
+	  margin-bottom: .5rem;
+	}
+
+	#card1text{
+	  color: #ffffff;
+	  font-size: 20pt;
+	  font-weight: 300;
+	  width:auto;
+	  text-align: center;
+	}
+
+	#card1button{
+		align-self: center;
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+
+	.gHomepageCard1{
+		display: grid;
+		grid-template-columns: repeat(14,1fr);
+		background-image: url(../img/HomepageCard1.png);
+		background-position: right 45% bottom 50%;
+		background-size: cover;
+		min-height: 70vh;
+		min-width: 100%;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.gCard1Content{
+		display: grid;
+		grid-column: 9/15;
+		margin-top: 25%;
+		margin-right: 10%;
+		margin-left: 15%;
+		margin-bottom: 10%;
+	}
+/* --- Homepage Cards End --- */
 
 
 
@@ -333,7 +397,7 @@ input[type=text]{
 	margin-right: 0rem;
 }
 .gUs{
-	grid-template-rows: repeat(2,1fr);
+	grid-template-rows: auto auto;
 	min-height: 60vh;
 }
 
@@ -344,22 +408,19 @@ input[type=text]{
 
 .S1G1{
 	grid-column-end: 13; 
-	padding-top: 0rem;
 	padding-bottom: 0rem;
-	margin-top: 0rem;
 	margin-bottom: 0rem;
 }
 .S1G2{
 	grid-column-start: 1;
-	padding-top: 0rem;
-	padding-bottom: 0rem;
-	margin-top: 0rem;
-	margin-bottom: 0rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .S2G1{
 	grid-column-end: 13;
-	padding-top: 0rem;
-	padding-bottom: 0rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-bottom: 0rem;
 }
 .S2G2{
 	grid-column-start: 1;
@@ -396,19 +457,86 @@ input[type=text]{
 
 /*---------------------------------*/
 
+/*------------------For Homepage Cards-------------------*/
+	.gHomepageCard1{
+		display: grid;
+		background-image: none;
+		grid-template-rows: 1fr 1fr;
+		min-height: 40vh;
+		min-width: 100%;
+		position: relative;
+		grid-gap: 0;
+	}
 
+	.gCard1Image{
+		background-image: url(../img/HomepageCard11.png);
+		grid-column: 1/15;
+		grid-row: 1/2;
+		background-size: cover;
+		max-width: 100%;
+		min-height: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.gCard1Content{
+		grid-row: 2/3;
+		grid-column: 1/15;
+		background-color: #15b890;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 0;
+		margin-left: 0;
+		padding-bottom: 10%;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	#card1title{
+	  	margin-bottom: 0;
+	  	font-size: 36pt;
+	}
+
+	#card1button{
+		align-self: center;
+		margin-left: 6rem;
+		margin-right: 6rem;
+	}
+/* --- Homepage Cards End --- */
 
 /*----------------ProductList-----------------*/
 .gSearchForm{
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
-.C1G2{
+/*----------*/
+#homepage-card2{
+	background-image: none;
+	grid-template-rows: auto auto;
+	min-height: 40vh;
+	position: relative;
+	grid-gap: 0;
+}
+.C1G1{
 	grid-column-start: 1;
+	grid-column-end: 13;
+	background-image: url(../img/HomepageCard31.png);
+	grid-row: 1/2;
+	background-size: cover;
+	max-width: 100%;
+	min-height: 60vh;
+	background-repeat: no-repeat;
+}
+.C1G2{
+	align-content: middle;
+	grid-column-start: 1;
+	grid-row: 2/3;
 	padding-top: 1rem;
 	padding-bottom: 2rem;
+	padding-left: auto;
 	padding-right: 1rem;
-	padding-left: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #E7F3FD;
 }
 .C2G1{
 	grid-column-end: 13;
@@ -416,6 +544,20 @@ input[type=text]{
 	padding-bottom: 2rem;
 	padding-right: 1rem;
 	padding-left: 1rem;
+	background-color: #E7F3FD;
+}
+
+.C2G2{
+	align-content: middle;
+	grid-column-start: 1;
+	grid-row: 2/3;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	padding-left: auto;
+	padding-right: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #E7F3FD;
 }
 .gHomeTopCardContent{
 	grid-column-start: 1;
