@@ -47,11 +47,12 @@ h2.BlueCatTitle{
 .gUs{
 	display: grid;
 	grid-template-columns:repeat(12,1fr);
-	min-height: 70vh;
+	min-height: 60vh;
 }
 .gUs img{
-	width: 100%;
-    min-height: 50vh;
+	max-width: 100%;
+	min-width: 60%;
+    min-height: 60vh;
 }
 .S1G1{
 	display: block;
@@ -287,25 +288,33 @@ input[type=text]{
 	background-color: #ffffff;
 }
 .C1G2{
-	padding-top: 15%;
-	padding-left: 4rem;
+	display: block;
+	padding-top: auto;
+	padding-left: 3rem;
 	padding-right: 1rem;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	margin-right: 1rem;
-	padding-bottom: 0;
+	margin-top: 10%;
+	padding-bottom: auto;
 	grid-column-start: 8;
 	grid-column-end: 13;
+	min-height: 40vh;
+}
+.C1G2 p, .C2G1 p{
+	margin-bottom: 0;
 }
 .C2G1{
 	display: block;
 	grid-column-start: 1;
 	grid-column-end: 6;
-	padding-top: 15%;
-	padding-left: 4rem;
-	padding-right: 1rem;
+	padding-top: auto;
+	padding-left: 3rem;
+	padding-right: 0rem;
 	margin-bottom: 10%;
+	margin-top: 10%;
 	margin-right: 1rem;
-	padding-bottom: 0;
+	padding-bottom: auto;
+	min-height: 40vh;
 }
 .Subscribe{
 	background-color: #1573b8;
@@ -320,7 +329,6 @@ input[type=text]{
 	background-position: right 45% bottom 50%;
 	background-size: cover;
 	min-height: 30vh;
-	max-height: 50vh;
 	background-repeat: no-repeat;
 	position: relative;
 }
@@ -330,7 +338,6 @@ input[type=text]{
 	background-position: right 45% bottom 50%;
 	background-size: cover;
 	min-height: 30vh;
-	max-height: 50vh;
 	background-repeat: no-repeat;
 	position: relative;
 }
@@ -410,6 +417,7 @@ input[type=text]{
 	grid-column-end: 13; 
 	padding-bottom: 0rem;
 	margin-bottom: 0rem;
+	max-height: 60vh;
 }
 .S1G2{
 	grid-column-start: 1;
@@ -509,10 +517,9 @@ input[type=text]{
 	grid-column-end: 3;
 }
 /*----------*/
-#homepage-card2{
+#homepage-card2,#homepage-card3{
 	background-image: none;
 	grid-template-rows: auto auto;
-	min-height: 40vh;
 	position: relative;
 	grid-gap: 0;
 }
@@ -536,28 +543,35 @@ input[type=text]{
 	padding-right: 1rem;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 	background-color: #E7F3FD;
 }
+
 .C2G1{
+	grid-row: 1/2;
+	grid-column-start: 1;
 	grid-column-end: 13;
 	padding-top: 1rem;
 	padding-bottom: 2rem;
 	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: #E7F3FD;
 }
 
 .C2G2{
-	align-content: middle;
 	grid-column-start: 1;
+	grid-column-end: 13;
+	background-image: url(../img/HomepageCard31.png);
 	grid-row: 2/3;
-	padding-top: 1rem;
-	padding-bottom: 2rem;
-	padding-left: auto;
-	padding-right: 1rem;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #E7F3FD;
+	background-size: cover;
+	max-width: 100%;
+	min-height: 60vh;
+	background-repeat: no-repeat;
 }
 .gHomeTopCardContent{
 	grid-column-start: 1;
