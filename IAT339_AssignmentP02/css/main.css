@@ -1162,6 +1162,7 @@ footer a{
   }
 
   .Account-Side-Bar ul{
+  	margin-top: 4rem;
   	list-style-type: none;
   	padding-top: 1rem;
   }
@@ -1172,8 +1173,7 @@ footer a{
 
   .Account-Side-Bar a{
   	color:#1D1D1D;
-  	font-family: Montserrat;
-  	font-size: 1.75rem;
+  	font-size: 1.5rem;
   	text-decoration: none;
 
   }
@@ -1232,6 +1232,31 @@ footer a{
   padding: 16px;
 }
 
+#Account-Personal-Information ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Furry-Information ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Billing-Information ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Shipping-Information ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Payment-Information ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
 
 
   /* Account page END*/
@@ -1278,15 +1303,13 @@ footer a{
   }
 
   .CheckOut-Side-Bar ul{
-  	margin-left: 2rem;
-  	margin-top: 6rem;
+  	margin: 6rem 0 4rem 2rem;
   	list-style-type: none;
   	padding-left: 0;
   }
 
   .CheckOut-Side-Bar {
   	background:#F2F2F2; 
-  	display: block;
   }
 
   .Checkout2PaymentInformation ul{
@@ -1306,7 +1329,7 @@ footer a{
 
   .CheckOut4-Title {
   	position: absolute;
-  	top: 40%;
+  	top: 25%;
   	right: 3rem;
   	font-size: 4vw;
   }
