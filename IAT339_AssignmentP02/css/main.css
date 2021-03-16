@@ -240,10 +240,11 @@ header a{
 	text-decoration: none;
 }
 
-header a:hover{
+/*header a:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 	color:#34383B;
-}
+}*/
+
 
 header a:focus{
 	color:#FFFFFF;
@@ -264,7 +265,6 @@ header ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	overflow: hidden;
 	background-color: #34383B;
 }
 
@@ -275,10 +275,10 @@ header li a {
 	text-decoration: none;
 }
 
-header li a:hover,
+/*header li a:hover,
 header .TopNavigationButton:hover {
 	background-color: rgba(0, 0, 0, 0.1);
-}
+}*/
 
 header .TopLogo {
 	display: block;
@@ -342,6 +342,9 @@ header .TopNavigationButton {
 }
 
 header .TopNavigationButton:checked ~ .TopNavigationList {
+	display: block;
+	text-align: center;
+	overflow: hidden;
 	max-height: max-content;
 }
 
@@ -363,6 +366,8 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:be
 header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:after {
 	top: 0;
 }
+
+
 
 
 /*---Header Section END---*/
@@ -417,10 +422,11 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
 	/* Reset styles */
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding-left: .5rem;
+	padding-right: 0.5rem;
 
 	/* Width */
-	/*width: 10rem;*/
+	width: min-content;
 
 }
 
@@ -476,6 +482,7 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
 .NavigationBar li:hover > ul {
 	display: block;
 }
+
 
 
 /*Learned Drop down menu from https://csslayout.io/patterns/nested-dropdowns/*/

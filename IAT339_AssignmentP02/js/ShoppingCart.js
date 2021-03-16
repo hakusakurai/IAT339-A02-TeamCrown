@@ -39,3 +39,5 @@ function minus2(){
 		countEl2.value = count2;
 	}  
 }
+
+

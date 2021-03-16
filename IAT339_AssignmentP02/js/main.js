@@ -146,4 +146,3 @@ function minus(){
 }
 // Leanred from:https://codepen.io/nevcanuludas/pen/WbNbow
 // --The function of Changing Quantity Section END--
-

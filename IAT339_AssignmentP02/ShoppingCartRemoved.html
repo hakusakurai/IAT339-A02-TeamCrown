@@ -31,7 +31,7 @@
 				<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
 				<ul>
 					<li>
-						<div><a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a></div>
+						<div><a href="#" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
 						<ul>
 							<li><a href="#" class="NavigationBarC3">Chicken</a></li>
 							<li><a href="#" class="NavigationBarC3">Fish</a></li>
@@ -40,15 +40,16 @@
 						</ul>
 					</li>						
 					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY SERIES</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
 				</ul>
 			</li>
 			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
 			<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
 			<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
 		</ul>
+
 
 
 	</header>
@@ -83,17 +84,18 @@
 					</div>
 					<!-- </div> -->
 					<div class="ShoppingCartQuantityButton">
-						<button type="button" class="ProductQuantity" >-</button>
-						<form>
-							<input type="number" name="quantity">
-						</form>
-						<button type="button" class="ProductQuantity">+</button>
+						<div class="ChangeQuantity">
+							<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus()">
+							<input type="number"  value="1" id="count">
+							<input type="button" value="+" class="ButtonPlus" onclick="plus()">
+						</div>
+
 					</div>
 					<div class="ShoppingCartProductPrice">
 						<h4>$42.65</h4>
 					</div>
 					<div class="ShoppingCartRemoveButton">
-						<a class="IntextLink" href="#ShoppingCartPattern">Remove</a>
+						<a class="IntextLink" href="ShoppingCartRemoved.html">Remove</a>
 					</div>
 				</div>
 
@@ -108,17 +110,18 @@
 						</div>
 						<!-- </div> -->
 						<div class="ShoppingCartQuantityButton">
-							<button type="button" class="ProductQuantity" >-</button>
-							<form>
-								<input type="number" name="quantity">
-							</form>
-							<button type="button" class="ProductQuantity">+</button>
+							<div class="ChangeQuantity">
+								<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus()">
+								<input type="number"  value="1" id="count">
+								<input type="button" value="+" class="ButtonPlus" onclick="plus()">
+							</div>
+
 						</div>
 						<div class="ShoppingCartProductPrice">
 							<h4>$42.65</h4>
 						</div>
 						<div class="ShoppingCartRemoveButton">
-							<a class="IntextLink" href="#ShoppingCartPattern">Remove</a>
+							<a class="IntextLink" href="ShoppingCartRemoved.html">Remove</a>
 						</div>
 					</div>
 
@@ -126,43 +129,43 @@
 
 
 
-						<div class="ShoppingCartCheckOutForm">
-							<div class="ShoppingCartAddDiscountCode">
-								<form>
-									<label class="DiscountCode" for="discountcode">ADD DISCOUNT CODE</label>
-									<input type="text" class="DiscountCode" placeholder="Enter Here" id="discountcode">
-									<button class="SubmitButton">ADD</button>
-								</form>
+					<div class="ShoppingCartCheckOutForm">
+						<div class="ShoppingCartAddDiscountCode">
+							<form>
+								<label class="DiscountCode" for="discountcode">ADD DISCOUNT CODE</label>
+								<input type="text" class="DiscountCode" placeholder="Enter Here" id="discountcode">
+								<button class="SubmitButton">ADD</button>
+							</form>
+						</div>
+						<div class="ShoppingCartSubTotal">
+							<div class="SubTotalHeadings">
+								<p>ORDER VALUE</p>
+								<p>SAVE VALUE</p>
+								<p class="Subtotal">SUBTOTAL</p>
 							</div>
-							<div class="ShoppingCartSubTotal">
-								<div class="SubTotalHeadings">
-									<p>ORDER VALUE</p>
-									<p>SAVE VALUE</p>
-									<p class="Subtotal">SUBTOTAL</p>
-								</div>
-								<div class="SubTotalPrice">
-									<p>$130.12</p>
-									<p>$32.00</p>
-									<p class="Subtotal">$98.12</p>
-								</div>
-							</div>
-							<div class="ShoppingCartCheckOutButton">
-								<button class="ResetButton">UPDATE</button>
-								<p><a class="CallToActionButton" href="CheckOut1.html">CHECK OUT</a></p>
+							<div class="SubTotalPrice">
+								<p>$130.12</p>
+								<p>$32.00</p>
+								<p class="Subtotal">$98.12</p>
 							</div>
 						</div>
-
-
-
-
-
-
+						<div class="ShoppingCartCheckOutButton">
+							<button class="ResetButton">UPDATE</button>
+							<p><a class="CallToActionButton" href="CheckOut1.html">CHECK OUT</a></p>
+						</div>
 					</div>
 
 
 
 
-				</main>
+
+
+				</div>
+
+
+
+
+			</main>
 
 <footer>
 			<div class="FooterAboutUs">
@@ -209,5 +212,5 @@
 			</div>
 
 			</footer>
-			</body>
-			</html>
+		</body>
+		</html>

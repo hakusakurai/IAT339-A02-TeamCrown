@@ -745,11 +745,11 @@ a.CallToActionButton{
 @media screen and (max-width:70em){
 
 	.ProductDetailedViewGridContainer{
-	display: grid;
-	grid-template-columns:repeat(8,1fr);
-	grid-template-rows:4rem .3fr .3fr .3fr 1.5fr;
-	min-height:100vh;
-}
+		display: grid;
+		grid-template-columns:repeat(8,1fr);
+		grid-template-rows:4rem .3fr .3fr .3fr 1.5fr;
+		min-height:100vh;
+	}
 
 
 	.ProductDetailed{
@@ -841,6 +841,16 @@ a.CallToActionButton{
 		font-size: 1rem;
 	}
 
+	header ul {
+		overflow: hidden;
+	}
+
+	.NavigationBar li:hover > ul {
+	display: none;
+}
+
+
+
 
 	/*------------------For Product List-------------------*/
 	.gProductListRow{
@@ -903,7 +913,7 @@ a.CallToActionButton{
 			grid-row: 4/5;
 		}
 
-		.RPrevious,{
+		.RPrevious{
 			display: block;
 			grid-column: 1/2;
 			grid-row: 4/5;
@@ -936,7 +946,7 @@ a.CallToActionButton{
 	/*--PageNavigationBarToggleMenuSize--*/
 
 	@media (min-width: 65em) {
-		header li {
+		header>li {
 			float: left;
 		}
 		header li a {
@@ -951,4 +961,3 @@ a.CallToActionButton{
 			display: none;
 		}
 	}
-	.GridContainer{
