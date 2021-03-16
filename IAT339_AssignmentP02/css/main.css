@@ -992,6 +992,10 @@ ul.ProductInformation{
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}
+
+	.ShoppingCartCheckOutButton a.CallToActionButton{
+		margin-left: -2rem;
+	}
 }
 
 .ReviewSubmissionSection{
@@ -1073,9 +1077,9 @@ p.Subtotal{
 }
 
 .ShoppingCartCheckOutButton button{
-	padding-left: 2.25rem;
-	padding-right: 2.25rem;
-	margin-bottom: 1rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	margin-bottom: .5rem;
 }
 
 
