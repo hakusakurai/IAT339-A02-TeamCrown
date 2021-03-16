@@ -11,54 +11,65 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
 	</head>
 	<body>
-		<header>
-		<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
-		<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
-		<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
-		<ul class="TopNavigationList NavigationBar">
-			<li>
-				<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
-				<ul>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
-				</ul>
-			</li>
-			<li>
-				<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
-				<ul>
-					<li>
-						<div><a href="#" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
-						<ul>
-							<li><a href="#" class="NavigationBarC3">Chicken</a></li>
-							<li><a href="#" class="NavigationBarC3">Fish</a></li>
-							<li><a href="#" class="NavigationBarC3">Beef</a></li>
-							<li><a href="#" class="NavigationBarC3">Lamb</a></li>
-						</ul>
-					</li>						
-					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY SERIES</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
-				</ul>
-			</li>
-			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
-			<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
-			<li><a href="SignUpAndSignIn.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
-		</ul>
 		
+		<header>
+			<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+			<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
+			<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
+			<ul class="TopNavigationList NavigationBar">
+				<li>
+					<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
+					<ul>
+						<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
+						<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
+						<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
+					<ul>
+						<li>
+							<div><a href="#" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
+							<ul>
+								<li><a href="#" class="NavigationBarC3">Chicken</a></li>
+								<li><a href="#" class="NavigationBarC3">Fish</a></li>
+								<li><a href="#" class="NavigationBarC3">Beef</a></li>
+								<li><a href="#" class="NavigationBarC3">Lamb</a></li>
+							</ul>
+						</li>						
+						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+						<li><a href="" class="NavigationBarC2">SHOP BY SERIES</a></li>
+						<li><a href="" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
+						<li><a href="" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
+					</ul>
+				</li>
+				<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
+				<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
+				<li><a href="SignUpAndSignIn.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
+			</ul>
 		</header>
+
+		<section id="homepage-card-section">
+			<div class="gHomepageCard1">
+				<div class="gCard1Image"></div>
+				<div class="gCard1Content">
+					<h2 id="card1title">Organic cat food serves your cat’s daily need</h2>
+					<p id="card1text">Discover more healthy organic handmade cat foods</p>
+					<button class="SubmitButton" id="card1button">SHOP</button>
+				</div>
+			</div>
+		</section>
 
 		<main class="Wrapper">
 			<div class="gAboutUsGridContainer">
-				<div class="gHomeTopCard"> 
+				<!--<div class="gHomeTopCard"> 
 					<div class="gHomeTopCardImage"></div>
 					<div class="gHomeTopCardContent">
 						<h2>Organic cat food serves your cat’s daily need</h2>
 						<p>Discover more healthy organic handmade cat foods.</p>
 						<button href="#" class="SubmitButton">SHOP</button>
 					</div>
-				</div>
+				</div>-->
 
  				<div class="RecommandationList" id="homepagerecommandation">
 					<h3>3000+ felinophiles give 5-star</h3>
@@ -97,27 +108,28 @@
 					</div>
 				</div>
 
-				<div class="gUs">
-					<div class="S1G1">				
-					</div>
+				<div class="gUs" id="homepage-card2">
+					<div class="C1G1"></div>
 					<div class="C1G2">
-						<h3>High Quality Meat </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cum neque arcu in turpis sodales imperdiet sociis. Velit etiam ut quam quam iaculis in a dictum dolor. </p>
+						<h3>High Quality Meat</h3>
+						<p>Our gredient covers grass-fed, pasture-raised animal protein. It’s more humane and better for the animal it’s more sustainable and better for the environment; and it’s higher in nutrients and better for your cat!</p>
 						<br>
-						<a href="#" class="CallToActionButton">DISCOVER MORE HIGH QUALITY MEAT</a>
+						<a href="ProductList.html" class="CallToActionButton">DISCOVER MORE HIGH QUALITY MEAT</a>
 					</div>
 				</div>
+				<br><br>
 
-				<div class="gUs">
+				<div class="gUs" id="homepage-card3">
 					<div class="C2G1">	
-						<h3>High Quality Meat </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cum neque arcu in turpis sodales imperdiet sociis. Velit etiam ut quam quam iaculis in a dictum dolor. </p>
+						<h3>Fresh Cat Food Delivery Service</h3>
+						<p>Our delivery service ships out high-quality, ultra-nourishing meals, helping you to give your cat his best life while making yours a little bit easier. All of the options arrived frozen or freeze-dried. </p>
 						<br>
 						<a href="#" class="CallToActionButton">START TO SHOP</a>
 					</div>
-					<div class="S2G2">
+					<div class="C2G2">
 					</div>
 				</div>
+				<br><br>
 
 				<div class="Subscribe">
 					<h3>Want to get the latest product information?</h3>
