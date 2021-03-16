@@ -21,40 +21,51 @@
 			<li>
 				<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
 				<ul>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
+					<li><a href="ProductList.html"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
+					<li><a href="ProductList.html"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
+					<li><a href="ProductList.html"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
 				</ul>
 			</li>
 			<li>
 				<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
 				<ul>
 					<li>
-						<div><a href="#" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
+						<div><a href="ProductList.html" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
 						<ul>
-							<li><a href="#" class="NavigationBarC3">Chicken</a></li>
-							<li><a href="#" class="NavigationBarC3">Fish</a></li>
-							<li><a href="#" class="NavigationBarC3">Beef</a></li>
-							<li><a href="#" class="NavigationBarC3">Lamb</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Chicken</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Fish</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Beef</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Lamb</a></li>
 						</ul>
 					</li>						
-					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY SERIES</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY SERIES</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
 				</ul>
 			</li>
 			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
 			<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
 			<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
 		</ul>
-
 			
 		</header>
 
+		<div id="AccountToggleSideBar" class="AccountSideBar ToggleSideBar">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+					<a href="#Account-Personal-Information">Personal Information</a>
+					<a href="#Account-Furry-Information">Furry Information</a>
+					<a href="#Account-Billing-Information">Billing Address</a>
+					<a href="#Account-Shipping-Information">Shipping Address</a>
+					<a href="#Account-Payment-Information">Payment Information</a>
+					<a href="PurchaseHistory.html">Purchase History</a>
+					<a href="SignUpAndSignIn.html">Sign Off</a>
+
+		</div>
 
 		<main class="Wrapper">
 			<h2 class="Account-Title">ACCOUNT</h2>
+			<button class="openbtn ToggleSideBar" onclick="openNav()">☰</button> 
 			<div class="Account-Grid-Container">
 				<div class="Account-Side-Bar">
 					<ul>
@@ -66,9 +77,7 @@
 					<li><a href="PurchaseHistory.html">Purchase History</a><li>
 					<li><a href="SignUpAndSignIn.html">Sign Off</a><li>
 				</ul>
-
-				
-				</div>
+			</div>
 
 				<div id="Account-Personal-Information">
 					<h3>PERSONAL INFORMATION</h3>
@@ -225,5 +234,6 @@
 				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
 			</div>
 		</footer>
+		<script src="js/main.js"></script>
 	</body>
 </html>

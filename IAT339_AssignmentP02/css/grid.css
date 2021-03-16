@@ -201,6 +201,10 @@ body{
 
 /* Account page grid start */
 
+.ToggleSideBar{
+	display: none;
+}
+
 .Account-Title{
 	margin-top: 3rem;
 }
@@ -258,45 +262,48 @@ body{
 }
 
 @media screen and (max-width:60rem){
-	.Account-Side-Bar{
-		margin-top: 4rem;
-		margin-right: 0rem;
-		padding-left: 2rem;
-		grid-column: 1/9;
+
+	.ToggleSideBar{
+		display: block;
 	}
+
+	.Account-Side-Bar{
+		display: none;
+	}
+
 
 	#Account-Personal-Information{
 		display: grid;
 		margin-top: 4rem;
 		padding: 4rem 2rem;
-		grid-column: 1/9;
+		grid-column: 2/9;
 	}
 
 	#Account-Furry-Information{
 		display: grid;
 		margin-top: 3rem;
 		padding: 4rem 2rem;
-		grid-column: 1/9;
+		grid-column: 2/9;
 	}
 
 	#Account-Billing-Information{
 		display: grid;
 		margin-top: 3rem;
 		padding: 4rem 2rem;
-		grid-column: 1/9;
+		grid-column: 2/9;
 
 	}
 	#Account-Shipping-Information{
 		display: grid;
 		margin-top: 3rem;
 		padding: 4rem 2rem;
-		grid-column: 1/9;
+		grid-column: 2/9;
 	}
 	#Account-Payment-Information{
 		display: grid;
 		margin-top: 3rem;
 		padding: 4rem 2rem;
-		grid-column:1/9;
+		grid-column:2/9;
 	}
 }
 
@@ -373,6 +380,9 @@ body{
 
 
 @media screen and (max-width:60rem){
+
+
+
 	.CheckOut-Side-Bar{
 		margin-top: 4rem;
 		padding-left: 2rem;
@@ -898,8 +908,8 @@ a.CallToActionButton{
 	}
 
 	.NavigationBar li:hover > ul {
-	display: none;
-}
+		display: none;
+	}
 
 
 
@@ -987,10 +997,44 @@ a.CallToActionButton{
 		}
 	}
 
-	@media screen and (max-width:24em){
+	@media screen and (max-width:28em){
 		.GridContainer{
 			grid-template-rows: 8rem 10rem 1fr;
 		}
+
+		#Account-Personal-Information{
+		display: grid;
+		margin-top: 4rem;
+		padding: 4rem 2rem;
+		grid-column: 3/9;
+	}
+
+	#Account-Furry-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column: 3/9;
+	}
+
+	#Account-Billing-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column: 3/9;
+
+	}
+	#Account-Shipping-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column: 3/9;
+	}
+	#Account-Payment-Information{
+		display: grid;
+		margin-top: 3rem;
+		padding: 4rem 2rem;
+		grid-column:3/9;
+	}
 	}
 
 
