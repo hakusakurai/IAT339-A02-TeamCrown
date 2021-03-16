@@ -240,10 +240,10 @@ header a{
 	text-decoration: none;
 }
 
-/*header a:hover{
+header > a:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 	color:#34383B;
-}*/
+}
 
 
 header a:focus{
@@ -422,12 +422,14 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
 	/* Reset styles */
 	list-style-type: none;
 	margin: 0;
-	padding-left: .5rem;
-	padding-right: 0.5rem;
 
 	/* Width */
 	width: min-content;
 
+}
+
+.NavigationBar ul li{
+	padding: .5rem;
 }
 
 .DropdownButton {
