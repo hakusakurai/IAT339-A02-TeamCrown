@@ -1141,7 +1141,7 @@ a.CallToActionButton{
 		}
 	}
 
-	@media (max-width: 25em) {
+	@media (max-width: 30em) {
 		h1{
 			font-size: 1.125rem;
 			font-weight:bold;
@@ -1191,7 +1191,7 @@ a.CallToActionButton{
 			width: 4.5rem;
 		}
 		.ProductDetailedViewGridContainer {
-			grid-template-rows: 4rem .3fr .3fr .2fr .8fr;
+			grid-template-rows: 4rem .3fr .3fr .1fr .8fr;
 		}
 		.RecommandationList{
 			margin-left: 2rem;
