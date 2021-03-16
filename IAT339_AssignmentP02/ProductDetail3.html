@@ -14,202 +14,294 @@
 </head>
 
 <body>
-		<header>
-			<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
-			<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
-			<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
-			<ul class="TopNavigationList NavigationBar">
-				<li>
-					<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
-					<ul>
-						<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
-						<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
-						<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
-					</ul>
-				</li>
-				<li>
-					<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
+	<header>
+		<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+		<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
+		<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
+		<ul class="TopNavigationList NavigationBar">
+			<li>
+				<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
+				<ul>
+					<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
+					<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
+					<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
+				</ul>
+			</li>
+			<li>
+				<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
+				<ul>
+					<li>
+						<div><a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a></div>
+						<ul>
+							<li><a href="#" class="NavigationBarC3">Chicken</a></li>
+							<li><a href="#" class="NavigationBarC3">Fish</a></li>
+							<li><a href="#" class="NavigationBarC3">Beef</a></li>
+							<li><a href="#" class="NavigationBarC3">Lamb</a></li>
+						</ul>
+					</li>						
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+				</ul>
+			</li>
+			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
+			<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
+			<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
+		</ul>
+		
+		
+	</header>
+
+
+
+	
+	<main class="Wrapper">
+		<div class="ProductDetailedViewGridContainer ShadowOfContainer">
+			<div class="BreadCrumbs">
+				<p><a href="Index.html" class="IntextLink">HOME</a> &gt; <a href="ProductList.html" class="IntextLink">PRODUCT LIST</a> &gt; LAMB AFFAIR - FRESH CAT FOOD</p>
+			</div>
+
+			<!-- Product detailed view section: image, basic info and add to cart START -->
+			<div class="ProductDetailed">
+
+				<div class="ProductImage">
+					<figure>
+						<img src="img/ProductImg3.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
+					</figure>
+				</div>
+
+				<div class="ProductDetailedList">
+					<div class="ProductTitle">
+						<h3>Lamb Affair - Fresh Cat Food</h3>
+						<a href="ProductList.html" class="IntextLink">By Kafka's Organic</a>
+						<div class="ProductRating">
+							<p>
+								<img src="img/Rating.png" width="142" height="23" alt="Rating">    (201)</p>
+								<h3 class="ProductPriceH3">$12.99</h3>
+							</div>
+						</div>
+						<div class="ProductDetail">
+							<h4>Size: 1 lb ($ 12.99/lb)</h4>
+							<h4>Fuction:<a href="ProductList.html" class="IntextLink">Hairball Control</a></h4>
+							<h4>Suitable Life Stage:<a href="ProductList.html" class="IntextLink">Adult</a></h4>
+						</div>
+						<div class="ProductPrice">
+							<div class="ChangeQuantity">
+								
+								<input type="button" value="-" class="ButtonMinus" onclick="minus()">
+								<input type="number" size="25" value="1" id="count">
+								<input type="button" value="+" class="ButtonPlus" onclick="plus()">
+							</div>
+
+							<div class="AddToCart">
+								<a href="ShoppingCart.html" class="CallToActionButton">ADD TO CART</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- Product detailed view section: image, basic info and add to cart END -->
+
+
+				<!-- Product description section START -->.
+
+				<div class="InformationTabs">
 					<ul>
 						<li>
-							<div><a href="#" class="NavigationBarC2">SHOP BY FOODTYPE</a></div>
-							<ul>
-								<li><a href="#" class="NavigationBarC3">Chicken</a></li>
-								<li><a href="#" class="NavigationBarC3">Fish</a></li>
-								<li><a href="#" class="NavigationBarC3">Beef</a></li>
-								<li><a href="#" class="NavigationBarC3">Lamb</a></li>
-							</ul>
-						</li>						
-						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-						<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+							<a class="IntextLink" href="#section1">Introduction</a>
+						</li>
+						<li>
+							<a class="IntextLink" href="#section2">Ingredients</a>
+						</li>
+						<li>
+							<a class="IntextLink" href="#section3">Guaranteed Analysis</a>
+						</li>
+						<li>
+							<a class="IntextLink" href="#section4">Benefits</a>
+						</li>
 					</ul>
-				</li>
-				<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
-				<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
-				<li><a href="Account.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
-			</ul>
-			
-			
-		</header>
+					<section id="section1">
+						<p>A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.</p>
+					</section>
+					<section id="section2">
+						<p>Pacific Wild Salmon (BC), Rockfish (BC), Cod, Sweet Potatoes, Turkey Liver, Organic Kale, Organic Carrots, Egg Shell Powder, Bone Broth, Omega-3 Fish Oil, Organic Safflower Oil, Cod Liver Oil, Kafka's Vitamin & Mineral Blend, Organic Kelp Pacific Wild Salmon (BC), Rockfish (BC), Cod, Sweet Potatoes, Turkey Liver, Organic Kale, Organic Carrots, Egg Shell Powder, Bone Broth, Omega-3 Fish Oil, Organic Safflower Oil, Cod Liver Oil, Kafka's Vitamin & Mineral Blend, Organic Kelp.</p>
+					</section>
+					<section id="section3">
+						<ul class="ProductInformation">
+							<li>Protein Min 38.0 %</li>
+							<li>Fat Min 16.0 %</li>
+							<li>Fiber Max 5.0 %</li>
+							<li>Magnesium Max 0.14 %</li>
+							<li>Taurine Min 0.15 %</li>
+							<li>Omega 3 Fatty Acids* Min 0.5 %</li>
+							<li>Omega 6 Fatty Acids* Min 2.5 %</li>
+							<li>Caloric Content: 3,667 Kcal/kg, 410 kcal/cup</li>
+						</ul>
+					</section>
+					<section id="section4">
+						<ul  class="ProductInformation">
+							<li>Free of preservatives, additives or fillers</li>
+							<li>Simple, natural, whole ingredients</li>
+							<li>Balanced & complete according to AAFCO guidelines</li>
+							<li>Heart-healthy. Omega-3 Fish oil & Organic Safflower/Flaxseed Oil </li>
+							<li>Gently cooked at low temperature</li>
+							<li>Small batch handmade</li>
+							<li>Drool-worthy taste! </li>
+						</ul>
+					</section>
+				</div>
+
+				<!-- !!!Tabs learned from:https://css-tricks.com/tabs-its-complicated/ -->
+
+
+				<!-- Product description section END -->
 
 
 
-		
-		<main class="Wrapper">
-			<div class="ProductDetailedViewGridContainer">
-						<div class="BreadCrumbs">
-							<p><a href="Index.html" class="IntextLink">HOME</a> &gt; <a href="ProductList.html" class="IntextLink">PRODUCT LIST</a> &gt; LAMB AFFAIR - FRESH CAT FOOD</p>
+
+
+
+
+				<!-- Product review section START -->
+				<div class="ProdcutReviews">
+
+
+					<h3 class="ProductSectionTitle">Reviews</h3>
+
+
+					<div class="ReviewSlide">
+
+						<div class="ReviewDetailed FadeAnimation">
+							<h3>catisbest  </h3> <h4>6 months ago</h4>
+							<div class="RatingHelpful">
+								<div class="RatingStars">
+									<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
+								</div>
+								<h4>Helpful (3)</h4>  <h4>Not Helpful (1)</h4>
+							</div>
+							<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
 						</div>
 
-						<!-- Product detailed view section: image, basic info and add to cart START -->
-						<div class="ProductDetailed">
-
-							<div class="ProductImage">
-								<figure>
-									<img src="img/ProductImg3.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
-								</figure>
-							</div>
-
-							<div class="ProductDetailedList">
-								<div class="ProductTitle">
-									<h3>Lamb Affair - Fresh Cat Food</h3>
-									<a href="ProductList.html" class="IntextLink">By Kafka's Organic</a>
-									<div class="ProductRating">
-										<p>
-											<img src="img/Rating.png" width="142" height="23" alt="Rating">    (201)</p>
-										</div>
-									</div>
-									<div class="ProductDetail">
-										<h4>Size: 1 lb ($ 12.99/lb)</h4>
-										<h4>Fuction:<a href="ProductList.html" class="IntextLink">Hairball Control</a></h4>
-										<h4>Suitable Life Stage:<a href="ProductList.html" class="IntextLink">Adult</a></h4>
-									</div>
-									<div class="ProductPrice">
-										<h3>$12.99</h3>
-										<div class="ChangeQuantity">
-											<button type="button" class="ProductQuantity" >-</button>
-											<form>
-												<input type="number" name="quantity">
-											</form>
-											<button type="button" class="ProductQuantity">+</button>
-										</div>
-										<div class="AddToCart">
-											<a href="ShoppingCart.html" class="CallToActionButton">ADD TO CART</a>
-										</div>
-									</div>
+						<div class="ReviewDetailed FadeAnimation">
+							<h3>catismylove  </h3> <h4>8 months ago</h4>
+							<div class="RatingHelpful">
+								<div class="RatingStars">
+									<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
 								</div>
-
+								<h4>Helpful (5)</h4>  <h4>Not Helpful (2)</h4>
 							</div>
-							<!-- Product detailed view section: image, basic info and add to cart END -->
-
-
-							<!-- Product description section START -->
-							<div class="ProductDetailedInformation">
-								<div class="InformationTabs">
-									<div class="InformationTab">
-										<a href="#" class="IntextLink">Introduction</a>
-									</div>
-									<div class="InformationTab">
-										<a href="#" class="IntextLink">Ingredients</a>
-									</div>
-									<div class="InformationTab">
-										<a href="#" class="IntextLink">Guaranteed Analysis</a>
-									</div>
-									<div class="InformationTab">
-										<a href="#" class="IntextLink">Benefits</a>
-									</div>
-								</div>
-								<div class="ProductDescription">
-									<p>A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.</p>
-								</div>
-							</div>
-							<!-- Product description section END -->
-
-							<!-- Product review section START -->
-							<div class="ProdcutReviews">
-
-
-								<h3 class="ProductSectionTitle">Reviews</h3>
-
-
-								<div class="ReviewSlide">
-
-									<div class="ReviewDetailed">
-										<h3>catisbest</h3> <h4>6 months ago</h4>
-										<div class="RatingHelpful">
-											<div class="RatingStars">
-												<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
-											</div>
-											<h4>Helpful (3)</h4>  <h4>Not Helpful (1)</h4>
-										</div>
-										<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
-									</div>
-
-									<div class="HelpfulButtons">
-										<h3> Helpful?</h3>
-										<button class="SubmitButton">YES</button>
-										<button class="SubmitButton">NO</button>
-									</div>
-
-									<a class="Previous">&#10094;</a>
-									<a class="Next">&#10095;</a>
-								</div>
-							</div>
-							<!-- Product review section END -->
-
-
-							<!-- Recommnadation List Section START -->
- 							<div class="RecommandationList">
-							<h3 class="ProductSectionTitle">Other Popular Products of Kafka’s Organic:</h3>
-
-							<div class="gSwitchItem">
-
-								<div class="gLeftArrow"><a class="LeftArrow">&#10094;</a></div>
-
-								<div class="gProductListRow" id="recom-list">
-									<div class="gProductListItem1">
-										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-										<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-									<div class="gProductListItem2">
-										<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
-										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-									<div class="gProductListItem3">
-										<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
-										<h4>Lamb Affair - Fresh Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-									<div class="gProductListItem4">
-										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-								</div>	
-
-								<div class="gRightArrow"><a class="RightArrow">&#10095;</a></div>
-
-							</div>
+							<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
 						</div>
-						<!-- Recommnadation List Section END -->
+
+						<div class="ReviewDetailed FadeAnimation">
+							<h3>catismylife  </h3> <h4>11 months ago</h4>
+							<div class="RatingHelpful">
+								<div class="RatingStars">
+									<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span>
+								</div>
+								<h4>Helpful (10)</h4>  <h4>Not Helpful (3)</h4>
+							</div>
+							<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
+						</div>
+
+						<div class="HelpfulButtons">
+							<h3> Helpful?</h3>
+							<button class="SubmitButton">YES</button>
+							<button class="SubmitButton">NO</button>
+						</div>
+
+						<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
+				<!-- Product review section END -->
+
+
+				<!-- Recommnadation List Section START -->
+				<div class="RecommandationList">
+					<h3 class="ProductSectionTitle">Other Popular Products of Kafka’s Organic:</h3>
+
+					<div class="gSwitchItem">
+
+						<div class="gRProductListRow" id="recom-list">
+							<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10094;</a></div>
+							<div class="gRProductListItem1">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem2">
+								<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem3">
+								<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+								<h4>Lamb Affair - Fresh Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem4">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10095;</a></div>
+						</div>	
+						
+					</div>
+
+					<div class="gSwitchItem">
+
+						<div class="gRProductListRow" id="recom-list">
+							<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10094;</a></div>
+							<div class="gRProductListItem1">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Homestead Turkey & Chicken Wet Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem2">
+								<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem3">
+								<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+								<h4>Lamb Affair - Fresh Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem4">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10095;</a></div>
+						</div>	
+						
+					</div>
 
 
 				</div>
+				<!-- Recommnadation List Section END -->
+
+
+			</div>
 
 
 
 
-			</main>
+		</main>
 
-			<footer>
-				<div class="Footer-Grid-Container">
+		<footer>
+			<div class="Footer-Grid-Container">
 				<ul class="Footer-Email">
 					<h4>EMAIL</h4>
 					<li>Crown_organicCatFoof@gmail.com</li>
@@ -239,6 +331,7 @@
 
 				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
 			</div>
-			</footer>
+		</footer>
+		<script src="js/main.js"></script>
 	</body>
-</html>
+	</html>
