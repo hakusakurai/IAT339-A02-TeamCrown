@@ -30,25 +30,25 @@ footer{
 }
 
 footer .FooterAboutUs{
-		display: block;
-		grid-column: 2/3;
-		margin-top: 5rem;
-		margin-bottom: 5rem;
+	display: block;
+	grid-column: 2/3;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 
 footer .FooterLink{
 	margin-left: 2rem;
-display: block;
-		grid-column: 3/4;
-		margin-top: 5rem;
-		margin-bottom: 5rem;
+	display: block;
+	grid-column: 3/4;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 footer .FooterFollowUs{
 	margin-left: 10rem;
-display: block;
-		grid-column: 4/5;
-		margin-top: 5rem;
-		margin-bottom: 5rem;
+	display: block;
+	grid-column: 4/5;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 
 footer a{
@@ -56,7 +56,7 @@ footer a{
 }
 footer .FooterTitle{
 	display: block;
-		font-family: Josefin Sans;
+	font-family: Josefin Sans;
 	font-size: 1rem;
 	padding-bottom: 1.5rem;
 }
@@ -65,7 +65,7 @@ footer .FooterTitle{
 	margin-right: 1rem;
 }
 .Footer-Instgram{
-margin-right: 1rem;
+	margin-right: 1rem;
 }
 .Footer-Youtube{
 	margin-right: 1rem;
@@ -79,42 +79,42 @@ footer ul li a{
 }
 @media screen and (max-width:70rem){
 	footer{
-	grid-template-columns:9.625rem 1fr 2rem;
-}
+		grid-template-columns:9.625rem 1fr 2rem;
+	}
 
-footer .FooterAboutUs{
-	margin-left: 0rem;
+	footer .FooterAboutUs{
+		margin-left: 0rem;
 		display: block;
 		grid-column: 2/3;
 		margin-top: 3rem;
 		margin-bottom: 1rem;
-}
+	}
 
-footer .FooterLink{
-	margin-left: 0rem;
-display: block;
+	footer .FooterLink{
+		margin-left: 0rem;
+		display: block;
 		grid-column: 2/3;
 		margin-top: 3rem;
 		margin-bottom: 1rem;
-}
-footer .FooterFollowUs{
-	margin-left: 0rem;
-display: block;
+	}
+	footer .FooterFollowUs{
+		margin-left: 0rem;
+		display: block;
 		grid-column: 2/3;
 		margin-top: 3rem;
 		margin-bottom: 1rem;
-}
+	}
 
-footer .FooterTitle{
+	footer .FooterTitle{
 
-	padding-bottom: 1rem;
-}
+		padding-bottom: 1rem;
+	}
 }
 
 @media screen and (max-width:35rem){
 	footer{
-	grid-template-columns:1.5rem 1fr 2rem;
-}
+		grid-template-columns:1.5rem 1fr 2rem;
+	}
 }
 
 /* Footer end */
@@ -346,27 +346,27 @@ body{
 
 @media screen and (max-width:37rem){
 	.ProgressBar{
-	grid-template-rows:1fr;
-}
+		grid-template-rows:1fr;
+	}
 	.ProgressSignIn{
-	display: none;
-}
+		display: none;
+	}
 
-.ProgressAddress{
-	display: none;
-}
+	.ProgressAddress{
+		display: none;
+	}
 
-.ProgressPayment{
-	display: none;
-}
+	.ProgressPayment{
+		display: none;
+	}
 
-.ProgressConfirm{
-	display: none;
-}
+	.ProgressConfirm{
+		display: none;
+	}
 
-.ProgressDone{
-	display: none;
-}
+	.ProgressDone{
+		display: none;
+	}
 }
 
 
@@ -395,9 +395,9 @@ body{
 }
 
 .CheckOut-Grid-Container .CheckOut1-Billing-Information{
-		display: inline-block;
-		position: relative;
-		left:0rem;
+	display: inline-block;
+	position: relative;
+	left:0rem;
 	margin-top: 4rem;
 	margin-right: 2rem;
 	padding: 4rem 2rem;
@@ -405,10 +405,10 @@ body{
 }
 
 .CheckOut2-Code-Information{
-    background: #F2F2F2;
+	background: #F2F2F2;
 	display: inline-block;
-		position: relative;
-		left:0rem;
+	position: relative;
+	left:0rem;
 	margin-top: 4rem;
 	margin-right: 2rem;
 	padding: 4rem 2rem;
@@ -416,10 +416,10 @@ body{
 }
 
 .Checkout2PaymentInformation{
-	    background: #F2F2F2;
+	background: #F2F2F2;
 	display: inline-block;
-		position: relative;
-		left:0rem;
+	position: relative;
+	left:0rem;
 	margin-top: 4rem;
 	margin-right: 2rem;
 	padding: 4rem 2rem;
@@ -468,9 +468,9 @@ body{
 	}
 
 	.CheckOut-Grid-Container .CheckOut1-Billing-Information{
-			display: block;
-			position: relative;
-			left:0rem;
+		display: block;
+		position: relative;
+		left:0rem;
 		margin-top: 4rem;
 		margin-right: 2rem;
 		padding: 4rem 2rem;
@@ -479,8 +479,8 @@ body{
 
 	.CheckOut2-Code-Information{
 		display: block;
-			position: relative;
-			left:0rem;
+		position: relative;
+		left:0rem;
 		margin-top: 4rem;
 		margin-right: 2rem;
 		padding: 4rem 2rem;
@@ -489,8 +489,8 @@ body{
 
 	.Checkout2PaymentInformation{
 		display: block;
-			position: relative;
-			left:0rem;
+		position: relative;
+		left:0rem;
 		margin-top: 4rem;
 		margin-right: 2rem;
 		padding: 4rem 2rem;
@@ -1086,38 +1086,38 @@ a.CallToActionButton{
 		}
 
 		#Account-Personal-Information{
-		display: grid;
-		margin-top: 4rem;
-		padding: 4rem 2rem;
-		grid-column: 3/9;
-	}
+			display: grid;
+			margin-top: 4rem;
+			padding: 4rem 2rem;
+			grid-column: 3/9;
+		}
 
-	#Account-Furry-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column: 3/9;
-	}
+		#Account-Furry-Information{
+			display: grid;
+			margin-top: 3rem;
+			padding: 4rem 2rem;
+			grid-column: 3/9;
+		}
 
-	#Account-Billing-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column: 3/9;
+		#Account-Billing-Information{
+			display: grid;
+			margin-top: 3rem;
+			padding: 4rem 2rem;
+			grid-column: 3/9;
 
-	}
-	#Account-Shipping-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column: 3/9;
-	}
-	#Account-Payment-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column:3/9;
-	}
+		}
+		#Account-Shipping-Information{
+			display: grid;
+			margin-top: 3rem;
+			padding: 4rem 2rem;
+			grid-column: 3/9;
+		}
+		#Account-Payment-Information{
+			display: grid;
+			margin-top: 3rem;
+			padding: 4rem 2rem;
+			grid-column:3/9;
+		}
 	}
 
 
@@ -1139,4 +1139,62 @@ a.CallToActionButton{
 		header .ToggleMenuIcon {
 			display: none;
 		}
+	}
+
+	@media (max-width: 25em) {
+		h1{
+			font-size: 1.125rem;
+			font-weight:bold;
+		}
+		h2{
+			font-size: 1.125rem;
+		}
+		h3{
+			font-size: 1rem;
+		}
+		p{
+			font-size: 1rem;
+		}
+		/*		ProductDetailPage START*/
+		.ProductImage figure img{
+			width: 100%;
+			height: 100%;
+		}
+		.AddToCart{
+			display: block;
+		}
+		.ChangeQuantity{
+			display: block;
+		}
+		.ProductPrice{
+			display: block;
+		}
+		h3.ProductSectionTitle{
+			padding:0;
+		}
+		.Previous, .Next{
+			padding:0;
+		}
+		.gLeftArrow {
+			padding:0;
+		}
+		.gRightArrow{
+			padding:0;
+		}
+		.RevewDetailed h4{
+			font-size: .8rem;
+		}
+		#recom-list{
+			grid-gap: 0;
+		}
+		#recom-list figure a img{
+			width: 4.5rem;
+		}
+		.ProductDetailedViewGridContainer {
+			grid-template-rows: 4rem .3fr .3fr .2fr .8fr;
+		}
+		.RecommandationList{
+			margin-left: 2rem;
+		}
+
 	}
