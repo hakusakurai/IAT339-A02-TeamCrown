@@ -129,3 +129,34 @@ function showRSlides(n) {
   Rslides[recommandationIndex-1].style.display = "block";
 }
 // --RecommandationList Section END--
+
+// --The function of Changing Quantity Section START--
+// var count = 1;
+// var countEl = document.getElementsByClassName("QuantityField");
+// function plus(){
+// 	count++;
+// 	countEl.value= count;
+// }
+// function minus(){
+// 	if(count>1){
+// 		count--;
+// 		countEl.value=count;
+// 	}
+// }
+
+
+    var count = 1;
+    var countEl = document.getElementById("count");
+    function plus(){
+        count++;
+        countEl.value = count;
+    }
+    function minus(){
+      if (count > 1) {
+        count--;
+        countEl.value = count;
+      }  
+    }
+
+// Leanred from:http://jsfiddle.net/polaszk/1oyfxoor/ 
+// --The function of Changing Quantity Section END--

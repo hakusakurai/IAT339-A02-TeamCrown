@@ -448,17 +448,15 @@ body{
 .ProductPrice{
 	display: grid;
 	grid-template-columns:repeat(6,1fr);
-	grid-template-rows:1fr 1fr;
 	padding-top: -1rem;
 }
 
 .ChangeQuantity{
-	grid-column: 2/6;
-	padding-left: 2rem;
+	grid-column: 1/4;
 }
 
 .AddToCart{
-	grid-column:1/6; 
+	grid-column:4/7; 
 
 }
 

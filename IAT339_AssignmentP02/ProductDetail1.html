@@ -78,6 +78,7 @@
 						<div class="ProductRating">
 							<p>
 								<img src="img/Rating.png" width="142" height="23" alt="Rating">    (201)</p>
+								<h3 class="ProductPriceH3">$12.99</h3>
 							</div>
 						</div>
 						<div class="ProductDetail">
@@ -86,14 +87,13 @@
 							<h4>Suitable Life Stage: <a href="ProductList.html" class="IntextLink">Adult</a></h4>
 						</div>
 						<div class="ProductPrice">
-							<h3>$12.99</h3>
 							<div class="ChangeQuantity">
-								<button type="button" class="ProductQuantity" >-</button>
-								<form>
-									<input type="number" name="quantity">
-								</form>
-								<button type="button" class="ProductQuantity">+</button>
+								
+								<input type="button" value="-" class="ButtonMinus" onclick="minus()">
+								<input type="number" size="25" value="1" id="count">
+								<input type="button" value="+" class="ButtonPlus" onclick="plus()">
 							</div>
+
 							<div class="AddToCart">
 								<a href="ShoppingCart.html" class="CallToActionButton">ADD TO CART</a>
 							</div>
@@ -105,233 +105,233 @@
 
 
 
-							<!-- Product description section START -->.
+				<!-- Product description section START -->.
 
-							<div class="InformationTabs">
-								<ul>
-									<li>
-										<a class="IntextLink" href="#section1">Introduction</a>
-									</li>
-									<li>
-										<a class="IntextLink" href="#section2">Ingredients</a>
-									</li>
-									<li>
-										<a class="IntextLink" href="#section3">Guaranteed Analysis</a>
-									</li>
-									<li>
-										<a class="IntextLink" href="#section4">Benefits</a>
-									</li>
-								</ul>
-								<section id="section1">
-									<p>A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.</p>
-								</section>
-								<section id="section2">
-									<p>Pacific Wild Salmon (BC), Rockfish (BC), Cod, Sweet Potatoes, Turkey Liver, Organic Kale, Organic Carrots, Egg Shell Powder, Bone Broth, Omega-3 Fish Oil, Organic Safflower Oil, Cod Liver Oil, Kafka's Vitamin & Mineral Blend, Organic Kelp Pacific Wild Salmon (BC), Rockfish (BC), Cod, Sweet Potatoes, Turkey Liver, Organic Kale, Organic Carrots, Egg Shell Powder, Bone Broth, Omega-3 Fish Oil, Organic Safflower Oil, Cod Liver Oil, Kafka's Vitamin & Mineral Blend, Organic Kelp.</p>
-								</section>
-								<section id="section3">
-									<ul class="ProductInformation">
-										<li>Protein Min 38.0 %</li>
-										<li>Fat Min 16.0 %</li>
-										<li>Fiber Max 5.0 %</li>
-										<li>Magnesium Max 0.14 %</li>
-										<li>Taurine Min 0.15 %</li>
-										<li>Omega 3 Fatty Acids* Min 0.5 %</li>
-										<li>Omega 6 Fatty Acids* Min 2.5 %</li>
-										<li>Caloric Content: 3,667 Kcal/kg, 410 kcal/cup</li>
-									</ul>
-								</section>
-								<section id="section4">
-									<ul  class="ProductInformation">
-										<li>Free of preservatives, additives or fillers</li>
-										<li>Simple, natural, whole ingredients</li>
-										<li>Balanced & complete according to AAFCO guidelines</li>
-										<li>Heart-healthy. Omega-3 Fish oil & Organic Safflower/Flaxseed Oil </li>
-										<li>Gently cooked at low temperature</li>
-										<li>Small batch handmade</li>
-										<li>Drool-worthy taste! </li>
-									</ul>
-								</section>
-							</div>
+				<div class="InformationTabs">
+					<ul>
+						<li>
+							<a class="IntextLink" href="#section1">Introduction</a>
+						</li>
+						<li>
+							<a class="IntextLink" href="#section2">Ingredients</a>
+						</li>
+						<li>
+							<a class="IntextLink" href="#section3">Guaranteed Analysis</a>
+						</li>
+						<li>
+							<a class="IntextLink" href="#section4">Benefits</a>
+						</li>
+					</ul>
+					<section id="section1">
+						<p>A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.A high protein meal they won’t turn their head at. It’s packed with Certified Humane® turkey and chicken raised without antibiotics and functional ingredients like locally sourced non-GMO cranberries, and superfoods like coconut oil, tumeric and dandelion greens.</p>
+					</section>
+					<section id="section2">
+						<p>Pacific Wild Salmon (BC), Rockfish (BC), Cod, Sweet Potatoes, Turkey Liver, Organic Kale, Organic Carrots, Egg Shell Powder, Bone Broth, Omega-3 Fish Oil, Organic Safflower Oil, Cod Liver Oil, Kafka's Vitamin & Mineral Blend, Organic Kelp Pacific Wild Salmon (BC), Rockfish (BC), Cod, Sweet Potatoes, Turkey Liver, Organic Kale, Organic Carrots, Egg Shell Powder, Bone Broth, Omega-3 Fish Oil, Organic Safflower Oil, Cod Liver Oil, Kafka's Vitamin & Mineral Blend, Organic Kelp.</p>
+					</section>
+					<section id="section3">
+						<ul class="ProductInformation">
+							<li>Protein Min 38.0 %</li>
+							<li>Fat Min 16.0 %</li>
+							<li>Fiber Max 5.0 %</li>
+							<li>Magnesium Max 0.14 %</li>
+							<li>Taurine Min 0.15 %</li>
+							<li>Omega 3 Fatty Acids* Min 0.5 %</li>
+							<li>Omega 6 Fatty Acids* Min 2.5 %</li>
+							<li>Caloric Content: 3,667 Kcal/kg, 410 kcal/cup</li>
+						</ul>
+					</section>
+					<section id="section4">
+						<ul  class="ProductInformation">
+							<li>Free of preservatives, additives or fillers</li>
+							<li>Simple, natural, whole ingredients</li>
+							<li>Balanced & complete according to AAFCO guidelines</li>
+							<li>Heart-healthy. Omega-3 Fish oil & Organic Safflower/Flaxseed Oil </li>
+							<li>Gently cooked at low temperature</li>
+							<li>Small batch handmade</li>
+							<li>Drool-worthy taste! </li>
+						</ul>
+					</section>
+				</div>
 
-							<!-- !!!Tabs learned from:https://css-tricks.com/tabs-its-complicated/ -->
-
-
-							<!-- Product description section END -->
+				<!-- !!!Tabs learned from:https://css-tricks.com/tabs-its-complicated/ -->
 
 
+				<!-- Product description section END -->
 
 
 
 
 
-							<!-- Product review section START -->
-							<div class="ProdcutReviews">
 
 
-								<h3 class="ProductSectionTitle">Reviews</h3>
+				<!-- Product review section START -->
+				<div class="ProdcutReviews">
 
 
-								<div class="ReviewSlide">
+					<h3 class="ProductSectionTitle">Reviews</h3>
 
-									<div class="ReviewDetailed FadeAnimation">
-										<h3>catisbest  </h3> <h4>6 months ago</h4>
-										<div class="RatingHelpful">
-											<div class="RatingStars">
-												<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
-											</div>
-											<h4>Helpful (3)</h4>  <h4>Not Helpful (1)</h4>
-										</div>
-										<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
-									</div>
 
-									<div class="ReviewDetailed FadeAnimation">
-										<h3>catismylove  </h3> <h4>8 months ago</h4>
-										<div class="RatingHelpful">
-											<div class="RatingStars">
-												<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
-											</div>
-											<h4>Helpful (5)</h4>  <h4>Not Helpful (2)</h4>
-										</div>
-										<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
-									</div>
+					<div class="ReviewSlide">
 
-									<div class="ReviewDetailed FadeAnimation">
-										<h3>catismylife  </h3> <h4>11 months ago</h4>
-										<div class="RatingHelpful">
-											<div class="RatingStars">
-												<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span>
-											</div>
-											<h4>Helpful (10)</h4>  <h4>Not Helpful (3)</h4>
-										</div>
-										<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
-									</div>
-
-									<div class="HelpfulButtons">
-										<h3> Helpful?</h3>
-										<button class="SubmitButton">YES</button>
-										<button class="SubmitButton">NO</button>
-									</div>
-
-									<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-									<a class="Next" onclick="plusSlides(1)">&#10095;</a>
+						<div class="ReviewDetailed FadeAnimation">
+							<h3>catisbest  </h3> <h4>6 months ago</h4>
+							<div class="RatingHelpful">
+								<div class="RatingStars">
+									<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
 								</div>
+								<h4>Helpful (3)</h4>  <h4>Not Helpful (1)</h4>
 							</div>
-							<!-- Product review section END -->
-
-
-							<!-- Recommnadation List Section START -->
-							<div class="RecommandationList">
-								<h3 class="ProductSectionTitle">Other Popular Products of Kafka’s Organic:</h3>
-
-								<div class="gSwitchItem">
-
-									<div class="gRProductListRow" id="recom-list">
-										<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10094;</a></div>
-										<div class="gRProductListItem1">
-											<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-											<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRProductListItem2">
-											<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
-											<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRProductListItem3">
-											<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
-											<h4>Lamb Affair - Fresh Cat Food</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRProductListItem4">
-											<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-											<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10095;</a></div>
-									</div>	
-									
-								</div>
-
-								<div class="gSwitchItem">
-
-									<div class="gRProductListRow" id="recom-list">
-										<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10094;</a></div>
-										<div class="gRProductListItem1">
-											<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-											<h4>Homestead Turkey & Chicken Wet Cat Food 1</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRProductListItem2">
-											<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
-											<h4>Ocean Fish Feast - Fresh Cat Food 1</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRProductListItem3">
-											<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
-											<h4>Lamb Affair - Fresh Cat Food 1</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRProductListItem4">
-											<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-											<h4>Ocean Fish Feast - Fresh Cat Food 1</h4><br>
-											<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-											<h4>$12.99</h4>
-										</div>
-										<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10095;</a></div>
-									</div>	
-									
-								</div>
-
-
-							</div>
-							<!-- Recommnadation List Section END -->
-
-
+							<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
 						</div>
 
-
-
-
-					</main>
-					<footer>
-						<div class="Footer-Grid-Container">
-							<ul class="Footer-Email">
-								<h4>EMAIL</h4>
-								<li>Crown_organicCatFoof@gmail.com</li>
-							</ul>
-							<ul class="Footer-Fax-Number">
-								<h4>FAX NUMBER</h4>
-								<li>(123) 456 7890 / (098) 765 4321</li>
-							</ul>
-							<ul class="Footer-Office-Address">
-								<h4>OFFICE ADDRESS</h4>
-								<li>8888 University Dr, Burnaby, BC V5A 1S6</li>
-							</ul>
-							<ul class="Footer-Quick-Link">
-								<li><a href="http://www.sfu.ca/~nza21/IAT339-Project1.5.2-ShimengZhou-301161810/PatternLibrary.html">Style Guide</a></li>
-							</ul>
-
-							<div class="Footer-Social-Media">
-								<a class="Footer-Facebook" href="https://www.facebook.com/"><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
-								<a class="Footer-Instgram" href="https://www.instagram.com/"><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
-								<a class="Footer-Youtube" href="https://www.youtube.com/"><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
-								<a class="Footer-Linkedin" href="https://www.linkedin.com/feed/"><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
+						<div class="ReviewDetailed FadeAnimation">
+							<h3>catismylove  </h3> <h4>8 months ago</h4>
+							<div class="RatingHelpful">
+								<div class="RatingStars">
+									<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span>
+								</div>
+								<h4>Helpful (5)</h4>  <h4>Not Helpful (2)</h4>
 							</div>
-
-							<ul class="Footer-Source-Code">
-								<li><a href="https://github.com/hakusakurai/IAT339-A02-TeamCrown">Visit gitHub repository</a></li>
-							</ul>
-
-							<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+							<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
 						</div>
-					</footer>
-					<script src="js/main.js"></script>
-				</body>
-				</html>
+
+						<div class="ReviewDetailed FadeAnimation">
+							<h3>catismylife  </h3> <h4>11 months ago</h4>
+							<div class="RatingHelpful">
+								<div class="RatingStars">
+									<span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span>
+								</div>
+								<h4>Helpful (10)</h4>  <h4>Not Helpful (3)</h4>
+							</div>
+							<p>Received this product three days ago, my cats really love this product. I have never had my cats love a cat food so much! I love that you can see the meat it is made of and it smells good :)</p>
+						</div>
+
+						<div class="HelpfulButtons">
+							<h3> Helpful?</h3>
+							<button class="SubmitButton">YES</button>
+							<button class="SubmitButton">NO</button>
+						</div>
+
+						<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="Next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
+				<!-- Product review section END -->
+
+
+				<!-- Recommnadation List Section START -->
+				<div class="RecommandationList">
+					<h3 class="ProductSectionTitle">Other Popular Products of Kafka’s Organic:</h3>
+
+					<div class="gSwitchItem">
+
+						<div class="gRProductListRow" id="recom-list">
+							<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10094;</a></div>
+							<div class="gRProductListItem1">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem2">
+								<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem3">
+								<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+								<h4>Lamb Affair - Fresh Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem4">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10095;</a></div>
+						</div>	
+
+					</div>
+
+					<div class="gSwitchItem">
+
+						<div class="gRProductListRow" id="recom-list">
+							<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10094;</a></div>
+							<div class="gRProductListItem1">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Homestead Turkey & Chicken Wet Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem2">
+								<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem3">
+								<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+								<h4>Lamb Affair - Fresh Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRProductListItem4">
+								<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+								<h4>Ocean Fish Feast - Fresh Cat Food 1</h4><br>
+								<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
+								<h4>$12.99</h4>
+							</div>
+							<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10095;</a></div>
+						</div>	
+
+					</div>
+
+
+				</div>
+				<!-- Recommnadation List Section END -->
+
+
+			</div>
+
+
+
+
+		</main>
+		<footer>
+			<div class="Footer-Grid-Container">
+				<ul class="Footer-Email">
+					<h4>EMAIL</h4>
+					<li>Crown_organicCatFoof@gmail.com</li>
+				</ul>
+				<ul class="Footer-Fax-Number">
+					<h4>FAX NUMBER</h4>
+					<li>(123) 456 7890 / (098) 765 4321</li>
+				</ul>
+				<ul class="Footer-Office-Address">
+					<h4>OFFICE ADDRESS</h4>
+					<li>8888 University Dr, Burnaby, BC V5A 1S6</li>
+				</ul>
+				<ul class="Footer-Quick-Link">
+					<li><a href="http://www.sfu.ca/~nza21/IAT339-Project1.5.2-ShimengZhou-301161810/PatternLibrary.html">Style Guide</a></li>
+				</ul>
+
+				<div class="Footer-Social-Media">
+					<a class="Footer-Facebook" href="https://www.facebook.com/"><img src="img/Facebook.png" alt="FacebookIcon" width="30" height="30"></a>
+					<a class="Footer-Instgram" href="https://www.instagram.com/"><img src="img/Instgram.png" alt="InstgramIcon" width="30" height="30"></a>
+					<a class="Footer-Youtube" href="https://www.youtube.com/"><img src="img/Youtube.png" alt="YoutubeIcon" width="30" height="30"></a>
+					<a class="Footer-Linkedin" href="https://www.linkedin.com/feed/"><img src="img/Linkedin.png" alt="LinkedinIcon" width="30" height="30"></a>
+				</div>
+
+				<ul class="Footer-Source-Code">
+					<li><a href="https://github.com/hakusakurai/IAT339-A02-TeamCrown">Visit gitHub repository</a></li>
+				</ul>
+
+				<a class="Footer-Logo" href="Index.html"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
