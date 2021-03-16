@@ -1296,6 +1296,42 @@ footer a{
 
   }
   /*checkout Page START*/
+  .Back img{
+  	position: absolute;
+  	height: auto;
+  }
+
+  .Back a.IntextLink{
+  	position: relative;
+  	top:.5rem;
+  	left:3rem;
+  	font-size:1.5rem;
+  }
+
+  .CheckOutNext img{
+  	position: absolute;
+  	height: auto;
+  	right:.5rem;
+  }
+
+  .CheckOutNext a.IntextLink{
+  	position: relative;
+  	top:.5rem;
+  	right:3.5rem;
+  	font-size:1.5rem;
+  }
+
+  @media screen and (max-width:37em){
+  .Back a.IntextLink{
+  	display: none;
+  }
+    .CheckOutNext a.IntextLink{
+    	display: none;
+  }
+
+  }
+
+
   .CheckOut1-Billing-Information ul{
   	list-style-type: none;
   	padding-left: 0;
