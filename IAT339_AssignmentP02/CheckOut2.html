@@ -18,27 +18,27 @@
 			<li>
 				<div><a href="ProductList.html" class="DropdownButton">SHOP BY BRAND</a></div>
 				<ul>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
-					<li><a href="#"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
+					<li><a href="ProductList.html"  class="NavigationBarC2">SHOP BY ONLY NATURAL PET</a></li>
+					<li><a href="ProductList.html"  class="NavigationBarC2">SHOP BY KAFKA'S ORGANIC</a></li>
+					<li><a href="ProductList.html"  class="NavigationBarC2">SHOP BY PROSERIES</a></li>
 				</ul>
 			</li>
 			<li>
 				<div><a href="ProductList.html" class="DropdownButton">SHOP BY CATEGORY</a></div>
 				<ul>
 					<li>
-						<div><a href="#" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
+						<div><a href="ProductList.html" class="NavigationBarC2">SHOP BY FLAVOR</a></div>
 						<ul>
-							<li><a href="#" class="NavigationBarC3">Chicken</a></li>
-							<li><a href="#" class="NavigationBarC3">Fish</a></li>
-							<li><a href="#" class="NavigationBarC3">Beef</a></li>
-							<li><a href="#" class="NavigationBarC3">Lamb</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Chicken</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Fish</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Beef</a></li>
+							<li><a href="ProductList.html" class="NavigationBarC3">Lamb</a></li>
 						</ul>
 					</li>						
-					<li><a href="" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY SERIES</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
-					<li><a href="" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY FOODTYPE</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY SERIES</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY LIFE STAGE</a></li>
+					<li><a href="ProductList.html" class="NavigationBarC2">SHOP BY HEALTH CONSIDERATION</a></li>
 				</ul>
 			</li>
 			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
@@ -49,46 +49,64 @@
 			
 			
 		</header>
-
 		<main class="Wrapper">
 			<h2 class="CheckOut-Title">CHECK OUT</h2>
+			<div class="ProgressBar">
+				<img class="ProgressCount" src="img/StepDone.png" alt="StepDone">
+				<img class="ProgressLine" src="img/LineDone.png" alt="LineDone">
+				<img class="ProgressCount" src="img/StepDone.png" alt="StepDone">
+				<img class="ProgressLine"  src="img/LineDone.png" alt="LineDone">
+				<img class="ProgressCount OnProgress" src="img/Step3OnProgress.png" alt="Step3OnProgress">
+				<img class="ProgressLine" src="img/LineWait.png" alt="LineWait">
+				<img class="ProgressCount" src="img/Step4Wait.png" alt="Step4Wait">
+				<img class="ProgressLine" src="img/LineWait.png" alt="LineWait">
+				<img class="ProgressCount" src="img/Step5Wait.png" alt="Step5Wait">
+
+				<h4 class="ProgressSignIn Finish">SignIn</h4>
+				<h4 class="ProgressAddress Finish">Address</h4>
+				<h4 class="ProgressPayment On">Payment</h4>
+				<h4 class="ProgressConfirm">Confirm</h4>
+				<h4 class="ProgressDone">Done</h4>
+			</div>
 			
 
 			<div class="CheckOut-Grid-Container">
-				<img class="ProgressBar" src="img/CheckOut1.png" alt="CheckOut1" width="1325" height="114">
 				<div class="CheckOut2-Code-Information">
 					<h3>ADD DISCOUNT CODE*</h3>
 					<label for="code"> </label>
 		            			<input type="text" id="code" name="code" placeholder=" "><br>
 		            			<div class="CheckOut-Button">
-			    			<button class="AddButton">AddButton</button>
+			    			<button class="SubmitButton">AddButton</button>
 			    		</div>
 			    </div>
 			    <div class="CheckOut-Side-Bar">
-						<ul>
+						<ul class="checkoutList">
 							<li>ORDER VALUE</li>
-							<li>$130.12</li>
 							<li>SAVE VALUE</li>
-							<li>$32.00</li>
 							<li>GST/HST</li>
-							<li>$3.32</li>
 							<li>PST</li>
-							<li>$6.10</li>
 							<li>TOTAL</li>
+						</ul>
+						<ul class="checkoutNum">
+							<li>$130.12</li>
+							<li>$32.00</li>
+							<li>$3.32</li>
+							<li>$6.10</li>
 							<li>$98.12</li>
 						</ul>
 		        	
 				</div>
+
 			    <div class="Checkout2PaymentMethod">
 			    </div>
 			    <div class="Checkout2PaymentInformation">
 		            		<h3>PAYMENT IMFORMATION</h3>	
 
-						<label for="card">Select Card</label>
+						<label for="card"><h4>Select Card</h4></label>
 		            	<input type="text" id="card" name="card" placeholder="VISA ending with 3344"><br>
 		            	<input type="text" id="card" name="card" placeholder="VISA ending with 5566"><br>
 
-		            	<label for="card">Security Code</label>
+		            	<label for="card"><h4>Security Code</h4></label>
 		            	<input type="text" id="card" name="card" placeholder="XXX"><br>
 		            	<ul>
 		            		<h4>Cardholder Address</h4>
@@ -97,18 +115,14 @@
 		        	
 				</div>
 
-				
-
-				<div class="Back">
-					<a href="CheckOut1.html">Back</a>
+			</div>
+			<div class="Back">
+					<a class="IntextLink" href="CheckOut1.html">Back</a>
 				</div>
 				<div class="CheckOutNext">
-					<a href="CheckOut3.html">Next Step</a>
+					<a class="IntextLink" href="CheckOut3.html">Next Step</a>
 				</div>
 
-
-
-			</div>
 
 			
 		</main>

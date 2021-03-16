@@ -1278,15 +1278,13 @@ footer a{
   }
 
   .CheckOut-Side-Bar ul{
-  	margin-left: 2rem;
-  	margin-top: 6rem;
+  	margin: 6rem 0 4rem 2rem;
   	list-style-type: none;
   	padding-left: 0;
   }
 
   .CheckOut-Side-Bar {
   	background:#F2F2F2; 
-  	display: block;
   }
 
   .Checkout2PaymentInformation ul{
@@ -1306,7 +1304,7 @@ footer a{
 
   .CheckOut4-Title {
   	position: absolute;
-  	top: 40%;
+  	top: 25%;
   	right: 3rem;
   	font-size: 4vw;
   }
