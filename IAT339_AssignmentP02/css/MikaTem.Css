@@ -271,11 +271,10 @@ input[type=text]{
 .C1G2{
 	padding-top: 15%;
 	padding-left: 4rem;
-	padding-right:4rem;
+	padding-right: 4rem;
 	grid-column-start: 8;
 	grid-column-end: 13;
 	background-color: #E7F3FD;
-	text-align: center;
 }
 .C2G1{
 	display: block;
@@ -285,7 +284,6 @@ input[type=text]{
 	padding-left: 4rem;
 	padding-right:4rem;
 	background-color: #E7F3FD;
-	text-align: center;
 }
 .Subscribe{
 	background-color: #1573b8;
