@@ -164,10 +164,13 @@ body{
 }
 
 .Account-Side-Bar{
+	position: fixed;
 	margin-top: 4rem;
 	margin-right: 2rem;
 	padding-left: 2rem;
 	grid-column: 1/4;
+	max-width: 30%;
+	padding-right: 7rem;
 }
 
 #Account-Personal-Information{
@@ -216,6 +219,7 @@ body{
 	}
 
 	.Account-Side-Bar{
+		position: none;
 		display: none;
 	}
 
