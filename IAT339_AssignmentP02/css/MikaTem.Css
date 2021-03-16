@@ -7,7 +7,6 @@
 .gAboutUsImage{
 	grid-column-start: 1;
 	grid-column-end: 9;
-	border: solid;
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	background-image: url(../img/BlueCat.png);
@@ -48,14 +47,14 @@ h2.BlueCatTitle{
 .gUs{
 	display: grid;
 	grid-template-columns:repeat(12,1fr);
-	min-height: 60vh;
+	min-height: 70vh;
 	padding-bottom: 4rem;
 }
 .S1G1{
 	display: block;
-	background-color: #BBBBBB;
 	grid-column-start: 1;
 	grid-column-end: 8;
+
 }
 .S1G2{
 	padding-top: 15%;
@@ -75,8 +74,13 @@ h2.BlueCatTitle{
 .S2G2{
 	grid-column-start: 6;
 	grid-column-end: 13;
-	background-color: #BBBBBB;
 }
+
+.gUs img{
+	width: 100%;
+    min-height: 50vh;
+}
+
 /*---------------------------------*/
 
 /*----------------SignUp-----------------*/
@@ -303,10 +307,12 @@ input[type=text]{
 	grid-column-start: 1;
 	grid-column-end: 3;
 	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-bottom: 3rem;
+	padding-right: 0rem;
+	padding-bottom: 1rem;
 	color: #333333;
-	margin-top: 80%;
+	margin-top: 90%;
+	margin-left: 3rem;
+	margin-right: 0rem;
 }
 .gUs{
 	grid-template-rows: repeat(2,1fr);
