@@ -124,8 +124,11 @@ input[type=text]{
   resize: vertical;
 }
 
-.CheckboxFont{
-	font-size: 12pt;
+.Agreeform{
+	font-size:12pt;
+	word-wrap:break-word;
+	display: inline-block;
+	vertical-align:middle;
 }
 
 #signupbutton{
@@ -133,17 +136,26 @@ input[type=text]{
 }
 
 #signin1{
-	padding-left: 4rem;
+	padding-left: 3rem;
 }
 
 #signin2{
-	padding-left: 2rem;
+	padding-left: 1rem;
 }
 
 .TemHolder{
 	background-color: #BBBBBB;
 }
 
+.SignUpImage img{
+	display: inline-block; 
+	vertical-align: middle;
+	width: auto;
+	margin-top:30%;
+	margin-left: 5%;
+	max-width: 90%;
+
+}
 /*---------------------------------*/
 
 
@@ -162,11 +174,14 @@ input[type=text]{
 .SortFont{
 	font-family: "Montserrant";
 	padding-left: 6px;
-	font-size: 12pt;
+	font-size: 10pt;
 	font-weight: 400;
 	letter-spacing: 0.03em;
 	color: #19191D;
 	text-decoration: none;
+	word-wrap:break-word;
+	display: inline-block;
+	vertical-align:middle;
 }
 .gSortFilter{
 	grid-column-start: 1;
@@ -323,7 +338,7 @@ input[type=text]{
 }
 
 .gUs img{
-	min-width: 60%;
+	min-width: 100%;
     height:100%;
 }
 
@@ -355,11 +370,12 @@ input[type=text]{
 
 /*----------------SignUp-----------------*/
 .gSignUp{
-	grid-template-rows:repeat(2,1fr);
+	grid-template-rows:0fr,1fr;
 }
 
 .SignUpImage{
 	grid-column-end: 3;
+	padding-bottom:10%;
 }
 
 .gSignUpForm{
@@ -371,7 +387,7 @@ input[type=text]{
 }
 
 #signin1{
-	padding-left: 2rem;
+	padding-left: 1rem;
 }
 
 #signin2{
