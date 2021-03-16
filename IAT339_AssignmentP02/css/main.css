@@ -1232,6 +1232,31 @@ footer a{
   padding: 16px;
 }
 
+#Account-Personal-Information ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Furry-Information ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Billing-Information ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Shipping-Information ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
+#Account-Payment-Information ul{
+	list-style-type: none;
+    padding-left: 0;
+}
+
 
 
   /* Account page END*/
