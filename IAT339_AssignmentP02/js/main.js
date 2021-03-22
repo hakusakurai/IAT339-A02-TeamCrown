@@ -146,6 +146,8 @@ function minus(){
 }
 // Leanred from:https://codepen.io/nevcanuludas/pen/WbNbow
 // --The function of Changing Quantity Section END--
+
+
 function openNav() {
   document.getElementById("AccountToggleSideBar").style.width = "250px";
   document.getElementsByClassName("Wrapper").style.marginLeft = "250px";
@@ -155,3 +157,30 @@ function closeNav() {
   document.getElementById("AccountToggleSideBar").style.width = "0";
   document.getElementsByClassName("Wrapper").style.marginLeft= "0";
 }
+
+
+// --The function of Product Image Slides Section START--
+var productImageIndex = 1;
+showImageSlides(productImageIndex);
+
+
+function currentImageSlide(n) {
+  showImageSlides(productImageIndex = n);
+}
+
+function showImageSlides(n) {
+  var i;
+  var imageSlides = document.getElementsByClassName("ProductImageSlides");
+  var dots = document.getElementsByClassName("dot");
+   
+
+  for (i = 0; i < imageSlides.length; i++) {
+      imageSlides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  imageSlides[productImageIndex-1].style.display = "block";  
+  dots[productImageIndex-1].className += " active";
+}
+// --The function of Product Image Slides Section END--

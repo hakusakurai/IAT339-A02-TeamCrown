@@ -1139,6 +1139,10 @@ a.CallToActionButton{
 		header .ToggleMenuIcon {
 			display: none;
 		}
+		header .SmallFormat{
+			display: none;
+		}
+
 	}
 
 	@media (max-width: 30em) {
@@ -1170,7 +1174,7 @@ a.CallToActionButton{
 			display: block;
 		}
 		h3.ProductSectionTitle{
-			padding:0;
+			padding:0 1rem;
 		}
 		.Previous, .Next{
 			padding:0;
@@ -1191,10 +1195,41 @@ a.CallToActionButton{
 			width: 4.5rem;
 		}
 		.ProductDetailedViewGridContainer {
-			grid-template-rows: 4rem .3fr .3fr .1fr .8fr;
+			grid-template-rows: 4rem .2fr .25rem .1fr .15fr .8fr;
 		}
-		.RecommandationList{
-			margin-left: 2rem;
+		.ProductDetailedViewGridContainer .RecommandationList{
+			margin:0;
 		}
+		.ProdcutReviews{
+			margin:2rem 1rem;
+		}
+		.ReviewDetailed h3,h4{
+			display: inline-block;
+			margin:.25rem 0;
+		}
+		.Wrapper{
+			width:clamp(16rem, 100vw, 75rem);
+			margin:0 auto;
+		}
+		.InformationTabs{
+			grid-column: 1/9;
+			padding: 0 1rem 0 0;
+			margin-bottom: 1rem;
+		}
+		#section1, #section2, #section3, #section4{
+			padding-left: 1rem;
+			margin-left: 1rem;
+		}
+		#section3 ul.ProductInformation{
+			padding-left: 1rem;
+		}
+		#section4 ul.ProductInformation{
+			padding-left: 1rem;
+		}
+		.ReviewSlide{
+			grid-template-rows: 1fr .5fr;
+		}
+
+
 
 	}

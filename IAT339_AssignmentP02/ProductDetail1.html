@@ -46,8 +46,8 @@
 				</ul>
 			</li>
 			<li><a href="AboutUs.html" class="DropdownButton">ABOUT US</a></li>
-			<li><a href="ShoppingCart.html"><img src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"></a></li>
-			<li><a href="SignUpAndSignIn.html"><img src="img/Account.png" alt="accounticon" width="20" height="20"></a></li>
+			<li><a href="ShoppingCart.html"><img class="LargeFormat" src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"><p class="SmallFormat">SHOPPING CART</p></a></li>
+			<li><a href="Account.html"><img class="LargeFormat" src="img/Account.png" alt="accounticon" width="20" height="20"><p class="SmallFormat">ACCOUNT</p></a></li>
 		</ul>
 
 
@@ -66,9 +66,29 @@
 			<div class="ProductDetailed">
 
 				<div class="ProductImage">
-					<figure>
-						<img src="img/ProductImg1.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
-					</figure>
+					<div class="ProductImageSlides">
+						<figure>
+							<img src="img/ProductImg1.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
+						</figure>
+						<div class="ProductImageCaption">Image 1</div>
+					</div>
+					<div class="ProductImageSlides">
+						<figure>
+							<img src="img/ProductImg2.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
+						</figure>
+						<div class="ProductImageCaption">Image 2</div>
+					</div>
+					<div class="ProductImageSlides">
+						<figure>
+							<img src="img/ProductImg3.png" alt="Homestead Turkey & Chicken Wet Cat Food" width="400" height="320">
+						</figure>
+						<div class="ProductImageCaption">Image 3</div>
+					</div>
+					<div class="ProductImageDots">
+						<span class="dot" onclick="currentImageSlide(1)"></span> 
+						<span class="dot" onclick="currentImageSlide(2)"></span> 
+						<span class="dot" onclick="currentImageSlide(3)"></span> 
+					</div>
 				</div>
 
 				<div class="ProductDetailedList">
