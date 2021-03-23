@@ -381,12 +381,9 @@ body{
 	position: relative;
 }
 
-.CheckOut-Side-Bar .checkoutList{
-}
-
 .CheckOut-Side-Bar .checkoutNum{
 	position: absolute;
-	top:0;
+	top:8rem;
 	left:8rem;
 }
 
@@ -453,7 +450,7 @@ body{
 }
 
 
-@media screen and (max-width:60rem){
+@media screen and (max-width:63rem){
 	.CheckOut-Side-Bar .checkoutList{
 		display: inline-block;
 	}
@@ -463,6 +460,7 @@ body{
 		display: inline-block;
 		top:0;
 		left:8rem;
+		padding-top: 9.75rem;
 	}
 
 	.CheckOut-Grid-Container .CheckOut-Side-Bar{

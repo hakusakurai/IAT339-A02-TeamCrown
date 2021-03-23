@@ -8,7 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro|Montserrat|Josefin Sans" type="text/css">
-
 	</head>
 	<body>
 		<header>
@@ -50,82 +49,76 @@
 			
 			
 		</header>
-
 		<main class="Wrapper">
 			<h2 class="CheckOut-Title">CHECK OUT</h2>
 			<div class="ProgressBar">
-				<img class="ProgressCount" src="img/StepDone.png" alt="StepDone">				
-
+				<img class="ProgressCount" src="img/StepDone.png" alt="StepDone">
 				<img class="ProgressLine" src="img/LineDone.png" alt="LineDone">
-
 				<img class="ProgressCount OnProgress" src="img/Step2OnProgress.png" alt="Step2OnProgress">
-				
 				<img class="ProgressLine"  src="img/LineWait.png" alt="LineWait">
-
-				<img class="ProgressCount" src="img/Step3Wait.png" alt="Step3Wait">				
-
+				<img class="ProgressCount" src="img/Step3Wait.png" alt="Step3Wait">
 				<img class="ProgressLine" src="img/LineWait.png" alt="LineWait">
-
-				<img class="ProgressCount" src="img/Step4Wait.png" alt="Step4Wait">				
-
+				<img class="ProgressCount" src="img/Step4Wait.png" alt="Step4Wait">
 				<img class="ProgressLine" src="img/LineWait.png" alt="LineWait">
-
 				<img class="ProgressCount" src="img/Step5Wait.png" alt="Step5Wait">
 
 				<h4 class="ProgressSignIn Finish">SignIn</h4>
-				<h4 class="ProgressAddress On">Address</h4>
-				<h4 class="ProgressPayment">Payment</h4>
+				<h4 class="ProgressAddress On">Payment</h4>
+				<h4 class="ProgressPayment">Address</h4>
 				<h4 class="ProgressConfirm">Confirm</h4>
 				<h4 class="ProgressDone">Done</h4>
 			</div>
+			
 
 			<div class="CheckOut-Grid-Container">
-				
-
-				<div class="CheckOut1-Billing-Information">
-					<h3>BILLING INFORMATION</h3>
-						<ul>
-							<h4>Name of receiver</h4>
-			    				<li>Wade Warren</li>
-						</ul>
-						<ul>
-							<h4>Phone number</h4>
-			    				<li>( 905 ) 929 3221</li>
-						</ul>
-						<ul>
-							<h4>Shipping Address</h4>
-			    				<li>1107- 4912  Smith Avenue L9H 1E6 Hamilton Ontario</li>
-						</ul>	
-						<ul>
-							<h4>Delivery type</h4>
-			    				<li>Standard Ddelivery( Order by 9AM ET to receive your order by Tuesday April 4</li>
-						</ul>
-						<div class="CheckOut-Button">
-			    			<button class="SubmitButton">Edit</button>
+				<div class="CheckOut2-Code-Information">
+					<h3>ADD DISCOUNT CODE*</h3>
+					<label for="code"> </label>
+		            			<input type="text" id="code" name="code" placeholder=" "><br>
+		            			<div class="CheckOut-Button">
+			    			<button class="SubmitButton">AddButton</button>
 			    		</div>
-		        	
-				</div>
-
-				<div class="CheckOut-Side-Bar">
+			    </div>
+			    <div class="CheckOut-Side-Bar">
+						<h3>YOUR ORDER</h3>
 						<ul class="checkoutList">
 							<li>ORDER VALUE</li>
 							<li>SAVE VALUE</li>
 							<li>GST/HST</li>
 							<li>PST</li>
-							<li>TOTAL</li>
+							<li><strong>TOTAL</strong></li>
 						</ul>
 						<ul class="checkoutNum">
 							<li>$130.12</li>
 							<li>$32.00</li>
 							<li>$3.32</li>
 							<li>$6.10</li>
-							<li>$98.12</li>
+							<li><strong>$98.12</strong></li>
 						</ul>
 		        	
 				</div>
 
+			    <div class="Checkout2PaymentMethod">
+			    </div>
+			    <div class="Checkout2PaymentInformation">
+		            		<h3>PAYMENT IMFORMATION</h3>	
+
+						<label for="card"><h4>Select Card</h4></label>
+		            	<input type="text" id="card" name="card" placeholder="VISA ending with 3344"><br>
+		            	<input type="text" id="card" name="card" placeholder="VISA ending with 5566"><br>
+
+		            	<label for="card"><h4>Security Code</h4></label>
+		            	<input type="text" id="card" name="card" placeholder="XXX"><br>
+		            	<ul>
+		            		<h4>Cardholder Address</h4>
+		            		<li>1107- 4912  Smith Avenue L9H 1E6 Hamilton Ontario</li>
+		            	</ul>
+		        	
+				</div>
+
 			</div>
-			<div class="Back">
+
+				<div class="Back">
 				<a href="SignUpAndSignIn.html"><img src="img/left.png" alt="leftArrow"></a>
 					<a class="IntextLink" href="SignUpAndSignIn.html">Back to Sign Up Page</a>
 				</div>
@@ -133,9 +126,10 @@
 					<a class="IntextLink" href="CheckOut2.html">Next Step</a>
 					<a href="CheckOut2.html"><img src="img/right.png" alt="rightArrow"></a>
 				</div>
+
+
 			
 		</main>
-
 
 
 		
@@ -186,3 +180,4 @@
 			</footer>
 	</body>
 </html>
+

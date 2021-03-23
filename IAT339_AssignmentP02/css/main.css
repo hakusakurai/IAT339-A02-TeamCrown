@@ -1414,14 +1414,20 @@ footer a{
   }
 
   .CheckOut-Side-Bar ul{
-  	margin: 6rem 0 4rem 2rem;
+  	margin: 3rem 0 4rem 0;
   	list-style-type: none;
   	padding-left: 0;
   }
 
   .CheckOut-Side-Bar {
   	background:#F2F2F2; 
+  	padding: 4rem 2rem;
   }
+
+  .CheckOut-Side-Bar .checkoutNum{
+  	padding-left: 2rem;
+  }
+
 
   .Checkout2PaymentInformation ul{
   	list-style-type: none;
