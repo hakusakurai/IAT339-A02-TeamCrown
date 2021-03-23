@@ -76,7 +76,7 @@
   panels[0].hidden = false;
 })();
 
-// -- Information Description Tabs Section END --
+
 
 
 function ReadMoreFunction(){
@@ -97,7 +97,9 @@ function ReadMoreFunction(){
     readMoreText.style.display="inline";
   }
 }
+// Read More function learned from https://www.w3schools.com/howto/howto_js_read_more.asp.
 
+// -- Information Description Tabs Section END --
 
 
 // -- Review Slides Section START --
@@ -172,12 +174,12 @@ function minus(){
 
 function openNav() {
   document.getElementById("AccountToggleSideBar").style.width = "250px";
-  document.getElementsByClassName("Wrapper").style.marginLeft = "250px";
+  // document.getElementsByClassName("Wrapper").style.marginLeft = "250px";
 }
 
 function closeNav() {
   document.getElementById("AccountToggleSideBar").style.width = "0";
-  document.getElementsByClassName("Wrapper").style.marginLeft= "0";
+  // document.getElementsByClassName("Wrapper").style.marginLeft= "0";
 }
 
 

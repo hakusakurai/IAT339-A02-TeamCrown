@@ -70,6 +70,8 @@
 				</div>
 			</div>
 
+			<div class="ShoppingCartSmall"></div>
+
 			<div class="ShoppingCartPatternGrid">
 				<!-- <div class="ShoppingCartProductGrid"> -->
 					<div class="ShoppingCartProductImage">
@@ -82,9 +84,10 @@
 					<!-- </div> -->
 					<div class="ShoppingCartQuantityButton">
 						<div class="ChangeQuantity">
-							<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus()">
-							<input type="number"  value="1" id="count">
-							<input type="button" value="+" class="ButtonPlus" onclick="plus()">
+							<div class="MinusButton">
+							<input type="button" value="-" class="ShoppingCartButtonMinus" onclick="minus()"></div>
+							<div class="InputArea"><input type="number"  value="1" id="count"></div>
+							<div class="PlusButton"><input type="button" value="+" class="ButtonPlus" onclick="plus()"></div>
 						</div>
 
 					</div>
