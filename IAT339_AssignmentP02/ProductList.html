@@ -54,7 +54,7 @@
 				<div class="gSortFilter">
 					<div class="Sorter">
 					<ul style="list-style-type:none;" class="Sort">
-						<li><h4 class="SortHead">Sort</h4></li>
+						<li><h4 class="SortTitle">Sort</h4></li>
 						<li><input type="checkbox" id="sort1"><label for="sort1" class="SortFont"> Recently Added</label></li>
 						<li><input type="checkbox" id="sort2"><label for="sort2" class="SortFont"> Most Rated</label></li>
 						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: Low→High</label></li>
@@ -64,23 +64,23 @@
 				    </ul>
 					</div>
 
-					<div class="Filter">
+					<div class="FilterContainer">
 					<button class="SubmitButton" id="filterbutton1">FILTER</button>
-					<h4 class="SortHead">All Categories</h4>
+					<h4 id="SortTitle">All Categories</h4>
 					<ul style="list-style-type: none;" class="Filter">					
-						<li><h4 class="SortHead">Food Type<h4></li>
-						<li><h4 class="SortHead">Flavor</h4>
+						<li><h4 class="SortHead ShowElement">Food Type<h4></li>
+						<li><h4 class="SortHead ShowElement">Flavor</h4>
 							<ul style="list-style-type: none;">
-								<li>Chicken</li>
-								<li>Fish</li>
-								<li>Beef</li>
-								<li>Lamb</li>
+								<li class="SortElement ShowElement">Chicken</li>
+								<li class="SortElement ShowElement">Fish</li>
+								<li class="SortElement ShowElement">Beef</li>
+								<li class="SortElement ShowElement">Lamb</li>
 								<li><button class="SubmitButton" id="filterbutton2">View more</button></li>
 							</ul>
 						</li>
-						<li><h4 class="SortHead">Series</h4></li>
-						<li><h4 class="SortHead">Health Consideration</h4></li>
-						<li><h4 class="SortHead">Life Stage</h4></li>
+						<li><h4 class="SortHead ShowElement">Series</h4></li>
+						<li><h4 class="SortHead ShowElement">Health Consideration</h4></li>
+						<li><h4 class="SortHead ShowElement">Life Stage</h4></li>
 						<button class="SubmitButton" id="filterbutton3">Collapsed filters</button>
 					</ul>
 					</div>
@@ -250,5 +250,6 @@
 			</div>
 
 			</footer>
+			<script src="js/filterHidding.js"></script>
 	</body>
 </html>

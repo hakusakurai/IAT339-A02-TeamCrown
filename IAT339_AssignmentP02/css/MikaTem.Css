@@ -193,10 +193,10 @@
 	display: inline-block;
 	vertical-align:middle;
 }
+
 .gSortFilter{
 	grid-column-start: 1;
 	grid-column-end: 2;
-	display: grid;
 	padding-right: 5%;
 	margin-top: 10%;
 }
@@ -272,9 +272,24 @@
 	padding-top: 1.5rem;
 	display: inline-block;
 }
-.SortHead{
+
+#SortTitle{
 	font-weight: 300;
 }
+
+.SortHead{
+	font-weight: 300;
+	display: none;
+}
+
+.SortElement{
+	display: none;
+}
+
+.ShowElement{
+	display: block;
+}
+
 #filterbutton1{
 	width: 95%;
 	height: 36px;
@@ -642,6 +657,7 @@
 /* --- Homepage Cards End --- */
 
 /*----------------ProductList-----------------*/
+
 	.gProductListContainer{
 		margin-top: 0.5rem;
 		margin-right: 1rem;
@@ -681,8 +697,6 @@
 	#searchbutton{
 		padding:.8rem .8rem;
 	}
-
-
 
 	.gSortFilter{
 		display: none;
