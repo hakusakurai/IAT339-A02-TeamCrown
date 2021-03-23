@@ -539,6 +539,10 @@ h3.ProductPriceH3{
 	margin:auto;
 }
 
+.ProductImage{
+	padding-top: 1.5rem;
+}
+
 .ProductImage figure{
 	margin-left: 0;
 }
@@ -548,15 +552,6 @@ h3.ProductPriceH3{
 }
 
 
-.ProductImageCaption{
-	color: #333333;
-	font-size: 1rem;
-	padding: .5rem 1rem;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-}
 
 .ProductImageDots{
 	text-align: center;
