@@ -208,5 +208,3 @@ function showImageSlides(n) {
   dots[productImageIndex-1].className += " active";
 }
 // --The function of Product Image Slides Section END--
-
-
