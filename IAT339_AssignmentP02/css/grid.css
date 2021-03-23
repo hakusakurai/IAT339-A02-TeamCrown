@@ -889,6 +889,10 @@ a.CallToActionButton{
 
 @media screen and (max-width:70em){
 
+	.Wrapper{
+		overflow: hidden;
+	}
+
 	.ProductDetailedViewGridContainer{
 		display: grid;
 		grid-template-columns:repeat(8,1fr);

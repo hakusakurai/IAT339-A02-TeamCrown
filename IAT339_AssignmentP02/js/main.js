@@ -78,6 +78,28 @@
 
 // -- Information Description Tabs Section END --
 
+
+function ReadMoreFunction(){
+
+  console.log("clicked");
+
+  var readMoreDot = document.getElementById("ReadMoreDots");
+  var readMoreText = document.getElementById("ReadMore");
+  var readMoreLink = document.getElementById("ReadMoreLink");
+
+  if(readMoreDot.style.display === "none"){
+    readMoreDot.style.display ="inline";
+    readMoreLink.innerHTML = "Read More";
+    readMoreText.style.display = "none";
+  } else {
+    readMoreDot.style.display="none";
+    readMoreLink.innerHTML ="Read Less";
+    readMoreText.style.display="inline";
+  }
+}
+
+
+
 // -- Review Slides Section START --
 var reviewIndex = 1;
 showSlides(reviewIndex);
@@ -184,3 +206,5 @@ function showImageSlides(n) {
   dots[productImageIndex-1].className += " active";
 }
 // --The function of Product Image Slides Section END--
+
+

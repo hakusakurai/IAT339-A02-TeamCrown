@@ -86,6 +86,14 @@ button{
 
 }
 
+button.ReadMoreButton{
+	font-family: Josefin Sans;
+}
+
+button.ReadMoreButton:hover{
+	color: #15B890;
+}
+
 button.SubmitButton{
 	background-color: #FFFFFF;
 	font-weight: Semi Bold; 
@@ -688,6 +696,11 @@ h3.ProductPriceH3{
 .InformationTabs section{
 	padding-left: 5rem;
 }
+
+#ReadMore{
+	display: none;
+}
+#more {display: none;}
 
 [role="tablist"] {
 	padding: 0;
