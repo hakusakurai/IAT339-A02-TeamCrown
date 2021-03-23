@@ -1252,6 +1252,16 @@ footer a{
   	text-decoration: none;
 
   }
+  .Account-Side-Bar a:active{
+	background-color:#1573B8;
+	}
+	.Account-Side-Bar a:hover {
+	background-color:#1573B8;
+	}
+	.Account-Side-Bar a:focus {
+	background-color:#1573B8;
+	}
+
 
   .AccountSideBar {
   	height: 100%;
