@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		
-		<header>
+	<header>
 		<a href="Index.html" class="TopLogo"><img src="img/Logo.png" alt="Logo" width="130" height="42"></a>
 		<input class="TopNavigationButton" type="checkbox" id="TopNavigationButton" />
 		<label class="ToggleMenuIcon" for="TopNavigationButton"><span class="ToggleIcon"></span></label>
@@ -47,7 +47,7 @@
 			<li><a href="ShoppingCart.html"><img class="LargeFormat" src="img/ShoppingCart.png" alt="shoppingcarticon" width="20" height="20"><p class="SmallFormat">SHOPPING CART</p></a></li>
 			<li><a href="Account.html"><img class="LargeFormat" src="img/Account.png" alt="accounticon" width="20" height="20"><p class="SmallFormat">ACCOUNT</p></a></li>
 		</ul>
-		</header>
+	</header>
 
 		<section id="homepage-card-section">
 			<div class="gHomepageCard1">
@@ -55,10 +55,43 @@
 				<div class="gCard1Content">
 					<h2 id="card1title">Organic cat food serves your cat’s daily need</h2>
 					<p id="card1text">Discover more healthy organic handmade cat foods</p>
-					<button class="SubmitButton" id="card1button">SHOP</button>
+					<a href="ProductList.html"><button class="SubmitButton" id="card1button">SHOP</button></a>
 				</div>
 			</div>
 		</section>
+
+		<div class="RecommandationList" id="homepagerecommandation">
+			<h3>3000+ felinophiles give 5-star</h3>
+			<h4>Our products are trusted by thousands of families</h4>
+
+			<div class="gSwitchItem">
+							<div class="gRProductListRow" id="recom-list-h">
+								<div class="gLeftArrow"><a class="RPrevious" onclick="plusRSlides(-1)">&#10096;</a></div>
+								<div class="gRProductListItem1">
+									<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
+									<h4>Homestead Turkey & Chicken Wet Cat Food</h4>
+									<h4>Function: Hairball Control</h4>
+								</div>
+								<div class="gRProductListItem2">
+									<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
+									<h4>Ocean Fish Feast - Indoor</h4>
+									<h4>Function: Indoor Diet</h4>
+								</div>
+								<div class="gRProductListItem3">
+									<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
+									<h4>Lamb Affair - Outdoor</h4>
+									<h4>Function: Odor Control</h4>
+								</div>
+								<div class="gRProductListItem4">
+									<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item4.png" alt="Pumpkin No Spice (with Beef) "></a></figure>
+									<h4>Pumpkin No Spice (with Beef) - Adult</h4>
+									<h4>Function: Indoor Diet</h4>
+								</div>
+								<div class="gRightArrow"><a class="RNext" onclick="plusRSlides(1)">&#10097;</a></div>
+							</div>	
+			</div>
+
+		</div>
 
 		<main class="Wrapper">
 			<div class="gAboutUsGridContainer">
@@ -70,71 +103,29 @@
 						<button href="#" class="SubmitButton">SHOP</button>
 					</div>
 				</div>-->
-
- 				<div class="RecommandationList" id="homepagerecommandation">
-					<h3>3000+ felinophiles give 5-star</h3>
-					<h4>Our products are trusted by thousands of families</h4>
-					<div class="gSwitchItem">
-						<div class="gLeftArrow"><a class="LeftArrow">&#10094;</a></div>
-							<div class="gProductListRow" id="recom-list">
-									<div class="gProductListItem1">
-										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-										<h4>Homestead Turkey & Chicken Wet Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-									<div class="gProductListItem2">
-										<figure><a href="ProductDetail2.html"><img class="ItemImage" src="img/Item2.png" alt="Ocean Fish Feast - Fresh Cat Food"></a></figure>
-										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-									<div class="gProductListItem3">
-										<figure><a href="ProductDetail3.html"><img class="ItemImage" src="img/Item3.png" alt="Lamb Affair - Fresh Cat Food"></a></figure>
-										<h4>Lamb Affair - Fresh Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-									<div class="gProductListItem4">
-										<figure><a href="ProductDetail1.html"><img class="ItemImage" src="img/Item1.png" alt="Homestead Turkey & Chicken Wet Cat Food"></a></figure>
-										<h4>Ocean Fish Feast - Fresh Cat Food</h4><br>
-										<p class="ItemRating"><img src="img/Rating.png" width="30%" height="7%" alt="Rating">    (201)</p>
-										<h4>$12.99</h4>
-									</div>
-							</div>	
-
-						<div class="gRightArrow"><a class="RightArrow">&#10095;</a></div>
-
-					</div>
-				</div>
-
 				<div class="gUs" id="homepage-card2">
 					<div class="C1G1"></div>
 					<div class="C1G2">
 						<h3>High Quality Meat</h3>
 						<p>Our gredient covers grass-fed, pasture-raised animal protein. It’s more humane and better for the animal it’s more sustainable and better for the environment; and it’s higher in nutrients and better for your cat!</p>
-						<br>
 						<a href="ProductList.html" class="CallToActionButton">DISCOVER MORE HIGH QUALITY MEAT</a>
 					</div>
 				</div>
-				<br><br>
 
 				<div class="gUs" id="homepage-card3">
 					<div class="C2G1">	
 						<h3>Fresh Cat Food Delivery Service</h3>
 						<p>Our delivery service ships out high-quality, ultra-nourishing meals, helping you to give your cat his best life while making yours a little bit easier. All of the options arrived frozen or freeze-dried. </p>
-						<br>
-						<a href="#" class="CallToActionButton">START TO SHOP</a>
+						<a href="ProductList.html" class="CallToActionButton">START TO SHOP</a>
 					</div>
 					<div class="C2G2">
 					</div>
 				</div>
-				<br><br>
 
 				<div class="Subscribe">
 					<h3>Want to get the latest product information?</h3>
 					<form id="subscribe"><input type="text" name="keyword" placeholder=""></form>
-					<a href="#" class="CallToActionButton">SUBSCRIBE</a>
+					<a href="SignUpAndSignIn.html" class="CallToActionButton">SUBSCRIBE</a>
 				</div>
 
 			</div>
