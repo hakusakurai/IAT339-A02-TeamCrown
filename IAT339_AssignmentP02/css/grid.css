@@ -1164,6 +1164,10 @@ a.CallToActionButton{
 			width: 100%;
 			height: 100%;
 		}
+
+		.ProductImage figure{
+			margin:1rem;
+		}
 		.AddToCart{
 			display: block;
 		}
@@ -1192,7 +1196,7 @@ a.CallToActionButton{
 			grid-gap: 0;
 		}
 		#recom-list figure a img{
-			width: 4.5rem;
+			width: 100%;
 		}
 		.ProductDetailedViewGridContainer {
 			grid-template-rows: 4rem .2fr .25rem .1fr .15fr .8fr;

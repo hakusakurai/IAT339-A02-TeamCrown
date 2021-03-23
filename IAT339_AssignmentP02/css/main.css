@@ -863,13 +863,39 @@ ul.ProductInformation{
 	padding-bottom: 2rem;
 }
 
+.RecommandationList p{
+	margin-top: .5rem;
+}
+
 .ItemImage{
 	width: 100%;
 	height: auto;
 	left: 0px;
 }
+
+
+
+.gSwitchItem figure{
+	height: 8rem;
+	width: auto;
+	margin: 1rem;
+}
+
+img.ItemImage {
+	width: 100%;
+	height: 100%;
+}
+
+.gSwitchItem h4{
+	display: block;
+	margin:.5rem 0;
+}
 .ItemRating{
 	display: inline;
+}
+
+#recom-list figure a img{
+	width: 100%;
 }
 
 
