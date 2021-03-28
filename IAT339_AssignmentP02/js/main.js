@@ -168,7 +168,7 @@ function minus(){
 		countEl.value = count;
 	}  
 }
-// Leanred from:https://codepen.io/nevcanuludas/pen/WbNbow
+// Learned from:https://codepen.io/nevcanuludas/pen/WbNbow
 // --The function of Changing Quantity Section END--
 
 

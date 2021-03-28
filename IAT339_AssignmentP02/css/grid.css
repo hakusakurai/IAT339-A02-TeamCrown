@@ -951,14 +951,14 @@ a.CallToActionButton{
 	.ProductDetailedViewGridContainer{
 		display: grid;
 		grid-template-columns:repeat(8,1fr);
-		grid-template-rows:4rem .3fr .3fr .3fr 1.5fr;
+		grid-template-rows:4rem .1fr .3fr .3fr .3fr;
 		min-height:100vh;
 	}
 
 
 	.ProductDetailed{
 		display: grid;
-		grid-template-rows: .5fr 1fr;
+		grid-template-rows: .5fr .5fr;
 		grid-gap: .3rem;
 		padding-left: 4rem; 
 		padding-right: 4rem;
@@ -969,6 +969,7 @@ a.CallToActionButton{
 	}
 	.ProductImage{
 		grid-column: 1/3;
+		padding-bottom: 2rem;
 	}
 
 
@@ -1204,7 +1205,17 @@ a.CallToActionButton{
 
 	}
 
-	@media (max-width: 30em) {
+	@media(max-width: 57em){
+		.AddToCart{
+			grid-column-start: 1;
+		}
+		h3.ProductSectionTitle{
+			padding-left: 2rem;
+		}
+	}
+
+
+	@media(max-width: 36em){
 		h1{
 			font-size: 1.125rem;
 			font-weight:bold;
@@ -1218,6 +1229,19 @@ a.CallToActionButton{
 		p{
 			font-size: 1rem;
 		}
+		.AddToCart{
+			grid-column-start: 1;
+		}
+		h3.ProductSectionTitle{
+			padding-left: 2rem;
+		}
+	}
+
+
+
+
+	@media (max-width: 30em) {
+
 		/*		ProductDetailPage START*/
 		.ProductImage figure img{
 			width: 100%;
