@@ -50,9 +50,11 @@
 		min-height: 35vw;
 	}
 	.gUs img{
-		max-width: 100%;
+		/*max-width: 100%;
 		min-width: 60%;
 	    min-height: 35vw;
+	    height:auto;*/
+	    min-height: 100%;
 	}
 	.S1G1{
 		display: block;
@@ -648,7 +650,7 @@
 
 	.gUs img{
 		min-width: 100%;
-	    height:100%;
+	    height:auto;
 	}
 
 	.S1G1{
