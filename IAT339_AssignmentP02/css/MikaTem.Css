@@ -54,7 +54,9 @@
 		min-width: 60%;
 	    min-height: 35vw;
 	    height:auto;*/
-	    min-height: 100%;
+	    display: inline-block;
+	    height: 100%;
+	    width: 100%;
 	}
 	.S1G1{
 		display: block;
@@ -678,7 +680,6 @@
 
 
 
-
 @media screen and (max-width:60em){
 /*----------------About Us-----------------*/
 	.gAboutUsImage{
@@ -978,4 +979,27 @@
 .card{
 	min-height: 20vw;
 }
+}
+
+@media screen and (max-width:25em){
+	.gBlueCatText {
+	    grid-column-start: 1;
+	    grid-column-end: 3;
+	    padding-left: 0rem;
+	    padding-right: 0rem;
+	    padding-bottom: 0rem;
+	    color: #333333;
+	    margin-top: 130%;
+	    margin-left: 1rem;
+	    margin-right: 0rem;
+	}
+
+	.S1G2{
+		padding-left: 2rem;
+	}
+
+	.S2G1{
+		padding-left: 2rem;
+	}
+
 }
