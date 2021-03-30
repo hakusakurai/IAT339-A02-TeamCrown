@@ -57,6 +57,7 @@
 	    display: inline-block;
 	    height: 100%;
 	    width: 100%;
+	    object-fit: cover;
 	}
 	.S1G1{
 		display: block;
