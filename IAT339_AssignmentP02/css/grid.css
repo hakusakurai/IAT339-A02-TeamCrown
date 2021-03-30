@@ -15,7 +15,7 @@ footer{
 	width: 100%;
 	display: grid;
 	grid-template-columns: 9.625rem 1fr 1fr 1fr 2rem;
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 }
 
 
@@ -56,7 +56,7 @@ footer a{
 }
 footer .FooterTitle{
 	display: block;
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 	font-size: 1rem;
 	padding-bottom: 1.5rem;
 }
@@ -717,7 +717,7 @@ a.CallToActionButton{
 }
 
 
-.RPrevious,{
+.RPrevious{
 	grid-column: 1;
 }
 
@@ -944,11 +944,11 @@ a.CallToActionButton{
 	}
 
 	.MinusButton{
-		grid-column-start: 1/2;
+		grid-column-start: 1;
 	}
 
 	.InputArea{
-		grid-column-start: 2/3;
+		grid-column-start: 2;
 	}
 
 	#count{
@@ -964,7 +964,7 @@ a.CallToActionButton{
 	}
 
 	.PlusButton{
-		grid-column-start:  3/4;
+		grid-column-start:  3;
 	}
 
 	.ShoppingCartProductPrice{
@@ -1420,11 +1420,11 @@ a.CallToActionButton{
 		}
 
 		.MinusButton{
-			grid-column-start: 1/2;
+			grid-column-start: 1;
 		}
 
 		.InputArea{
-			grid-column-start: 2/3;
+			grid-column-start: 2;
 		}
 
 		#count{
@@ -1440,7 +1440,7 @@ a.CallToActionButton{
 		}
 
 		.PlusButton{
-			grid-column-start:  3/4;
+			grid-column-start:  3;
 		}
 
 		.ShoppingCartProductPrice{
