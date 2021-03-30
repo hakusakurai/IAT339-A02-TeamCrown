@@ -213,11 +213,52 @@ body{
 	margin-bottom: 2rem;
 }
 
-@media screen and (max-width:60rem){
+.wrap-1{
+		display: none;
+		position: 
+	}
+	.wrap-2{
+		display: none;
+	}
+	.wrap-3{
+		display: none;
+	}
+	.wrap-4{
+		display: none;
+	}
+	.wrap-5{
+		display: none;
+	}
+	.wrap-6{
+		display: none;
+	}
 
-	.ToggleSideBar{
+@media screen and (max-width:60rem){
+	.Account-Grid-Container{
+		display: grid;
+		grid-template-columns: repeat(8,1fr);
+		min-height: 5vh;
+	}
+
+	.wrap-1{
 		display: block;
 	}
+	.wrap-2{
+		display: block;
+	}
+	.wrap-3{
+		display: block;
+	}
+	.wrap-4{
+		display: block;
+	}
+	.wrap-5{
+		display: block;
+	}
+	.wrap-6{
+		display: block;
+	}
+
 
 	.Account-Side-Bar{
 		position: none;
@@ -226,37 +267,22 @@ body{
 
 
 	#Account-Personal-Information{
-		display: grid;
-		margin-top: 4rem;
-		padding: 4rem 2rem;
-		grid-column: 2/9;
+		display: none;
 	}
 
 	#Account-Furry-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column: 2/9;
+		display: none;
 	}
 
 	#Account-Billing-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column: 2/9;
+		display: none;
 
 	}
 	#Account-Shipping-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column: 2/9;
+		display: none;
 	}
 	#Account-Payment-Information{
-		display: grid;
-		margin-top: 3rem;
-		padding: 4rem 2rem;
-		grid-column:2/9;
+		display: none;
 	}
 }
 
@@ -384,13 +410,25 @@ body{
 
 .CheckOut-Side-Bar .checkoutNum{
 	position: absolute;
-	top:8rem;
+	top: 19rem;
+	left:8rem;
+}
+.CheckOut3-Side-Bar .checkoutNum{
+	position: absolute;
+	top: 9.75rem;
 	left:8rem;
 }
 
 
 
 .CheckOut-Grid-Container .CheckOut-Side-Bar{
+	position: absolute;
+	display: inline-block;
+	right:0rem;
+	margin: 4rem 0;
+	width: 30%;
+}
+.CheckOut-Grid-Container .CheckOut3-Side-Bar{
 	position: absolute;
 	display: inline-block;
 	right:0rem;
@@ -408,16 +446,6 @@ body{
 	width: 67%;
 }
 
-.CheckOut2-Code-Information{
-	background: #F2F2F2;
-	display: inline-block;
-	position: relative;
-	left:0rem;
-	margin-top: 4rem;
-	margin-right: 2rem;
-	padding: 4rem 2rem;
-	width: 67%;
-}
 
 .Checkout2PaymentInformation{
 	background: #F2F2F2;
@@ -450,6 +478,16 @@ body{
 	right: 0;
 }
 
+   @media screen and (max-width:1285px){
+   		.CheckOut-Side-Bar .checkoutNum {
+		    top: 20.75rem;
+		}
+		.CheckOut3-Side-Bar .checkoutNum {
+		    top: 9.75rem;
+		}
+   }
+
+   
 
 @media screen and (max-width:63rem){
 	.CheckOut-Side-Bar .checkoutList{
@@ -460,11 +498,31 @@ body{
 		position: absolute;
 		display: inline-block;
 		top:0;
-		left:8rem;
-		padding-top: 9.75rem;
+		left:50%;
+		padding-top: 19rem;
 	}
 
 	.CheckOut-Grid-Container .CheckOut-Side-Bar{
+		position: relative;
+		display: block;
+		right:0rem;
+		margin: 4rem 0;
+		width: 100%;
+	}
+
+	.CheckOut3-Side-Bar .checkoutList{
+		display: inline-block;
+	}
+
+	.CheckOut3-Side-Bar .checkoutNum{
+		position: absolute;
+		display: inline-block;
+		top:0;
+		left: 40%;
+    	padding-top: 9.75rem;
+	}
+
+	.CheckOut-Grid-Container .CheckOut3-Side-Bar{
 		position: relative;
 		display: block;
 		right:0rem;
@@ -503,6 +561,23 @@ body{
 	}
 
 }
+
+@media screen and (max-width:575px){
+   		.CheckOut-Side-Bar .checkoutNum {
+		    padding-top: 16.75rem;
+		}
+		.CheckOut3-Side-Bar .checkoutNum {
+		    padding-top: 7.25rem;
+		}
+	}
+
+@media screen and (max-width:369px){
+   		.CheckOut-Side-Bar .checkoutNum {
+		    padding-top: 18.25rem;
+		}
+	}
+
+
 
 
 /* Check out page grid end */
@@ -1139,47 +1214,6 @@ a.CallToActionButton{
 			padding: 0;
 		}
 	}
-
-	@media screen and (max-width:28em){
-		.GridContainer{
-			grid-template-rows: 8rem 10rem 1fr;
-		}
-
-		#Account-Personal-Information{
-			display: grid;
-			margin-top: 4rem;
-			padding: 4rem 2rem;
-			grid-column: 3/9;
-		}
-
-		#Account-Furry-Information{
-			display: grid;
-			margin-top: 3rem;
-			padding: 4rem 2rem;
-			grid-column: 3/9;
-		}
-
-		#Account-Billing-Information{
-			display: grid;
-			margin-top: 3rem;
-			padding: 4rem 2rem;
-			grid-column: 3/9;
-
-		}
-		#Account-Shipping-Information{
-			display: grid;
-			margin-top: 3rem;
-			padding: 4rem 2rem;
-			grid-column: 3/9;
-		}
-		#Account-Payment-Information{
-			display: grid;
-			margin-top: 3rem;
-			padding: 4rem 2rem;
-			grid-column:3/9;
-		}
-	}
-
 
 
 	/*--PageNavigationBarToggleMenuSize--*/

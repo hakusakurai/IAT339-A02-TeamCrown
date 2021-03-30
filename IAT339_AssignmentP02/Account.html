@@ -51,27 +51,13 @@
 			
 		</header>
 
-		<div id="AccountToggleSideBar" class="AccountSideBar ToggleSideBar">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-					<a href="#Account-Personal-Information">Personal Information</a>
-					<a href="#Account-Furry-Information">Furry Information</a>
-					<a href="#Account-Billing-Information">Billing Address</a>
-					<a href="#Account-Shipping-Information">Shipping Address</a>
-					<a href="#Account-Payment-Information">Payment Information</a>
-					<a href="PurchaseHistory.html">Purchase History</a>
-					<a href="SignUpAndSignIn.html">Sign Off</a>
-
-		</div>
-
 		<main class="Wrapper">
 			<h2 class="Account-Title">ACCOUNT</h2>
-			<button class="openbtn ToggleSideBar" onclick="openNav()">☰</button> 
 			<div class="Account-Grid-Container">
 				<div class="Account-Side-Bar">
 					<ul>
 					<li><a href="#Account-Personal-Information">Personal Information</a></li>
 					<li><a href="#Account-Furry-Information">Furry Information</a></li>
-					<li><a href="#Account-Billing-Information">Billing Address</a></li>
 					<li><a href="#Account-Shipping-Information">Shipping Address</a></li>
 					<li><a href="#Account-Payment-Information">Payment Information</a></li>
 					<li><a href="PurchaseHistory.html">Purchase History</a></li>
@@ -114,34 +100,6 @@
 		            			<label for="Weight"><h4>Weight(lbs)</h4></label>
 		            			<input type="text" id="Weight" name="Weight" placeholder="12.5">
 
-		            <div class="Account-Button">
-		             <a href="AccountEdit.html"><button class="SubmitButton">Submit</button></a>
-		        	</div>
-				</div>
-
-				<div id="Account-Billing-Information">
-					<h3>BILLING INFORMATION</h3>
-					<label for="firstname"><h4>First Name</h4></label>
-		            			<input type="text" id="firstname" name="firstname" placeholder="Wade"><br>
-
-		            			<label for="lastname"><h4>Last Name</h4></label>
-		            			<input type="text" id="lastname" name="lastname" placeholder="Warren"><br>
-
-		            			<label for="postcode"><h4>Postal Code</h4></label>
-		            			<input type="text" id="postcode" name="postcode" placeholder="L9H 1E6">
-
-		            			<label for="unitsuite"><h4>Unit/ Suite</h4></label>
-		            			<input type="text" id="unitsuite" name="unitsuite" placeholder="1107">
-
-		            			<label for="City"><h4>City</h4></label>
-		            			<input type="text" id="City" name="City" placeholder="Hamilton">
-
-		            			<label for="Province"><h4>Province</h4></label>
-		            			<input type="text" id="Province" name="Province" placeholder="Ontario">
-
-		            			<label for="street"><h4>Street Address</h4></label>
-		            			<input type="text" id="street" name="street" placeholder="4912  Smith Avenue">
-		            			
 		            <div class="Account-Button">
 		             <a href="AccountEdit.html"><button class="SubmitButton">Submit</button></a>
 		        	</div>
@@ -197,7 +155,127 @@
 				</div>
 
 			</div>
+
+
+<div id="mobileacountelement">
+			<div class="wrap-1">
+    <input type="radio" id="tab-1" name="tabs">
+    <label for="tab-1"><div>PERSONAL INFORMATION</div><div class="cross"></div></label>
+    <div class="Account-Personal-Information">
+    	<label for="fullname"><h4>Username</h4></label>
+		            			<input type="text" id="fullname" name="fullname" placeholder="Wadew"><br>
+
+		            			<label for="email"><h4>Email Address</h4></label>
+		            			<input type="text" id="email" name="email" placeholder="wadew@gmail.com"><br>
+
+		            			<label for="password"><h4>Change Password</h4></label>
+		            			<input type="text" id="password" name="password" placeholder="wadew@gmail.com">
+		            <div class="Account-Button">
+		             <a href="AccountEdit.html"><button class="SubmitButton">Submit</button></a>
+		        	</div>
+    </div>
+  </div>
+
+  <div class="wrap-2">
+    <input type="radio" id="tab-2" name="tabs">
+    <label for="tab-2"><div>FURRY INFORMATION</div><div class="cross"></div></label>
+    <div class="Account-Personal-Information">
+    <label for="petid"><h4>Furry Name</h4></label>
+		            			<input type="text" id="petid" name="petid" placeholder="meowee"><br>
+
+		            			<label for="birthday"><h4>Birtyday (mm/dd/yyyy)</h4></label>
+		            			<input type="text" id="birthday" name="birthday" placeholder="q0/26/2012"><br>
+
+		            			<label for="gender"><h4>Gender</h4></label>
+		            			<input type="text" id="gender" name="gender" placeholder="Female">
+
+		            			<label for="Breed"><h4>Breed</h4></label>
+		            			<input type="text" id="Breed" name="Breed" placeholder="Domestic Shorthair">
+
+		            			<label for="Color"><h4>Color</h4></label>
+		            			<input type="text" id="Color" name="Color" placeholder="Black">
+
+		            			<label for="Weight"><h4>Weight(lbs)</h4></label>
+		            			<input type="text" id="Weight" name="Weight" placeholder="12.5">
+
+		            <div class="Account-Button">
+		             <a href="AccountEdit.html"><button class="SubmitButton">Submit</button></a>
+		        	</div>
+		        </div>
+  </div>
+
+  <div class="wrap-3">
+    <input type="radio" id="tab-3" name="tabs">
+    <label for="tab-3"><div>SHIPPING INFORMATION</div><div class="cross"></div></label>
+    <div class="Account-Personal-Information">
+   <label for="firstname"><h4>First Name</h4></label>
+		            			<input type="text" id="firstname" name="firstname" placeholder="Wade"><br>
+
+		            			<label for="lastname"><h4>Last Name</h4></label>
+		            			<input type="text" id="lastname" name="lastname" placeholder="Warren"><br>
+
+		            			<label for="postcode"><h4>Postal Code</h4></label>
+		            			<input type="text" id="postcode" name="postcode" placeholder="L9H 1E6">
+
+		            			<label for="unitsuite"><h4>Unit/ Suite</h4></label>
+		            			<input type="text" id="unitsuite" name="unitsuite" placeholder="1107">
+
+		            			<label for="City"><h4>City</h4></label>
+		            			<input type="text" id="City" name="City" placeholder="Hamilton">
+
+		            			<label for="Province"><h4>Province</h4></label>
+		            			<input type="text" id="Province" name="Province" placeholder="Ontario">
+
+		            			<label for="street"><h4>Street Address</h4></label>
+		            			<input type="text" id="street" name="street" placeholder="4912  Smith Avenue">
+		            			
+		            <div class="Account-Button">
+		             <a href="AccountEdit.html"><button class="SubmitButton">Submit</button></a>
+		        	</div>
+		        </div>
+  </div>
+
+
+  <div class="wrap-4">
+    <input type="radio" id="tab-4" name="tabs">
+    <label for="tab-4"><div>PAYMENT INFORMATION</div><div class="cross"></div></label>
+    <div class="Account-Personal-Information">
+    <label for="card1number"><h4>Card 1 Number</h4></label>
+		            			<input type="text" id="card1number" name="card1number" placeholder="4243 7931 0545 3344"><br>
+
+		            			<label for="expiry1date"><h4>Expiry Date</h4></label>
+		            			<input type="text" id="expiry1date" name="expiry1date" placeholder="04/23"><br>
+
+		            			<label for="card2number"><h4>Card 2 Number</h4></label>
+		            			<input type="text" id="card2number" name="card2number" placeholder="5291 5258 9457 5566">
+
+		            			<label for="expiry2date"><h4>Expiry Date</h4></label>
+		            			<input type="text" id="expiry2date" name="expiry2date" placeholder="01/25"><br>
+		            			
+		            <div class="Account-Button">
+		             <a href="AccountEdit.html"><button class="SubmitButton">Submit</button></a>
+		        	</div>
+		        </div>
+  </div>
+
+   <div class="wrap-5">
+    <input type="radio" id="tab-5" name="tabs">
+    <label for="tab-5"><a href="PurchaseHistory.html"><div>-> PURCHASE HISTORY</div></a></label>
+  </div>
+
+  <div class="wrap-6">
+    <input type="radio" id="tab-6" name="tabs">
+    <label for="tab-6"><a href="SignUpAndSignIn.html"><div>-> SIGN OUT</div></a></label>
+  </div>
+
+</div>
+
+
 		</main>
+	
+
+
+  
 
 
 

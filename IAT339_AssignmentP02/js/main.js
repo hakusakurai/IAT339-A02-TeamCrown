@@ -208,3 +208,9 @@ function showImageSlides(n) {
   dots[productImageIndex-1].className += " active";
 }
 // --The function of Product Image Slides Section END--
+
+
+//account page accordian start
+
+
+//account page accordian end

@@ -1201,22 +1201,157 @@ footer a{
 
 /* Account page START*/
 
+input {
+    display: none;
+}
+
+input[type=text]{
+	border: 0.15rem solid #F2F2F2;
+	display: block;
+	border-radius: .25rem;
+	font-family: Source Sans Pro;
+	font-size: 1rem;
+	height: 40px;
+	max-width: 40rem;
+    width: 80%;
+}
+
+.Account-Button{
+	padding-top: 1rem;
+}
+
+.wrap-5 label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #F2F2F2;
+    user-select: none;
+    background-color: #F2F2F2;
+}
+.wrap-5 label a{
+text-decoration: none;
+color: #333333;
+}
+.wrap-6 label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #F2F2F2;
+    user-select: none;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+}
+.wrap-6 label a{
+text-decoration: none;
+color: #333333;
+}
+.wrap-1 label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #F2F2F2;
+    user-select: none;
+    background-color: #F2F2F2;
+}
+.wrap-2 label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #F2F2F2;
+    user-select: none;
+    background-color: #F2F2F2;
+}
+.wrap-3 label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #F2F2F2;
+    user-select: none;
+    background-color: #F2F2F2;
+}
+.wrap-4 label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #F2F2F2;
+    user-select: none;
+    background-color: #F2F2F2;
+}
+
+label div:first-child {
+    width: 100%;
+    line-height: 45px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.cross{
+    margin-right:15px;
+    margin-top:3px;
+}
+
+.cross:before,.cross:after {
+    content: '';
+    border-top: 2px solid #3E474F;
+    width: 15px;
+    display: block;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+
+.cross:after {
+    transform: rotate(90deg);
+    margin-top: -2px;
+}
+
+
+.Account-Personal-Information {
+	display: block;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    margin: 0 0px 10px 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, .5s;
+    background-color: #F2F2F2;
+    padding-left: 1rem;
+}
+
+input:checked ~ .Account-Personal-Information {
+    max-height: 900px;
+    transition: max-height, 1s;
+}
+
+input:checked ~ label .cross:before {
+    transform: rotate(180deg);
+}
+
+input:checked ~ label .cross:after {
+    transform: rotate(0deg);
+}
+
+
+
+
+
 .Account-Side-Bar{
 	background:#F2F2F2;
 	display: block;
 }
 
-#Account-Personal-Information{
-	background:#F2F2F2;
-	display: block;
-}
 
 #Account-Furry-Information{
 	background:#F2F2F2;
 	display: block;
 }
 
-#Account-Billing-Information{
+#Account-Personal-Information{
 	background:#F2F2F2;
 	display: block;
 
@@ -1230,7 +1365,7 @@ footer a{
 	display: block;
 }
 
-.Account-Grid-Container input[type=text] {
+#Account-Grid-Container input[type=text] {
 	width: 100%;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -1250,7 +1385,7 @@ footer a{
   }
 
   .Account-Side-Bar li{
-  	padding-top: .5rem;
+  	padding-top: .3rem;
   }
 
   .Account-Side-Bar a{
@@ -1260,13 +1395,13 @@ footer a{
 
   }
   .Account-Side-Bar a:active{
-	background-color:#1573B8;
+	color:#15B890;
 	}
 	.Account-Side-Bar a:hover {
-	background-color:#1573B8;
+	color:#15B890;
 	}
 	.Account-Side-Bar a:focus {
-	background-color:#1573B8;
+	color:#15B890;
 	}
 
 
@@ -1329,6 +1464,11 @@ footer a{
   	padding-left: 0;
   }
 
+  .Account-Personal-Information ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
   #Account-Furry-Information ul {
   	list-style-type: none;
   	padding-left: 0;
@@ -1349,9 +1489,15 @@ footer a{
   	padding-left: 0;
   }
 
-
+  	@media screen and (max-width:28em){
+		label div:first-child {
+		    font-size: .7em;
+		}
+	}
 
   /* Account page END*/
+
+
   .Reference-Container{
   	position: relative;
   }
@@ -1409,6 +1555,13 @@ footer a{
   	font-size:1.5rem;
   }
 
+  .CheckOut-Side-Bar .DiscountEdge{
+  	padding-bottom: 1rem;
+  }
+  .CheckOut3-Side-Bar .DiscountEdge{
+  	padding-bottom: 1rem;
+  }
+
   @media screen and (max-width:37em){
   	.Back a.IntextLink{
   		display: none;
@@ -1431,7 +1584,7 @@ footer a{
   }
 
   .CheckOut-Side-Bar ul{
-  	margin: 3rem 0 4rem 0;
+  	margin: 0 0 4rem 0;
   	list-style-type: none;
   	padding-left: 0;
   }
@@ -1442,6 +1595,21 @@ footer a{
   }
 
   .CheckOut-Side-Bar .checkoutNum{
+  	padding-left: 2rem;
+  }
+
+   .CheckOut3-Side-Bar ul{
+  	margin: 0 0 4rem 0;
+  	list-style-type: none;
+  	padding-left: 0;
+  }
+
+  .CheckOut3-Side-Bar {
+  	background:#F2F2F2; 
+  	padding: 4rem 2rem;
+  }
+
+  .CheckOut3-Side-Bar .checkoutNum{
   	padding-left: 2rem;
   }
 
