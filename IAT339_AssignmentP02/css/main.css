@@ -1227,6 +1227,10 @@ footer a{
 		font-family: Montserrat;
 		color: #ffffff;
 	}
+
+	.footerTitle{
+	margin-bottom: 1rem;
+}
 }
 
 /*footer seeting END*/
@@ -1610,6 +1614,21 @@ input:checked ~ label .cross:after {
   	top:.5rem;
   	left:3rem;
   	font-size:1.5rem;
+  }
+
+  .CheckoutText{
+  	margin: .25rem 0;
+  	font-size: 1rem;
+    font-family: Montserrat;
+    color: #333333;
+  }
+
+  .ForSpace{
+  	margin-top: 3rem;
+  }
+
+  .ForSecondSpace{
+  	margin-top: 1rem;
   }
 
   .CheckOutNext img{
