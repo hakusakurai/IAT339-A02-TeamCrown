@@ -619,7 +619,6 @@ body{
 .ProductPrice{
 	display: grid;
 	grid-template-columns:repeat(6,1fr);
-	padding-top: -1rem;
 }
 
 .ChangeQuantity{
