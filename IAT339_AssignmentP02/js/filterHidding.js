@@ -15,6 +15,7 @@ function toggleHidden(button){
 var showAll = true;
 
 sortTitle = document.querySelector("#filterbutton3");
+sortTitle = document.querySelector("#filterbutton4");
 sortTitle.addEventListener('click', e=>{
     showAll = !showAll;
 
@@ -28,3 +29,12 @@ sortTitle.addEventListener('click', e=>{
         e.classList.toggle("ShowElement", showAll);
     });
 })
+
+
+function openSFNav() {
+  document.getElementsByClassName("mSortFilter")[0].style.width = "250px";
+}
+
+function closeSFNav() {
+  document.getElementsByClassName("mSortFilter")[0].style.width = "0";
+}

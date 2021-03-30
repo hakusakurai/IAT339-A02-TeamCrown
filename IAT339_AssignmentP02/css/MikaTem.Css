@@ -307,7 +307,23 @@
 	}
 
 
-
+	.mSortFilter {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #F4F4F7;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	  float:right;
+	  border-style: solid 5px #F4F4F7;
+	}
+	.mFilter{
+		padding-left: .5rem;
+	}
 	.gSearchLine{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -340,17 +356,31 @@
 	.ShowElement{
 		display: block;
 	}
+	#xbutton{
+		position: relative;
+		float: right;
+		font-size: 28pt;
+		padding-right: .5rem;
+	}
 
 	#filterbutton1{
 		width: 95%;
 		height: 36px;
 		padding-top: .8rem;
 	}
-	#filterbutton2,#filterbutton3{
+	#filterbutton2,#filterbutton3,#filterbutton4{
 		height: 30px;
 		padding-top: .4rem;
 		margin-top: .5rem;
 		margin-bottom: 1.5rem;
+	}
+	.Filtertoggle{
+		display: inline-block;
+		float: right;
+		padding-top: 10%;
+	}
+	.gHiddenFilter{
+		display: none;
 	}
 
 	/*#filterbutton{
@@ -576,7 +606,7 @@
 /* --- Homepage Cards End --- */
 
 
-/*----------------Test-----------------*/
+/*----------------Brand card-----------------*/
 .X{
   margin: 0;
   max-height: 12vw;
@@ -610,7 +640,25 @@
       padding:0rem;
       transition: all 1s ease-in-out;
   }
-  .card:hover {
+  #brand-1{
+  	flex-grow: 10;
+  	  .card__head {
+        transform: rotate(0deg) skew(-5deg);
+  	}
+  }
+    #brand-2{
+  	flex-grow: 10;
+  	  .card__head {
+        transform: rotate(0deg) skew(-5deg);
+  	}
+  }
+    #brand-3{
+  	flex-grow: 10;
+  	  .card__head {
+        transform: rotate(0deg) skew(-5deg);
+  	}
+  }
+  .card:hover{
       flex-grow: 10;
       .card__head {
         text-align: center;
@@ -842,6 +890,9 @@
 		max-width: 100%;
 	}
 
+	.gHiddenFilter{
+		display: block;
+	}
 
 /*----------*/
 /*------------------For Homepage Cards-------------------*/
