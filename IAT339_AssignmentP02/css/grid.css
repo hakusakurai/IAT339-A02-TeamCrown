@@ -214,8 +214,7 @@ body{
 }
 
 .wrap-1{
-		display: none;
-		position: 
+		display: none; 
 	}
 	.wrap-2{
 		display: none;
@@ -261,7 +260,6 @@ body{
 
 
 	.Account-Side-Bar{
-		position: none;
 		display: none;
 	}
 
