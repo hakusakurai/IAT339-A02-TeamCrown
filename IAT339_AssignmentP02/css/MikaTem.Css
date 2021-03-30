@@ -259,7 +259,7 @@
 		transition: all 1s ease-in-out;
 	}
 	.Brand2:hover {
-		grid-column: 4-10;
+		grid-column: 4/10;
 		transition: all 1s ease-in-out;
 	}
 	.Brand2:hover +.Brand1{
@@ -322,7 +322,6 @@
 	  transition: 0.5s;
 	  padding-top: 60px;
 	  float:right;
-	  border-style: solid 5px #F4F4F7;
 	}
 	.mFilter{
 		padding-left: .5rem;
@@ -496,7 +495,6 @@
 		margin-bottom: 5%;
 		margin-right: 1rem;
 		margin-top: 10%;
-		padding-bottom: auto;
 		grid-column-start: 8;
 		grid-column-end: 13;
 		min-height: 25vw;
@@ -514,7 +512,6 @@
 		margin-bottom: auto;
 		margin-top: auto;
 		margin-right: 1rem;
-		padding-bottom: auto;
 		min-height: 25vw;
 	}
 	.Subscribe{
@@ -630,7 +627,6 @@
     transition: all 1s ease-in-out;
     height: 12vw;
     position: relative;
-    margin-right: :0px;
     padding:0rem;
   }
   .card img{
@@ -643,25 +639,20 @@
   }
   #brand-1{
   	flex-grow: 10;
-  	  .card__head {
-        transform: rotate(0deg) skew(-5deg);
-  	}
   }
     #brand-2{
   	flex-grow: 10;
-  	  .card__head {
-        transform: rotate(0deg) skew(-5deg);
-  	}
   }
     #brand-3{
   	flex-grow: 10;
-  	  .card__head {
+  }
+ .card__head {
         transform: rotate(0deg) skew(-5deg);
   	}
-  }
   .card:hover{
       flex-grow: 10;
-      .card__head {
+    }
+    .card:hover .card__head {
         text-align: center;
         top: calc(100% - 2em);
         color: white;
@@ -669,7 +660,6 @@
         font-size: 2em;
         transform: rotate(0deg) skew(-5deg);
       }
-    }
   .card:not(:nth-child(3)) {
       margin-right: .1em;
   }
@@ -731,7 +721,7 @@
 
 /*----------------SignUp-----------------*/
 	.gSignUp{
-		grid-template-rows:0fr,1fr;
+		grid-template-rows:0fr 1fr;
 	}
 
 	.SignUpImage{
@@ -917,12 +907,10 @@
 		background-repeat: no-repeat;
 	}
 	.C1G2{
-		align-content: middle;
 		grid-column-start: 1;
 		grid-row: 2/3;
 		padding-top: 1rem;
 		padding-bottom: 2rem;
-		padding-left: auto;
 		padding-right: 1rem;
 		margin-right: auto;
 		margin-left: auto;
@@ -938,7 +926,6 @@
 		padding-top: 1rem;
 		padding-bottom: 2rem;
 		padding-right: 1rem;
-		padding-left: auto;
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-right: auto;
