@@ -1214,7 +1214,6 @@ footer a{
 
 .footerTitle{
 	font-size: 1.125rem;
-	width:clamp(45ch, 95%, 85ch);
 	font-family: 'Source Sans Pro';
 	margin-top: 2rem;
 	margin-bottom: .5rem;
