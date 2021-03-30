@@ -717,7 +717,7 @@ a.CallToActionButton{
 }
 
 
-.RPrevious,{
+.RPrevious{
 	grid-column: 1;
 }
 
@@ -944,11 +944,11 @@ a.CallToActionButton{
 	}
 
 	.MinusButton{
-		grid-column-start: 1/2;
+		grid-column-start: 1;
 	}
 
 	.InputArea{
-		grid-column-start: 2/3;
+		grid-column-start: 2;
 	}
 
 	#count{
@@ -964,7 +964,7 @@ a.CallToActionButton{
 	}
 
 	.PlusButton{
-		grid-column-start:  3/4;
+		grid-column-start:  3;
 	}
 
 	.ShoppingCartProductPrice{
@@ -1420,11 +1420,11 @@ a.CallToActionButton{
 		}
 
 		.MinusButton{
-			grid-column-start: 1/2;
+			grid-column-start: 1;
 		}
 
 		.InputArea{
-			grid-column-start: 2/3;
+			grid-column-start: 2;
 		}
 
 		#count{
@@ -1440,7 +1440,7 @@ a.CallToActionButton{
 		}
 
 		.PlusButton{
-			grid-column-start:  3/4;
+			grid-column-start:  3;
 		}
 
 		.ShoppingCartProductPrice{
