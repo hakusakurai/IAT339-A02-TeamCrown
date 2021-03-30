@@ -485,6 +485,8 @@ body{
 		}
    }
 
+
+
    
 
 @media screen and (max-width:63rem){
@@ -981,7 +983,7 @@ a.CallToActionButton{
 @media screen and (max-width:71em){
 	.PurchaseHistoryShoppingCartGridContainer{
 		grid-template-columns:1fr 1fr;
-		grid-template-rows:6rem 5rem 1fr 1fr 1fr 2.5fr;
+		grid-template-rows:6rem 5rem 1fr 1fr 1fr 1fr;
 	}
 
 	.ShoppingCartPatternGrid{
