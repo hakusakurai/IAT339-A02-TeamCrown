@@ -5,7 +5,7 @@
 	margin:0 auto;
 }
 body{
-	font-family:Source Sans Pro;
+	font-family:'Source Sans Pro';
 }
 
 h1,h2,h3, h4{
@@ -34,7 +34,7 @@ h4{
 p{
 	font-size: 1.125rem;
 	width:clamp(45ch, 95%, 85ch);
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 }
 
 a.IntextLink:link {
@@ -55,8 +55,8 @@ a.IntextLink:visited {
 }
 
 a.CallToActionButton{
-	font-family: Josefin Sans;
-	font-weight: Semi Bold; 
+	font-family: 'Josefin Sans';
+	font-weight:600;  
 	display: inline-block;
 	color: #F8F8F8;
 }
@@ -81,13 +81,13 @@ a.CallToActionButton:focus {
 
 
 button{
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 	margin-top: 1rem;
 
 }
 
 button.ReadMoreButton{
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 }
 
 button.ReadMoreButton:hover{
@@ -96,7 +96,7 @@ button.ReadMoreButton:hover{
 
 button.SubmitButton{
 	background-color: #FFFFFF;
-	font-weight: Semi Bold; 
+	font-weight: 600; 
 	display: inline-block;
 	color: #15B890;
 	font-size: 1rem;
@@ -109,7 +109,7 @@ button.SubmitButton{
 
 .SubmitButton{
 	background-color: #FFFFFF;
-	font-weight: Semi Bold; 
+	font-weight: 600; 
 	display: inline-block;
 	color: #15B890;
 	font-size: 1rem;
@@ -172,7 +172,7 @@ input[type=text]{
 	border: 0.15rem solid #F2F2F2;
 	display: block;
 	border-radius: .25rem;
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	font-size: 1rem;
 	height: 40px;
 }
@@ -197,12 +197,12 @@ input[type=number]{
 
 ul.ProductBenefit{
 	list-style: "- ";
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	font-size: 1rem;
 }
 
 ol.NumberedList{
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	font-size: 1rem;
 }
 
@@ -287,7 +287,7 @@ header a:focus{
 
 header {
 	background-color: #34383B;
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	position: fixed;
 	width: 100%;
@@ -311,7 +311,7 @@ header li a {
 header .SmallFormat{
 	display: block;
 	margin:auto;
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 	font-size: 1rem;
 	padding-top: .25rem;
 }
@@ -415,7 +415,7 @@ header .TopNavigationButton:checked ~ .ToggleMenuIcon:not(.steps) .ToggleIcon:af
 .MainNavigation{
 	background-color: #34383B;
 	font-size: .3rem;
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 	height: 4.5rem;
 	padding-top: 1rem;
 	display: grid;
@@ -711,7 +711,7 @@ h3.ProductPriceH3{
 }
 
 .InformationTabs a.IntextLink {
-	font-family: Josefin Sans;
+	font-family: 'Josefin Sans';
 	color: #333333;
 	font-size: 1.25rem;
 }
@@ -775,7 +775,7 @@ h3.ProductPriceH3{
 
 ul.ProductInformation{
 	list-style: "- ";
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	font-size: 1rem;
 }
 
@@ -1120,7 +1120,7 @@ img.ItemImage {
 .ReviewProductInformation p{
 	font-size: 1.125rem;
 	width: auto;
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 }
 
 .ReviewForm{
@@ -1134,7 +1134,7 @@ textarea{
 	border: 0.15rem solid #F2F2F2;
 	display: block;
 	border-radius: .25rem;
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	font-size: 1rem;
 	height: 10rem;
 }
@@ -1215,7 +1215,7 @@ footer a{
 .footerTitle{
 	font-size: 1.125rem;
 	width:clamp(45ch, 95%, 85ch);
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	margin-top: 2rem;
 	margin-bottom: .5rem;
 }
@@ -1274,7 +1274,7 @@ input[type=text]{
 	border: 0.15rem solid #F2F2F2;
 	display: block;
 	border-radius: .25rem;
-	font-family: Source Sans Pro;
+	font-family: 'Source Sans Pro';
 	font-size: 1rem;
 	height: 40px;
 	max-width: 40rem;
@@ -1437,6 +1437,12 @@ input:checked ~ label .cross:after {
 	border-radius: 3px;
 
 }
+
+
+
+  label {
+  	display: block;
+  }
 
   .Account-Side-Bar ul{
   	margin-top: 4rem;

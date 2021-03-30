@@ -55,54 +55,17 @@
 					<div class="Sorter">
 					<ul style="list-style-type:none;" class="Sort">
 						<li><h4 class="SortTitle">Sort</h4></li>
-						<li><input type="checkbox" id="sort1"><label for="sort1" class="SortFont"> Recently Added</label></li>
-						<li><input type="checkbox" id="sort2"><label for="sort2" class="SortFont"> Most Rated</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: Low→High</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: High→Low</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Discount: Low→High</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Discount: High→Low</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Recently Added</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Most Rated</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Price: Low→High</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Price: High→Low</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Discount: Low→High</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Discount: High→Low</label></li>
 				    </ul>
 					</div>
 
 					<div class="FilterContainer">
-					<button class="SubmitButton" id="filterbutton1">FILTER</button>
-					<h4 class="SortHead ShowElement">All Categories</h4>
-					<ul style="list-style-type: none;" class="Filter">					
-						<li><h4 class="SortHead ShowElement">&#10095; Food Type<h4></li>
-						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Flavor</a></h4>
-							<ul style="list-style-type: none;" class="FlavorFilter">
-								<li class="SortElement ShowElement">Chicken</li>
-								<li class="SortElement ShowElement">Fish</li>
-								<li class="SortElement ShowElement">Beef</li>
-								<li class="SortElement ShowElement">Lamb</li>
-								<!--<li><button class="SubmitButton" id="filterbutton2">View more</button></li>-->
-							</ul>
-						</li>
-						<li><h4 class="SortHead ShowElement">&#10095; Series</h4></li>
-						<li><h4 class="SortHead ShowElement">&#10095; Health Consideration</h4></li>
-						<li><h4 class="SortHead ShowElement">&#10095; Life Stage</h4></li>
-						<button class="SubmitButton" id="filterbutton3">Collapsed filters</button>
-					</ul>
-					</div>
-
-				</div>
-
-				<div class="mSortFilter">
-					<a href="javascript:void(0)" class="closebtn IntextLink" onclick="closeSFNav()" id="xbutton">×</a>
-					<div class="Sorter">
-					<ul style="list-style-type:none;" class="Sort">
-						<li><h4 class="SortTitle">Sort</h4></li>
-						<li><input type="checkbox" id="sort1"><label for="sort1" class="SortFont"> Recently Added</label></li>
-						<li><input type="checkbox" id="sort2"><label for="sort2" class="SortFont"> Most Rated</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: Low→High</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Price: High→Low</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Discount: Low→High</label></li>
-						<li><input type="checkbox" id="sort3"><label for="sort3" class="SortFont"> Discount: High→Low</label></li>
-				    </ul>
-					</div>
-
-					<div class="FilterContainer mFilter">
-					<button class="SubmitButton" id="filterbutton1">FILTER</button>
+					<button class="SubmitButton filterbutton1">FILTER</button>
 					<h4 class="SortHead ShowElement">All Categories</h4>
 					<ul style="list-style-type: none;" class="Filter">					
 						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Food Type</a></h4></li>
@@ -118,7 +81,43 @@
 						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Series</a></h4></li>
 						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Health Consideration</a></h4></li>
 						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Life Stage</a></h4></li>
-						<button class="SubmitButton" id="filterbutton4">Collapsed filters</button>
+						<a class="SubmitButton" id="filterbutton3">Collapsed filters</a>
+					</ul>
+					</div>
+				</div>
+
+				<div class="mSortFilter">
+					<a href="javascript:void(0)" class="closebtn IntextLink" onclick="closeSFNav()" id="xbutton">×</a>
+					<div class="Sorter">
+					<ul style="list-style-type:none;" class="Sort">
+						<li><h4 class="SortTitle">Sort</h4></li>
+						<li><input type="checkbox"><label  class="SortFont"> Recently Added</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Most Rated</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Price: Low→High</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Price: High→Low</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Discount: Low→High</label></li>
+						<li><input type="checkbox"><label  class="SortFont"> Discount: High→Low</label></li>
+				    </ul>
+					</div>
+
+					<div class="FilterContainer mFilter">
+					<button class="SubmitButton filterbutton1">FILTER</button>
+					<h4 class="SortHead ShowElement">All Categories</h4>
+					<ul style="list-style-type: none;" class="Filter">					
+						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Food Type</a></h4></li>
+						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Flavor</a></h4>
+							<ul style="list-style-type: none;" class="FlavorFilter">
+								<li class="SortElement ShowElement"><a class="IntextLink">Chicken</a></li>
+								<li class="SortElement ShowElement"><a class="IntextLink">Fish</a></li>
+								<li class="SortElement ShowElement"><a class="IntextLink">Beef</a></li>
+								<li class="SortElement ShowElement"><a class="IntextLink">Lamb</a></li>
+								<!--<li><button class="SubmitButton" id="filterbutton2">View more</button></li>-->
+							</ul>
+						</li>
+						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Series</a></h4></li>
+						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Health Consideration</a></h4></li>
+						<li><h4 class="SortHead ShowElement"><a class="IntextLink">&#10095; Life Stage</a></h4></li>
+						<a class="SubmitButton" id="filterbutton4">Collapsed filters</a>
 					</ul>
 					</div>
 				</div>
@@ -132,13 +131,13 @@
 					<div class="X">
 						<div class="container">
 						  <div class="card">
-						  	<a href="ProductListb1.html"><img src="img/brand01.png"></a>
+						  	<a href="ProductListb1.html"><img src="img/brand01.png" alt="brand1 figure"></a>
 						  </div>
 						  <div class="card">
-						    <a href="ProductListb2.html"><img src="img/brand02.png"></a>
+						    <a href="ProductListb2.html"><img src="img/brand02.png" alt="brand2 figure"></a>
 						  </div>
 						  <div class="card" id="brand-3">
-						    <a href="ProductList.html"><img src="img/brand03.png"></a>
+						    <a href="ProductList.html"><img src="img/brand03.png" alt="brand3 figure"></a>
 						  </div>
 						</div>
 					</div>
