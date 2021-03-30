@@ -14,8 +14,8 @@ function toggleHidden(button){
 
 var showAll = true;
 
-sortTitle = document.querySelector("#filterbutton3");
 sortTitle = document.querySelector("#filterbutton4");
+sortTitle = document.querySelector("#filterbutton3");
 sortTitle.addEventListener('click', e=>{
     showAll = !showAll;
 
